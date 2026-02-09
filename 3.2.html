@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3.2 Friction</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #003366; }
+.question { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Section 3.2 – Friction</h1>
+
+<h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> Friction is best defined as<br>
+A. a force that accelerates objects<br>
+B. a force that opposes motion between surfaces in contact<br>
+C. the tendency of an object to resist changes in motion<br>
+D. a force that always points upward<br>
+E. the amount of matter in an object</div>
+
+<div class="question"><strong>2.</strong> Static friction is the friction force that<br>
+A. acts on objects that are already moving<br>
+B. prevents an object from starting to move<br>
+C. always equals kinetic friction<br>
+D. is independent of the normal force<br>
+E. increases with velocity</div>
+
+<div class="question"><strong>3.</strong> Kinetic friction is<br>
+A. the friction that prevents motion from starting<br>
+B. the friction that opposes motion of an object already sliding<br>
+C. independent of the surface texture<br>
+D. always greater than static friction<br>
+E. only present in liquids</div>
+
+<div class="question"><strong>4.</strong> The coefficient of static friction ($\mu_s$) is<br>
+A. always equal to one<br>
+B. measured in newtons<br>
+C. a dimensionless constant that depends on the two surfaces<br>
+D. the same as kinetic friction<br>
+E. always zero</div>
+
+<div class="question"><strong>5.</strong> The coefficient of kinetic friction ($\mu_k$) is typically<br>
+A. larger than the coefficient of static friction<br>
+B. smaller than the coefficient of static friction<br>
+C. equal to the weight of the object<br>
+D. negative<br>
+E. greater than 10</div>
+
+<div class="question"><strong>6.</strong> The normal force is<br>
+A. always equal to the object's weight<br>
+B. the contact force exerted perpendicular to a surface<br>
+C. always directed downward<br>
+D. independent of the object's mass<br>
+E. a frictional force</div>
+
+<div class="question"><strong>7.</strong> The equation for kinetic friction force is<br>
+A. $f = \mu m g$<br>
+B. $f_k = \mu_k N$<br>
+C. $f = \mu g$<br>
+D. $f = N \times m$<br>
+E. $f = \mu / N$</div>
+
+<div class="question"><strong>8.</strong> Maximum static friction is calculated using<br>
+A. $f_{s,max} = \mu_s m$<br>
+B. $f_{s,max} = \mu_s N$<br>
+C. $f_{s,max} = m / \mu_s$<br>
+D. $f_{s,max} = N / \mu_s$<br>
+E. $f_{s,max} = \mu_s g$</div>
+
+<div class="question"><strong>9.</strong> Friction acts<br>
+A. perpendicular to the surface<br>
+B. always upward<br>
+C. parallel to the surface and opposite to motion<br>
+D. at a 45-degree angle<br>
+E. in the direction of applied force</div>
+
+<div class="question"><strong>10.</strong> When an object is moving at constant velocity on a horizontal surface, the friction force is<br>
+A. zero<br>
+B. greater than the applied force<br>
+C. equal in magnitude to the applied force<br>
+D. less than the object's weight<br>
+E. always kinetic friction</div>
+
+<div class="question"><strong>11.</strong> Lubrication reduces friction because<br>
+A. it increases the normal force<br>
+B. it decreases the coefficient of friction between surfaces<br>
+C. it eliminates the normal force<br>
+D. it makes objects heavier<br>
+E. it changes the direction of motion</div>
+
+<div class="question"><strong>12.</strong> Friction between two surfaces depends on<br>
+A. only the normal force<br>
+B. only the coefficient of friction<br>
+C. both the normal force and the coefficient of friction<br>
+D. neither the normal force nor the coefficient of friction<br>
+E. the object's color</div>
+
+<div class="question"><strong>13.</strong> The direction of kinetic friction is<br>
+A. always downward<br>
+B. always upward<br>
+C. opposite to the direction of motion<br>
+D. in the same direction as motion<br>
+E. always horizontal</div>
+
+<div class="question"><strong>14.</strong> Static friction can have values ranging from<br>
+A. zero to $\mu_s N$<br>
+B. zero to $\mu_k N$<br>
+C. $-\mu_s N$ to $\mu_s N$<br>
+D. only zero<br>
+E. zero to infinity</div>
+
+<div class="question"><strong>15.</strong> On an inclined plane, the normal force is<br>
+A. always equal to the object's weight<br>
+B. equal to the component of weight perpendicular to the plane<br>
+C. zero<br>
+D. always equal to the object's mass<br>
+E. greater than the object's weight</div>
+
+<div class="question"><strong>16.</strong> The SI unit for the coefficient of friction is<br>
+A. newtons<br>
+B. kilograms<br>
+C. meters per second<br>
+D. dimensionless (no units)<br>
+E. joules</div>
+
+<div class="question"><strong>17.</strong> When you try to slide a heavy box across the floor and it doesn't move, you are being opposed by<br>
+A. kinetic friction<br>
+B. static friction<br>
+C. air resistance<br>
+D. gravity<br>
+E. the object's inertia</div>
+
+<div class="question"><strong>18.</strong> Once an object starts sliding, the friction force<br>
+A. suddenly decreases because kinetic friction is typically less than static friction<br>
+B. suddenly increases<br>
+C. becomes zero<br>
+D. equals the applied force<br>
+E. becomes independent of velocity</div>
+
+<div class="question"><strong>19.</strong> Surface texture affects friction by<br>
+A. changing the object's mass<br>
+B. altering the coefficient of friction between surfaces<br>
+C. increasing the normal force<br>
+D. eliminating the normal force<br>
+E. creating gravity</div>
+
+<div class="question"><strong>20.</strong> Two identical blocks are placed on two different surfaces with different coefficients of friction. When equal forces are applied, the block on the surface with greater $\mu_k$ will<br>
+A. accelerate faster<br>
+B. accelerate slower<br>
+C. experience less friction<br>
+D. experience zero friction<br>
+E. have more mass</div>
+
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> Why is the coefficient of kinetic friction typically less than the coefficient of static friction?<br>
+A. kinetic friction is stronger<br>
+B. once objects are moving, they overcome the initial resistance, resulting in less friction<br>
+C. kinetic friction is independent of the normal force<br>
+D. static friction doesn't depend on surface texture<br>
+E. kinetic friction only exists in air</div>
+
+<div class="question"><strong>2.</strong> A book slides across a table and slows down even though no one is pushing it. What causes this?<br>
+A. the book loses weight<br>
+B. gravity increases<br>
+C. kinetic friction opposes the motion<br>
+D. the book's mass decreases<br>
+E. the table exerts an upward force</div>
+
+<div class="question"><strong>3.</strong> When pushing a car, why is it harder to get the car moving initially than to keep it moving at constant velocity?<br>
+A. the car's weight increases initially<br>
+B. static friction must be overcome first, which requires more force than kinetic friction<br>
+C. gravity is stronger when objects are stationary<br>
+D. the normal force is larger initially<br>
+E. friction reverses direction once the car moves</div>
+
+<div class="question"><strong>4.</strong> A hockey player slides a puck across ice and across a wooden floor. On which surface is the friction force greater, and why?<br>
+A. ice has greater friction due to smoother surface<br>
+B. wood has greater friction due to higher coefficient of friction<br>
+C. both have equal friction<br>
+D. ice has greater friction because it's colder<br>
+E. friction depends only on velocity</div>
+
+<div class="question"><strong>5.</strong> If an object is placed on a horizontal surface and the normal force is increased (by adding weight on top), the friction force<br>
+A. decreases<br>
+B. increases proportionally to the increase in normal force<br>
+C. remains zero<br>
+D. becomes independent of normal force<br>
+E. changes direction</div>
+
+<div class="question"><strong>6.</strong> A car is stopped on a sloped road. Why doesn't it slide down even though gravity pulls it downward?<br>
+A. gravity only acts on horizontal surfaces<br>
+B. the car has infinite mass<br>
+C. static friction prevents the car from sliding down<br>
+D. there is no component of gravity along the slope<br>
+E. the road is not really sloped</div>
+
+<div class="question"><strong>7.</strong> Why does a person walking on ice need to be more careful than walking on concrete?<br>
+A. ice has a higher coefficient of friction<br>
+B. ice has a lower coefficient of friction, making it easier to slip<br>
+C. ice exerts more friction on shoes<br>
+D. ice weighs more<br>
+E. concrete causes more friction than ice</div>
+
+<div class="question"><strong>8.</strong> A sled is being pulled at constant velocity across snow. Which of the following is true?<br>
+A. the friction force is zero<br>
+B. the applied force equals the friction force<br>
+C. the friction force is greater than the applied force<br>
+D. there is no friction between the sled and snow<br>
+E. friction is static, not kinetic</div>
+
+<div class="question"><strong>9.</strong> How would adding oil to a door hinge reduce friction?<br>
+A. oil increases the normal force<br>
+B. oil decreases the coefficient of friction by separating surfaces<br>
+C. oil adds mass to the hinge<br>
+D. oil changes the direction of the hinge<br>
+E. oil increases resistance</div>
+
+<div class="question"><strong>10.</strong> A book is at rest on a table. A person pushes with 10 N, but the book doesn't move. What can we conclude about static friction?<br>
+A. static friction is zero<br>
+B. static friction equals 10 N and balances the applied force<br>
+C. static friction is greater than 10 N<br>
+D. static friction is less than 10 N<br>
+E. static friction doesn't exist between the book and table</div>
+
+<div class="question"><strong>11.</strong> A 50 kg box is pushed across a floor. The normal force acting on the box is<br>
+A. zero<br>
+B. 50 N<br>
+C. equal to the box's weight (490 N on Earth)<br>
+D. equal to the applied force<br>
+E. independent of the box's mass</div>
+
+<div class="question"><strong>12.</strong> Why do car tires need to have surface texture (treads)?<br>
+A. to make the car look better<br>
+B. to increase friction and prevent slipping, especially on wet surfaces<br>
+C. to reduce friction for faster driving<br>
+D. to decrease the normal force<br>
+E. to change the car's weight</div>
+
+<div class="question"><strong>13.</strong> A person drags a box across a floor with a rope held at an angle above horizontal. How does this affect friction compared to pushing horizontally?<br>
+A. friction increases because the angle changes<br>
+B. friction decreases because the normal force decreases<br>
+C. friction remains the same<br>
+D. friction becomes zero<br>
+E. friction depends only on the angle, not the normal force</div>
+
+<div class="question"><strong>14.</strong> When an object slides down a frictionless incline versus an incline with friction, the difference is<br>
+A. friction only acts on objects moving downward<br>
+B. friction opposes the motion down the slope, reducing acceleration<br>
+C. there is no difference<br>
+D. friction increases the acceleration<br>
+E. friction acts perpendicular to the motion</div>
+
+<div class="question"><strong>15.</strong> In order to minimize friction between bicycle parts, what should be done?<br>
+A. increase the normal force<br>
+B. use lubricants to decrease the coefficient of friction<br>
+C. increase the surface texture<br>
+D. add more weight to the bicycle<br>
+E. move the bicycle faster</div>
+
+<h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A block rests on a horizontal surface. With a normal force of 450 N and coefficient of static friction 0.40, calculate the maximum static friction force.</div>
+
+<div class="question"><strong>2.</strong> Determine the kinetic friction force on a 60 kg object sliding on a surface where $\mu_k = 0.25$ and $g = 9.8 \text{ m/s}^2$.</div>
+
+<div class="question"><strong>3.</strong> An object experiences a normal force of 800 N as it slides. If the coefficient of kinetic friction is 0.15, find the kinetic friction force.</div>
+
+<div class="question"><strong>4.</strong> A 45 kg box slides across a floor with coefficient of kinetic friction 0.30. Calculate the friction force using $g = 9.8 \text{ m/s}^2$.</div>
+
+<div class="question"><strong>5.</strong> A book weighing 25 N sits on a table with $\mu_s = 0.50$. What is the maximum static friction force that can act on the book?</div>
+
+<div class="question"><strong>6.</strong> A 55 kg crate rests on a horizontal surface. Given $\mu_s = 0.35$ and $g = 9.8 \text{ m/s}^2$, calculate the maximum static friction.</div>
+
+<div class="question"><strong>7.</strong> An object sliding on a surface experiences a normal force of 1200 N. If $\mu_k = 0.12$, find the kinetic friction force.</div>
+
+<div class="question"><strong>8.</strong> Calculate the kinetic friction acting on a 75 kg person sliding on ice where $\mu_k = 0.05$ and $g = 9.8 \text{ m/s}^2$.</div>
+
+<div class="question"><strong>9.</strong> A 35 kg child's sled has a coefficient of static friction of $\mu_s = 0.40$ on snow. Using $g = 9.8 \text{ m/s}^2$, what is the maximum force needed to overcome static friction and start moving the sled?</div>
+
+<div class="question"><strong>10.</strong> Find the kinetic friction force on an 8.5 kg object where the coefficient of kinetic friction is 0.28 and $g = 9.8 \text{ m/s}^2$.</div>
+
+<div class="question"><strong>11.</strong> A block with a normal force of 340 N is being pushed across a surface. If the coefficient of static friction is 0.60, calculate the maximum static friction.</div>
+
+<div class="question"><strong>12.</strong> An object is sliding on a surface and experiences a normal force of 625 N. Determine the kinetic friction force if $\mu_k = 0.08$.</div>
+
+<div class="question"><strong>13.</strong> An 80 kg object rests on a surface where $\mu_s = 0.25$. Using $g = 9.8 \text{ m/s}^2$, calculate the maximum static friction force.</div>
+
+<div class="question"><strong>14.</strong> Calculate the kinetic friction acting on a 2.5 kg laptop being dragged across a desk where $\mu_k = 0.18$ and $g = 9.8 \text{ m/s}^2$.</div>
+
+<div class="question"><strong>15.</strong> A 120 kg furniture piece is being moved across a floor with coefficient of kinetic friction 0.22. Using $g = 9.8 \text{ m/s}^2$, find the kinetic friction.</div>
+
+<div class="question"><strong>16.</strong> An object with a normal force of 560 N is being tested for static friction. If $\mu_s = 0.45$, what is the maximum static friction?</div>
+
+<div class="question"><strong>17.</strong> A 3.2 kg textbook slides across a table with a normal force of 31.4 N. Find the kinetic friction force if $\mu_k = 0.20$.</div>
+
+<div class="question"><strong>18.</strong> A 92 kg person is standing on a floor where $\mu_s = 0.70$. Using $g = 9.8 \text{ m/s}^2$, what is the maximum static friction?</div>
+
+<div class="question"><strong>19.</strong> A 45 kg box is being pushed across a floor with coefficient of kinetic friction 0.35. Find the kinetic friction force using $g = 9.8 \text{ m/s}^2$.</div>
+
+<div class="question"><strong>20.</strong> An object sliding on a surface experiences a normal force of 310 N. If $\mu_k = 0.16$, calculate the kinetic friction force.</div>
+
+<div class="question"><strong>21.</strong> A 68 kg object slides on a surface with coefficient of kinetic friction 0.29. Using $g = 9.8 \text{ m/s}^2$, determine the friction force.</div>
+
+<div class="question"><strong>22.</strong> Calculate the maximum static friction on a 12 kg mass where $\mu_s = 0.55$ and $g = 9.8 \text{ m/s}^2$.</div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A 50 kg box is placed on a horizontal surface. With $\mu_s = 0.40$ and $\mu_k = 0.25$, calculate the maximum static friction using $g = 9.8 \text{ m/s}^2$. Then calculate the kinetic friction if the box is pushed and starts sliding.</div>
+
+<div class="question"><strong>2.</strong> During a laboratory investigation, an 85 kg object rests on a floor. Determine the normal force using $g = 9.8 \text{ m/s}^2$. With $\mu_k = 0.18$, calculate the kinetic friction force when the object slides. Finally, find the net force if an applied force of 200 N pushes the object.</div>
+
+<div class="question"><strong>3.</strong> A 45 kg child's wagon is being pulled across a surface. The normal force is 350 N. Calculate the maximum static friction where $\mu_s = 0.35$. Then determine the kinetic friction where $\mu_k = 0.20$. What force is required to overcome static friction and start the wagon moving?</div>
+
+<div class="question"><strong>4.</strong> For safety purposes, a 75 kg person is being tested on a carpeted floor. Calculate the person's weight on Earth using $g = 9.8 \text{ m/s}^2$. Then calculate the maximum static friction where $\mu_s = 0.60$. What force is required to make the person start sliding?</div>
+
+<div class="question"><strong>5.</strong> A warehouse worker needs to move a 120 kg box on a floor where $\mu_s = 0.35$ and $\mu_k = 0.22$. Determine the normal force using $g = 9.8 \text{ m/s}^2$. Calculate both the maximum static friction and the kinetic friction. If the box is pushed with 600 N, find the net force and the resulting acceleration.</div>
+
+<div class="question"><strong>6.</strong> A physics student investigates friction on different surfaces. A 30 kg object is pushed where $\mu_s = 0.50$. Using $g = 9.8 \text{ m/s}^2$, calculate the maximum static friction force. After the object starts moving with $\mu_k = 0.30$, calculate the kinetic friction. How much less force is needed to keep the object moving compared to starting it?</div>
+
+<div class="question"><strong>7.</strong> A 65 kg crate is being moved across a horizontal floor with $\mu_k = 0.25$. Using $g = 9.8 \text{ m/s}^2$, calculate the normal force. Then find the friction force. If an applied force of 250 N pushes the crate, calculate the net force and the resulting acceleration.</div>
+
+<div class="question"><strong>8.</strong> An 80 kg object is on an incline where the normal force is 650 N and the component of weight along the incline is 520 N. With $\mu_k = 0.15$, calculate the friction force. Determine whether the object will slide down by comparing to maximum static friction where $\mu_s = 0.80$.</div>
+
+<div class="question"><strong>9.</strong> Two identical surfaces have different friction coefficients for comparison. Surface A has $\mu_k = 0.20$ and surface B has $\mu_k = 0.40$. A 50 kg box slides on each surface using $g = 9.8 \text{ m/s}^2$. Calculate the friction force on each surface and find the difference.</div>
+
+<div class="question"><strong>10.</strong> A tall building has carpeted elevator floors with specific friction properties. A 95 kg person is in an elevator accelerating upward at $2.0 \text{ m/s}^2$ on Earth where $g = 9.8 \text{ m/s}^2$. Calculate the person's apparent weight (normal force). With $\mu_s = 0.65$, calculate the maximum static friction. Could the person remain stationary if the elevator suddenly decelerated at $3.0 \text{ m/s}^2$?</div>
+
+<div class="question"><strong>11.</strong> A 55 kg object is on a surface where $\mu_s = 0.45$ and $\mu_k = 0.28$. Determine the normal force using $g = 9.8 \text{ m/s}^2$. Find both the maximum static friction and kinetic friction. If a 300 N force is applied horizontally, determine whether the object will move and calculate the acceleration if it does.</div>
+
+<div class="question"><strong>12.</strong> A delivery service is testing friction on different floor types. A 40 kg box is dragged across a floor with $\mu_k = 0.32$ by a rope held at 30° above horizontal. The tension in the rope is 180 N. Calculate the normal force considering the upward component of rope tension. Then find the friction force and the net horizontal force.</div>
+
+<div class="question"><strong>13.</strong> A 70 kg sled is being pulled across snow where $\mu_s = 0.30$ and $\mu_k = 0.15$. Using $g = 9.8 \text{ m/s}^2$, calculate the maximum static friction. Once moving, find the kinetic friction. If the sled is pulled with a force of 250 N, calculate the resulting acceleration.</div>
+
+<div class="question"><strong>14.</strong> During a mechanical systems analysis, a 60 kg block is on a horizontal surface with $\mu_s = 0.55$ and $\mu_k = 0.35$. Using $g = 9.8 \text{ m/s}^2$, calculate the maximum static friction force. Then determine what happens if a 400 N force is applied: find the kinetic friction, the net force, and the acceleration.</div>
+
+<div class="question"><strong>15.</strong> Two identical blocks are tested on very different surfaces to compare friction effects. One 50 kg block is on an icy surface with $\mu_k = 0.15$ and another is on a rough surface with $\mu_k = 0.60$. Each is pushed with the same 200 N force using $g = 9.8 \text{ m/s}^2$. Calculate the friction on each surface, the net force on each block, and the acceleration of each block.</div>
+
+<hr>
+<h2>Answer Key</h2>
+
+<h3>Bank 1 – Vocabulary</h3>
+<ol>
+<li>B</li><li>B</li><li>B</li><li>C</li><li>B</li>
+<li>B</li><li>B</li><li>B</li><li>C</li><li>C</li>
+<li>B</li><li>C</li><li>C</li><li>A</li><li>B</li>
+<li>D</li><li>B</li><li>A</li><li>B</li><li>B</li>
+</ol>
+
+<h3>Bank 2 – Conceptual</h3>
+<ol>
+<li>B</li><li>C</li><li>B</li><li>B</li><li>B</li>
+<li>C</li><li>B</li><li>B</li><li>B</li><li>B</li>
+<li>C</li><li>B</li><li>B</li><li>B</li><li>B</li>
+</ol>
+
+<h3>Bank 3 – Single-Step Calculations</h3>
+<ol>
+<li>180 N</li><li>147 N</li><li>120 N</li><li>132.3 N</li><li>12.5 N</li>
+<li>188.9 N</li><li>144 N</li><li>36.75 N</li><li>137.2 N</li><li>23.3 N</li>
+<li>204 N</li><li>50 N</li><li>196 N</li><li>4.41 N</li><li>259.0 N</li>
+<li>252 N</li><li>6.28 N</li><li>631.2 N</li><li>154.4 N</li><li>49.6 N</li>
+<li>193.9 N</li><li>64.68 N</li>
+</ol>
+
+<h3>Bank 4 – Multi-Step Calculations</h3>
+<ol>
+<li>Max static: 196 N; Kinetic: 122.5 N</li>
+<li>Normal: 833 N; Kinetic: 150 N; Net: 50 N</li>
+<li>Max static: 122.5 N; Kinetic: 70 N; Force needed: 122.5 N</li>
+<li>Weight: 735 N; Max static: 441 N; Force needed: 441 N</li>
+<li>Normal: 1176 N; Max static: 411.6 N; Kinetic: 258.7 N; Net: 341.3 N; Acceleration: 2.85 m/s²</li>
+<li>Max static: 147 N; Kinetic: 88.2 N; Difference: 58.8 N</li>
+<li>Normal: 637 N; Friction: 159.3 N; Net: 90.7 N; Acceleration: 1.42 m/s²</li>
+<li>Friction: 97.5 N; Object will slide (static max: 520 N > friction)</li>
+<li>Surface A: 98 N; Surface B: 196 N; Difference: 98 N</li>
+<li>Apparent weight: 1121 N; Max static: 728.7 N; Yes, person could remain stationary</li>
+<li>Normal: 539 N; Max static: 242.6 N; Kinetic: 150.9 N; Yes, moves; Acceleration: 2.71 m/s²</li>
+<li>Normal: 350 N; Friction: 112 N; Net horizontal: 68 N (approx)</li>
+<li>Max static: 205.8 N; Kinetic: 102.9 N; Acceleration: 2.10 m/s²</li>
+<li>Max static: 323.4 N; Kinetic: 206.1 N; Net: 193.9 N; Acceleration: 3.23 m/s²</li>
+<li>Icy: friction 73.5 N, net 126.5 N, a = 2.53 m/s²; Rough: friction 294 N, net -94 N (doesn't move beyond static)</li>
+</ol>
+
+</body>
+</html>

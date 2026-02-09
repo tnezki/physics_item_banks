@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4.1 Momentum and Impulse</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #003366; }
+.question { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Section 4.1 – Momentum and Impulse</h1>
+
+<h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> Momentum is defined as<br>
+A. the product of mass and acceleration<br>
+B. the product of mass and velocity<br>
+C. the product of force and time<br>
+D. the rate of change of velocity<br>
+E. the distance traveled per unit time</div>
+
+<div class="question"><strong>2.</strong> The SI unit of momentum is<br>
+A. newton (N)<br>
+B. joule (J)<br>
+C. kilogram-meter per second (kg·m/s)<br>
+D. meter per second squared (m/s²)<br>
+E. watt (W)</div>
+
+<div class="question"><strong>3.</strong> Momentum is a vector quantity because<br>
+A. it depends only on mass<br>
+B. it has magnitude but no direction<br>
+C. it depends on velocity, which has direction<br>
+D. it is measured in SI units<br>
+E. it is always positive</div>
+
+<div class="question"><strong>4.</strong> Impulse is defined as<br>
+A. the product of mass and velocity<br>
+B. the change in momentum<br>
+C. the rate of change of position<br>
+D. the product of mass and acceleration<br>
+E. the total distance traveled</div>
+
+<div class="question"><strong>5.</strong> The impulse-momentum theorem states that<br>
+A. momentum is always conserved<br>
+B. force equals mass times acceleration<br>
+C. impulse equals the change in momentum<br>
+D. energy is always conserved<br>
+E. velocity is constant over time</div>
+
+<div class="question"><strong>6.</strong> The SI unit of impulse is<br>
+A. kilogram (kg)<br>
+B. meter per second (m/s)<br>
+C. newton-second (N·s)<br>
+D. joule (J)<br>
+E. meter per second squared (m/s²)</div>
+
+<div class="question"><strong>7.</strong> A newton-second (N·s) is equivalent to<br>
+A. kg·m/s²<br>
+B. kg·m/s<br>
+C. kg/s<br>
+D. N·m<br>
+E. J/s</div>
+
+<div class="question"><strong>8.</strong> The formula for momentum is<br>
+A. $p = ma$<br>
+B. $p = Ft$<br>
+C. $p = mv$<br>
+D. $p = \frac{1}{2}mv^2$<br>
+E. $p = mgh$</div>
+
+<div class="question"><strong>9.</strong> The formula for impulse in terms of force and time is<br>
+A. $J = mv$<br>
+B. $J = ma$<br>
+C. $J = F\Delta t$<br>
+D. $J = \frac{1}{2}mv^2$<br>
+E. $J = mgh$</div>
+
+<div class="question"><strong>10.</strong> The change in momentum is calculated as<br>
+A. $\Delta p = m(v_f + v_i)$<br>
+B. $\Delta p = mv_f - mv_i$<br>
+C. $\Delta p = \frac{1}{2}m(v_f^2 - v_i^2)$<br>
+D. $\Delta p = m(v_f \times v_i)$<br>
+E. $\Delta p = F/t$</div>
+
+<div class="question"><strong>11.</strong> An object with greater momentum is<br>
+A. easier to stop than an object with less momentum<br>
+B. more difficult to stop than an object with less momentum<br>
+C. always moving faster than an object with less momentum<br>
+D. always more massive than an object with less momentum<br>
+E. at rest</div>
+
+<div class="question"><strong>12.</strong> If an object's velocity is negative, its momentum is<br>
+A. also negative<br>
+B. positive<br>
+C. zero<br>
+D. undefined<br>
+E. always zero</div>
+
+<div class="question"><strong>13.</strong> Doubling the velocity of an object while keeping mass constant<br>
+A. has no effect on momentum<br>
+B. doubles the momentum<br>
+C. quadruples the momentum<br>
+D. halves the momentum<br>
+E. reduces momentum to zero</div>
+
+<div class="question"><strong>14.</strong> Doubling the mass of an object while keeping velocity constant<br>
+A. has no effect on momentum<br>
+B. doubles the momentum<br>
+C. quadruples the momentum<br>
+D. halves the momentum<br>
+E. reduces momentum to zero</div>
+
+<div class="question"><strong>15.</strong> The impulse-momentum theorem can be written as<br>
+A. $F\Delta t = mv$<br>
+B. $F\Delta t = \Delta p$<br>
+C. $F\Delta t = ma$<br>
+D. $F = ma$<br>
+E. $p = mv$</div>
+
+<div class="question"><strong>16.</strong> Average force is defined as<br>
+A. the total force divided by mass<br>
+B. the constant force that produces the same impulse as a varying force<br>
+C. the force at the beginning of a collision<br>
+D. the maximum force during a collision<br>
+E. the minimum force during a collision</div>
+
+<div class="question"><strong>17.</strong> In a collision, increasing the time interval<br>
+A. increases the force required for the same change in momentum<br>
+B. has no effect on force<br>
+C. decreases the force required for the same change in momentum<br>
+D. eliminates all forces<br>
+E. makes momentum zero</div>
+
+<div class="question"><strong>18.</strong> Airbags work by<br>
+A. decreasing collision time to reduce force<br>
+B. increasing collision time to reduce force<br>
+C. eliminating all momentum<br>
+D. preventing any change in momentum<br>
+E. making the car heavier</div>
+
+<div class="question"><strong>19.</strong> To maximize the force delivered in a collision, you should<br>
+A. maximize the time of contact<br>
+B. minimize the time of contact<br>
+C. keep time constant<br>
+D. eliminate momentum<br>
+E. reduce velocity to zero</div>
+
+<div class="question"><strong>20.</strong> The same change in momentum can be produced by<br>
+A. only a large force<br>
+B. only a small force<br>
+C. either a large force acting for a short time or a small force acting for a long time<br>
+D. only forces acting for exactly one second<br>
+E. forces that are always constant</div>
+
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> A slow-moving freight train has more momentum than a fast-moving bicycle because<br>
+A. the train is always faster<br>
+B. the train has much greater mass that compensates for lower velocity<br>
+C. trains always have more momentum than bicycles<br>
+D. bicycles cannot have momentum<br>
+E. momentum does not depend on mass</div>
+
+<div class="question"><strong>2.</strong> Two objects have the same momentum. If object A has twice the mass of object B, then<br>
+A. object A has twice the velocity of object B<br>
+B. object B has twice the velocity of object A<br>
+C. both objects have the same velocity<br>
+D. object A is at rest<br>
+E. object B is at rest</div>
+
+<div class="question"><strong>3.</strong> A car traveling east at 20 m/s has momentum. If the car's velocity changes to 20 m/s west, then<br>
+A. its momentum remains the same<br>
+B. its momentum magnitude remains the same but direction reverses<br>
+C. its momentum becomes zero<br>
+D. its momentum doubles<br>
+E. momentum is no longer defined</div>
+
+<div class="question"><strong>4.</strong> An object at rest has momentum of<br>
+A. infinity<br>
+B. one kg·m/s<br>
+C. undefined<br>
+D. zero<br>
+E. equal to its mass</div>
+
+<div class="question"><strong>5.</strong> When a net force acts on an object, the object's momentum<br>
+A. remains constant<br>
+B. changes<br>
+C. becomes zero<br>
+D. becomes infinite<br>
+E. is undefined</div>
+
+<div class="question"><strong>6.</strong> If no net force acts on an object, its momentum<br>
+A. increases<br>
+B. decreases<br>
+C. remains constant<br>
+D. becomes zero<br>
+E. oscillates</div>
+
+<div class="question"><strong>7.</strong> A karate expert breaks a board by delivering a blow with her hand. To maximize the force, she should<br>
+A. maximize the time her hand is in contact with the board<br>
+B. minimize the time her hand is in contact with the board<br>
+C. make contact for exactly one second<br>
+D. reduce her hand's momentum to zero<br>
+E. increase the board's mass</div>
+
+<div class="question"><strong>8.</strong> During a car crash, crumple zones in the front of the car collapse. This design feature<br>
+A. decreases the time of collision, increasing force on passengers<br>
+B. increases the time of collision, decreasing force on passengers<br>
+C. has no effect on force<br>
+D. eliminates all momentum<br>
+E. prevents any change in velocity</div>
+
+<div class="question"><strong>9.</strong> A baseball bat strikes a ball. The impulse delivered to the ball<br>
+A. depends only on the bat's mass<br>
+B. depends only on the ball's mass<br>
+C. depends on both the force and the time of contact<br>
+D. is independent of time<br>
+E. is always zero</div>
+
+<div class="question"><strong>10.</strong> Two forces produce the same impulse. Force A is 100 N acting for 0.1 s. Force B could be<br>
+A. 50 N acting for 0.1 s<br>
+B. 100 N acting for 0.2 s<br>
+C. 200 N acting for 0.05 s<br>
+D. 10 N acting for 0.1 s<br>
+E. 100 N acting for 1.0 s</div>
+
+<div class="question"><strong>11.</strong> A truck and a car have the same kinetic energy. Which has greater momentum?<br>
+A. the car<br>
+B. the truck<br>
+C. both have the same momentum<br>
+D. neither has momentum<br>
+E. cannot be determined</div>
+
+<div class="question"><strong>12.</strong> An astronaut in space throws a wrench. After releasing the wrench, the astronaut<br>
+A. remains stationary<br>
+B. moves in the same direction as the wrench<br>
+C. moves in the opposite direction to the wrench<br>
+D. moves perpendicular to the wrench<br>
+E. experiences no change in motion</div>
+
+<div class="question"><strong>13.</strong> A tennis ball and a bowling ball are moving with the same velocity. Which has greater momentum?<br>
+A. the tennis ball<br>
+B. the bowling ball<br>
+C. both have the same momentum<br>
+D. neither has momentum<br>
+E. cannot be determined</div>
+
+<div class="question"><strong>14.</strong> During a collision, if the time interval increases by a factor of 4 while the change in momentum stays the same, the average force<br>
+A. increases by a factor of 4<br>
+B. decreases by a factor of 4<br>
+C. increases by a factor of 2<br>
+D. decreases by a factor of 2<br>
+E. remains the same</div>
+
+<div class="question"><strong>15.</strong> A rubber ball bounces off a wall, reversing its velocity. The change in the ball's momentum is<br>
+A. zero because it returns to the same speed<br>
+B. twice the magnitude of its initial momentum<br>
+C. equal to its initial momentum<br>
+D. half its initial momentum<br>
+E. undefined</div>
+
+<div class="question"><strong>16.</strong> Padded dashboards in cars are safety features because they<br>
+A. decrease the stopping distance<br>
+B. increase the time over which passengers come to rest<br>
+C. decrease the change in momentum<br>
+D. prevent all collisions<br>
+E. eliminate kinetic energy</div>
+
+<div class="question"><strong>17.</strong> A hockey puck sliding on ice eventually comes to rest due to friction. The friction force<br>
+A. increases the puck's momentum<br>
+B. has no effect on momentum<br>
+C. decreases the puck's momentum to zero<br>
+D. doubles the momentum<br>
+E. makes momentum negative</div>
+
+<div class="question"><strong>18.</strong> In comparing momentum ($p = mv$) and kinetic energy ($KE = \frac{1}{2}mv^2$), momentum<br>
+A. is a scalar like kinetic energy<br>
+B. is a vector while kinetic energy is a scalar<br>
+C. is always larger than kinetic energy<br>
+D. is always smaller than kinetic energy<br>
+E. has the same units as kinetic energy</div>
+
+<div class="question"><strong>19.</strong> A ball dropped from a height hits the ground and bounces back up. At the instant of impact, the ball experiences<br>
+A. zero force<br>
+B. a very large force over a very short time<br>
+C. a very small force over a very long time<br>
+D. no change in momentum<br>
+E. zero impulse</div>
+
+<div class="question"><strong>20.</strong> Follow-through in sports (like golf or baseball) is important because it<br>
+A. decreases the time of contact<br>
+B. increases the time of contact, thereby increasing impulse<br>
+C. eliminates all forces<br>
+D. reduces momentum to zero<br>
+E. prevents any change in velocity</div>
+
+<h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A 60 kg person runs at 8.0 m/s. Calculate the person's momentum.</div>
+
+<div class="question"><strong>2.</strong> Determine the momentum of a 1500 kg car traveling at 25 m/s.</div>
+
+<div class="question"><strong>3.</strong> A 0.45 kg soccer ball moves with a velocity of 18 m/s. What is its momentum?</div>
+
+<div class="question"><strong>4.</strong> Calculate the momentum of a 12 kg bowling ball rolling at 6.5 m/s.</div>
+
+<div class="question"><strong>5.</strong> A 0.16 kg hockey puck slides across ice with a velocity of 35 m/s. Find its momentum.</div>
+
+<div class="question"><strong>6.</strong> A truck with mass 8000 kg travels at 20 m/s. Determine the truck's momentum.</div>
+
+<div class="question"><strong>7.</strong> A 0.058 kg tennis ball is served at 52 m/s. Calculate its momentum.</div>
+
+<div class="question"><strong>8.</strong> An athlete with mass 75 kg sprints at 9.5 m/s. What is the athlete's momentum?</div>
+
+<div class="question"><strong>9.</strong> Calculate the momentum of a 2.5 kg medicine ball thrown at 12 m/s.</div>
+
+<div class="question"><strong>10.</strong> A 950 kg compact car moves at 18 m/s. Determine its momentum.</div>
+
+<div class="question"><strong>11.</strong> A hockey stick exerts an average force of 95 N on a puck for 0.050 s. Calculate the impulse delivered to the puck.</div>
+
+<div class="question"><strong>12.</strong> Determine the impulse when a force of 240 N acts for 0.15 s.</div>
+
+<div class="question"><strong>13.</strong> A bat exerts a force of 850 N on a ball for 0.0020 s. Find the impulse.</div>
+
+<div class="question"><strong>14.</strong> Calculate the impulse when a 1200 N force acts for 0.35 s.</div>
+
+<div class="question"><strong>15.</strong> A tennis racket applies 420 N to a ball for 0.0055 s. What impulse is delivered?</div>
+
+<div class="question"><strong>16.</strong> A 0.45 kg soccer ball accelerates from rest to 20 m/s. Calculate the change in momentum.</div>
+
+<div class="question"><strong>17.</strong> A 1500 kg car traveling at 30 m/s comes to a stop. Determine the change in the car's momentum.</div>
+
+<div class="question"><strong>18.</strong> A 0.16 kg hockey puck initially moving at 25 m/s is brought to rest. Find the change in momentum.</div>
+
+<div class="question"><strong>19.</strong> A 60 kg skateboarder increases speed from 2.0 m/s to 8.0 m/s. Calculate the change in momentum.</div>
+
+<div class="question"><strong>20.</strong> A 0.058 kg tennis ball's velocity changes from 40 m/s to the left to 35 m/s to the right. Determine the change in momentum. (Take right as positive.)</div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A 0.45 kg soccer ball is kicked from rest to a velocity of 20 m/s. The player's foot is in contact with the ball for 0.025 s. Calculate the change in momentum, then determine the average force exerted by the player's foot.</div>
+
+<div class="question"><strong>2.</strong> A 1500 kg car traveling at 30 m/s brakes to a stop in 5.0 s. First find the car's initial momentum, then calculate the change in momentum, and finally determine the average braking force.</div>
+
+<div class="question"><strong>3.</strong> A pitcher throws a 0.145 kg baseball at 42 m/s. The catcher stops it in 0.012 s. Calculate the ball's initial momentum, then find the impulse required to stop it, and finally determine the average force on the catcher's glove.</div>
+
+<div class="question"><strong>4.</strong> A 75 kg running back moving at 8.5 m/s is tackled and brought to rest in 1.2 s. Determine the running back's initial momentum, calculate the change in momentum, and find the average force exerted during the tackle.</div>
+
+<div class="question"><strong>5.</strong> An engineer tests a crash barrier by driving a 950 kg car into it at 15 m/s. The car stops in 0.85 s. First calculate the car's momentum before impact, then find the impulse needed to stop it, and finally determine the average force exerted by the barrier.</div>
+
+<div class="question"><strong>6.</strong> A 0.16 kg hockey puck slides at 25 m/s and is struck by a stick, reversing its direction to 30 m/s. The contact lasts 0.040 s. Calculate the change in momentum (being careful with signs), then determine the average force exerted by the stick.</div>
+
+<div class="question"><strong>7.</strong> A 2200 kg truck traveling east at 18 m/s collides with a barrier and rebounds westward at 6.0 m/s in 1.5 s. Calculate the truck's initial momentum (east positive), its final momentum, the change in momentum, and the average force exerted by the barrier.</div>
+
+<div class="question"><strong>8.</strong> A driver applies brakes to a 1200 kg car traveling at 28 m/s, bringing it to rest. If the average braking force is 8000 N, first find the impulse needed, then calculate how long the braking takes.</div>
+
+<div class="question"><strong>9.</strong> A golfer strikes a 0.046 kg golf ball initially at rest. The club exerts an average force of 2400 N for 0.00050 s. Calculate the impulse delivered, then determine the ball's final velocity.</div>
+
+<div class="question"><strong>10.</strong> A 55 kg person jumps from a platform and lands on the ground, changing velocity from 8.0 m/s downward to zero. If the landing takes 0.20 s, find the change in momentum, then calculate the average force exerted by the ground on the person.</div>
+
+<div class="question"><strong>11.</strong> A warehouse worker pushes a 85 kg cart from rest to 4.5 m/s in 2.8 s. Calculate the cart's change in momentum, then use the impulse-momentum theorem to find the average force applied.</div>
+
+<div class="question"><strong>12.</strong> A 0.058 kg tennis ball approaches a racket at 30 m/s and leaves at 40 m/s in the opposite direction. The contact time is 0.0045 s. Calculate the change in momentum, then determine the average force exerted by the racket.</div>
+
+<div class="question"><strong>13.</strong> A child throws a 0.12 kg ball at a wall at 15 m/s. The ball bounces back at 12 m/s. If contact with the wall lasts 0.080 s, find the ball's change in momentum and the average force exerted by the wall.</div>
+
+<div class="question"><strong>14.</strong> A safety engineer drops a 70 kg crash test dummy from rest. After falling, the dummy has a velocity of 9.5 m/s downward when it strikes an airbag. The airbag stops the dummy in 0.45 s. Calculate the dummy's momentum just before impact, then find the average force exerted by the airbag.</div>
+
+<div class="question"><strong>15.</strong> During a rocket launch, exhaust gases with total mass 850 kg are expelled at 1200 m/s in 2.5 s. First calculate the momentum of the expelled gases, then determine the average thrust force produced by the rocket engine.</div>
+
+<div class="question"><strong>16.</strong> A 3.5 kg sledgehammer moving at 8.0 m/s strikes a stake and comes to rest in 0.015 s. Find the hammer's initial momentum, calculate the impulse required to stop it, and determine the average force on the stake.</div>
+
+<div class="question"><strong>17.</strong> A defensive player with mass 95 kg running at 7.5 m/s tackles an offensive player, coming to rest together in 0.65 s. Calculate the defensive player's initial momentum, then find the average force exerted during the collision.</div>
+
+<div class="question"><strong>18.</strong> A force of 550 N acts on a 45 kg object initially at rest for 1.8 s. Calculate the impulse delivered, then use it to find the object's final velocity.</div>
+
+<div class="question"><strong>19.</strong> A 1800 kg car increases its velocity from 12 m/s to 24 m/s. If the engine provides an average force of 3600 N, first calculate the change in momentum, then determine how long this acceleration takes.</div>
+
+<div class="question"><strong>20.</strong> A pitcher throws a 0.145 kg baseball horizontally at 38 m/s. A batter hits it back horizontally at 45 m/s. The bat is in contact with the ball for 0.0015 s. Calculate the ball's initial momentum, its final momentum (opposite direction), the change in momentum, and the average force exerted by the bat.</div>
+
+<hr>
+<h2>Answer Key</h2>
+
+<h3>Bank 1 – Vocabulary</h3>
+<ol>
+<li>B</li><li>C</li><li>C</li><li>B</li><li>C</li>
+<li>C</li><li>B</li><li>C</li><li>C</li><li>B</li>
+<li>B</li><li>A</li><li>B</li><li>B</li><li>B</li>
+<li>B</li><li>C</li><li>B</li><li>B</li><li>C</li>
+</ol>
+
+<h3>Bank 2 – Conceptual</h3>
+<ol>
+<li>B</li><li>B</li><li>B</li><li>D</li><li>B</li>
+<li>C</li><li>B</li><li>B</li><li>C</li><li>C</li>
+<li>B</li><li>C</li><li>B</li><li>B</li><li>B</li>
+<li>B</li><li>C</li><li>B</li><li>B</li><li>B</li>
+</ol>
+
+<h3>Bank 3 – Single-Step Calculations</h3>
+<ol>
+<li>480 kg·m/s</li>
+<li>37500 kg·m/s</li>
+<li>8.1 kg·m/s</li>
+<li>78 kg·m/s</li>
+<li>5.6 kg·m/s</li>
+<li>160000 kg·m/s</li>
+<li>3.0 kg·m/s</li>
+<li>712 kg·m/s</li>
+<li>30 kg·m/s</li>
+<li>17100 kg·m/s</li>
+<li>4.75 N·s</li>
+<li>36 N·s</li>
+<li>1.7 N·s</li>
+<li>420 N·s</li>
+<li>2.31 N·s</li>
+<li>9.0 kg·m/s</li>
+<li>45000 kg·m/s</li>
+<li>4.0 kg·m/s</li>
+<li>360 kg·m/s</li>
+<li>4.35 kg·m/s</li>
+</ol>
+
+<h3>Bank 4 – Multi-Step Calculations</h3>
+<ol>
+<li>Δp = 9.0 kg·m/s; F = 360 N</li>
+<li>Initial p = 45000 kg·m/s; Δp = 45000 kg·m/s; F = 9000 N</li>
+<li>Initial p = 6.09 kg·m/s; J = 6.09 N·s; F = 508 N</li>
+<li>Initial p = 638 kg·m/s; Δp = 638 kg·m/s; F = 532 N</li>
+<li>p = 14250 kg·m/s; J = 14250 N·s; F = 16800 N</li>
+<li>Δp = 8.8 kg·m/s; F = 220 N</li>
+<li>Initial p = 39600 kg·m/s; Final p = -13200 kg·m/s; Δp = 52800 kg·m/s; F = 35200 N</li>
+<li>J = 33600 N·s; Δt = 4.2 s</li>
+<li>J = 1.2 N·s; v_f = 26 m/s</li>
+<li>Δp = 440 kg·m/s; F = 2200 N</li>
+<li>Δp = 382.5 kg·m/s; F = 137 N</li>
+<li>Δp = 4.06 kg·m/s; F = 902 N</li>
+<li>Δp = 3.24 kg·m/s; F = 40.5 N</li>
+<li>p = 665 kg·m/s; F = 1478 N</li>
+<li>p = 1020000 kg·m/s; F = 408000 N</li>
+<li>p = 28 kg·m/s; J = 28 N·s; F = 1867 N</li>
+<li>p = 712.5 kg·m/s; F = 1096 N</li>
+<li>J = 990 N·s; v_f = 22 m/s</li>
+<li>Δp = 21600 kg·m/s; Δt = 6.0 s</li>
+<li>Initial p = 5.51 kg·m/s; Final p = -6.525 kg·m/s; Δp = 12.035 kg·m/s; F = 8023 N</li>
+</ol>
+
+</body>
+</html>

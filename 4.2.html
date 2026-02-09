@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4.2 Conservation of Momentum in One Dimension</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #003366; }
+.question { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Section 4.2 – Conservation of Momentum in One Dimension</h1>
+
+<h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> The law of conservation of momentum states that<br>
+A. momentum increases over time<br>
+B. in an isolated system, total momentum remains constant<br>
+C. momentum equals force times acceleration<br>
+D. momentum is always zero<br>
+E. momentum depends only on velocity</div>
+
+<div class="question"><strong>2.</strong> An isolated system is one in which<br>
+A. there are no forces at all<br>
+B. all objects are at rest<br>
+C. the net external force is zero or negligible<br>
+D. internal forces do not exist<br>
+E. momentum is not conserved</div>
+
+<div class="question"><strong>3.</strong> Internal forces are<br>
+A. forces from outside the system<br>
+B. forces that objects within the system exert on each other<br>
+C. always zero<br>
+D. forces that change total momentum<br>
+E. forces that violate Newton's laws</div>
+
+<div class="question"><strong>4.</strong> External forces are<br>
+A. forces between objects within the system<br>
+B. forces from outside the system<br>
+C. always negligible<br>
+D. forces that never affect momentum<br>
+E. internal collision forces</div>
+
+<div class="question"><strong>5.</strong> Conservation of momentum applies when<br>
+A. kinetic energy is conserved<br>
+B. all objects are moving<br>
+C. external forces are zero or negligible<br>
+D. objects stick together<br>
+E. objects bounce apart</div>
+
+<div class="question"><strong>6.</strong> In a closed system, momentum is conserved<br>
+A. only in elastic collisions<br>
+B. only in inelastic collisions<br>
+C. in all types of collisions<br>
+D. only when objects stick together<br>
+E. only when kinetic energy is conserved</div>
+
+<div class="question"><strong>7.</strong> Recoil is<br>
+A. when an object at rest separates into two parts<br>
+B. when two objects stick together<br>
+C. a violation of momentum conservation<br>
+D. only applicable to guns<br>
+E. unrelated to momentum</div>
+
+<div class="question"><strong>8.</strong> The conservation equation for a two-object collision is<br>
+A. $m_1 + m_2 = m_1v_1 + m_2v_2$<br>
+B. $m_1v_{1i} + m_2v_{2i} = m_1v_{1f} + m_2v_{2f}$<br>
+C. $p_1 = p_2$<br>
+D. $F_1 = F_2$<br>
+E. $KE_i = KE_f$</div>
+
+<div class="question"><strong>9.</strong> When two objects start at rest and push apart, the total final momentum is<br>
+A. equal to the sum of their masses<br>
+B. equal to their combined velocity<br>
+C. infinite<br>
+D. zero<br>
+E. undefined</div>
+
+<div class="question"><strong>10.</strong> In the equation $p_{\text{before}} = p_{\text{after}}$, the subscripts refer to<br>
+A. different objects<br>
+B. before and after the collision<br>
+C. parallel and perpendicular components<br>
+D. positive and negative directions<br>
+E. mass and velocity</div>
+
+<div class="question"><strong>11.</strong> The subscript "i" in $v_{1i}$ stands for<br>
+A. impact<br>
+B. initial (before collision)<br>
+C. isolated<br>
+D. internal<br>
+E. inelastic</div>
+
+<div class="question"><strong>12.</strong> The subscript "f" in $v_{1f}$ stands for<br>
+A. force<br>
+B. friction<br>
+C. final (after collision)<br>
+D. fast<br>
+E. fixed</div>
+
+<div class="question"><strong>13.</strong> In one-dimensional collisions, direction is indicated by<br>
+A. always using absolute values<br>
+B. ignoring direction entirely<br>
+C. using positive and negative signs<br>
+D. using vectors in 3D space<br>
+E. converting to angles</div>
+
+<div class="question"><strong>14.</strong> A system where friction and air resistance are negligible can be considered<br>
+A. non-isolated<br>
+B. approximately isolated<br>
+C. perfectly elastic<br>
+D. perfectly inelastic<br>
+E. at equilibrium</div>
+
+<div class="question"><strong>15.</strong> During a collision, internal forces<br>
+A. change the total momentum of the system<br>
+B. do not change the total momentum of the system<br>
+C. are always zero<br>
+D. only act on one object<br>
+E. violate Newton's third law</div>
+
+<div class="question"><strong>16.</strong> Rocket propulsion in space demonstrates conservation of momentum because<br>
+A. rockets push against air<br>
+B. expelled gases gain momentum in one direction, causing the rocket to gain momentum in the opposite direction<br>
+C. momentum is not conserved in space<br>
+D. external forces dominate<br>
+E. the rocket remains at rest</div>
+
+<div class="question"><strong>17.</strong> If two objects of equal mass push apart from rest, they will move<br>
+A. in the same direction at the same speed<br>
+B. in opposite directions at equal speeds<br>
+C. in opposite directions at different speeds<br>
+D. one will remain at rest<br>
+E. both will remain at rest</div>
+
+<div class="question"><strong>18.</strong> If a heavy object and a light object push apart from rest, the lighter object will<br>
+A. move slower than the heavy object<br>
+B. move at the same speed as the heavy object<br>
+C. move faster than the heavy object<br>
+D. remain at rest<br>
+E. have zero momentum</div>
+
+<div class="question"><strong>19.</strong> Gun recoil occurs because<br>
+A. the gun is heavier than the bullet<br>
+B. conservation of momentum requires the gun to move backward when the bullet moves forward<br>
+C. external forces act on the gun<br>
+D. momentum is not conserved<br>
+E. the gun has no initial momentum</div>
+
+<div class="question"><strong>20.</strong> Momentum is conserved in collisions even when<br>
+A. kinetic energy is not conserved<br>
+B. all objects come to rest<br>
+C. external forces are large<br>
+D. the system is not isolated<br>
+E. Newton's laws don't apply</div>
+
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> A moving billiard ball strikes a stationary ball. After the collision, both balls are moving. Which statement is true?<br>
+A. Total momentum increased<br>
+B. Total momentum decreased<br>
+C. Total momentum remained constant<br>
+D. Momentum was not conserved<br>
+E. Only the first ball has momentum</div>
+
+<div class="question"><strong>2.</strong> Two ice skaters push off from each other while initially at rest. What must be true about their final momenta?<br>
+A. Both have positive momentum<br>
+B. Both have negative momentum<br>
+C. They are equal in magnitude but opposite in direction<br>
+D. They are both zero<br>
+E. One is twice the other</div>
+
+<div class="question"><strong>3.</strong> A 50 kg person and a 100 kg person push apart on ice from rest. Compared to the 100 kg person, the 50 kg person will move<br>
+A. at the same speed<br>
+B. twice as fast<br>
+C. half as fast<br>
+D. four times as fast<br>
+E. not at all</div>
+
+<div class="question"><strong>4.</strong> In a collision between two objects where external forces are negligible, which quantity is definitely conserved?<br>
+A. kinetic energy<br>
+B. potential energy<br>
+C. momentum<br>
+D. velocity<br>
+E. speed</div>
+
+<div class="question"><strong>5.</strong> A truck collides head-on with a car. During the collision, which object experiences the greater change in momentum?<br>
+A. the truck<br>
+B. the car<br>
+C. both experience the same change in momentum (equal but opposite)<br>
+D. neither changes momentum<br>
+E. depends on their speeds</div>
+
+<div class="question"><strong>6.</strong> If a system's total momentum is 100 kg·m/s before a collision, what is it after the collision (assuming no external forces)?<br>
+A. 0 kg·m/s<br>
+B. 50 kg·m/s<br>
+C. 100 kg·m/s<br>
+D. 200 kg·m/s<br>
+E. cannot be determined</div>
+
+<div class="question"><strong>7.</strong> A firecracker at rest explodes into two fragments. The fragments fly apart in opposite directions. What was the total momentum of the fragments?<br>
+A. maximum possible value<br>
+B. equal to their combined mass<br>
+C. zero<br>
+D. negative<br>
+E. infinite</div>
+
+<div class="question"><strong>8.</strong> In a one-dimensional collision, if we define rightward as positive, an object moving leftward has<br>
+A. positive velocity and positive momentum<br>
+B. negative velocity and negative momentum<br>
+C. positive velocity and negative momentum<br>
+D. negative velocity and positive momentum<br>
+E. zero momentum</div>
+
+<div class="question"><strong>9.</strong> Two objects collide and stick together. Is momentum conserved?<br>
+A. Yes, momentum is always conserved in collisions in isolated systems<br>
+B. No, momentum is lost when objects stick together<br>
+C. Only if kinetic energy is also conserved<br>
+D. Only if the objects have equal mass<br>
+E. No, because this is an inelastic collision</div>
+
+<div class="question"><strong>10.</strong> A rocket in space expels gas backward at high speed. What happens to the rocket?<br>
+A. It remains stationary because there's nothing to push against<br>
+B. It moves forward to conserve momentum<br>
+C. It moves backward with the gas<br>
+D. It cannot move in space<br>
+E. External forces propel it forward</div>
+
+<div class="question"><strong>11.</strong> Consider a collision on a frictionless surface. Why can we treat this as an isolated system?<br>
+A. Because there are no forces at all<br>
+B. Because friction is the only force<br>
+C. Because external forces like friction are negligible during the brief collision<br>
+D. Because the objects don't touch<br>
+E. Because momentum is always conserved everywhere</div>
+
+<div class="question"><strong>12.</strong> A 1000 kg car moving east at 20 m/s collides with a 2000 kg truck moving west at 10 m/s. What is the total momentum of the system? (East is positive.)<br>
+A. 40,000 kg·m/s east<br>
+B. 20,000 kg·m/s west<br>
+C. 0 kg·m/s<br>
+D. 30,000 kg·m/s east<br>
+E. cannot be determined</div>
+
+<div class="question"><strong>13.</strong> After a collision, if one object is moving faster than before while the other is moving slower, this indicates<br>
+A. momentum was not conserved<br>
+B. momentum was transferred from one object to another<br>
+C. external forces acted on the system<br>
+D. kinetic energy increased<br>
+E. the collision violated Newton's laws</div>
+
+<div class="question"><strong>14.</strong> A rifle fires a bullet. The rifle recoils backward. Compared to the bullet's momentum, the rifle's recoil momentum is<br>
+A. much larger<br>
+B. much smaller<br>
+C. equal in magnitude but opposite in direction<br>
+D. zero<br>
+E. twice as large</div>
+
+<div class="question"><strong>15.</strong> In which scenario would momentum NOT be conserved?<br>
+A. Two cars colliding on an icy road<br>
+B. A rocket in space expelling gas<br>
+C. Two pool balls colliding<br>
+D. A box sliding down a rough inclined plane (considering only the box, not Earth)<br>
+E. Two ice skaters pushing apart</div>
+
+<div class="question"><strong>16.</strong> If kinetic energy is lost during a collision but momentum is conserved, where did the energy go?<br>
+A. It was destroyed<br>
+B. It transformed into other forms like heat and sound<br>
+C. It increased the momentum<br>
+D. It created new mass<br>
+E. It disappeared</div>
+
+<div class="question"><strong>17.</strong> Two objects with equal momentum collide head-on and stick together. What is their final velocity?<br>
+A. twice their initial velocities<br>
+B. half their initial velocities<br>
+C. zero<br>
+D. equal to one of the initial velocities<br>
+E. cannot be determined without masses</div>
+
+<div class="question"><strong>18.</strong> In a perfectly inelastic collision where objects stick together, momentum is<br>
+A. not conserved because they stick together<br>
+B. conserved despite kinetic energy being lost<br>
+C. only conserved if velocities are equal<br>
+D. converted to potential energy<br>
+E. destroyed during impact</div>
+
+<div class="question"><strong>19.</strong> A large truck and a small car have a head-on collision. During the collision, the magnitude of force on the truck compared to the force on the car is<br>
+A. much greater<br>
+B. much smaller<br>
+C. exactly equal (Newton's third law)<br>
+D. zero on both<br>
+E. dependent on their velocities</div>
+
+<div class="question"><strong>20.</strong> An astronaut floating in space throws a tool away. The astronaut will<br>
+A. remain motionless<br>
+B. accelerate in the same direction as the tool<br>
+C. accelerate in the opposite direction to the tool<br>
+D. experience no change in motion<br>
+E. fall downward</div>
+
+<h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A 2.0 kg cart moving at 4.0 m/s collides with a 3.0 kg cart at rest. After the collision, they stick together. Calculate their combined velocity after the collision.</div>
+
+<div class="question"><strong>2.</strong> Calculate the final velocity of two carts that stick together after colliding: a 5.0 kg cart moving at 6.0 m/s strikes a 3.0 kg cart at rest.</div>
+
+<div class="question"><strong>3.</strong> A 1500 kg car moving east at 20 m/s collides and couples with a 1000 kg car moving east at 10 m/s. Determine their combined velocity after collision.</div>
+
+<div class="question"><strong>4.</strong> Two ice skaters push apart from rest. Skater A (50 kg) moves at 2.0 m/s to the right. Find the velocity of skater B (75 kg).</div>
+
+<div class="question"><strong>5.</strong> A 60 kg astronaut throws a 5.0 kg tool at 8.0 m/s. Calculate the astronaut's recoil velocity.</div>
+
+<div class="question"><strong>6.</strong> A 0.050 kg bullet is fired from a 4.0 kg rifle at 400 m/s. Determine the recoil velocity of the rifle.</div>
+
+<div class="question"><strong>7.</strong> Two carts collide and stick together: a 4.0 kg cart at 5.0 m/s and a 6.0 kg cart at rest. Find their final combined velocity.</div>
+
+<div class="question"><strong>8.</strong> A 1200 kg car traveling west at 15 m/s collides and sticks to a 1800 kg truck at rest. Calculate their velocity after collision.</div>
+
+<div class="question"><strong>9.</strong> A 0.16 kg hockey puck moving at 20 m/s collides with a 0.16 kg puck at rest. After collision, the first puck moves at 5.0 m/s in the same direction. Determine the second puck's velocity.</div>
+
+<div class="question"><strong>10.</strong> Calculate the final velocity when a 3.0 kg cart at 8.0 m/s collides and sticks with a 2.0 kg cart at 2.0 m/s moving in the same direction.</div>
+
+<div class="question"><strong>11.</strong> Two astronauts push apart from rest. Astronaut A (80 kg) moves at 1.5 m/s. Find the velocity of astronaut B (60 kg).</div>
+
+<div class="question"><strong>12.</strong> A 2.5 kg skateboard rolls at 4.0 m/s. A 50 kg skater steps onto it. Calculate their combined velocity.</div>
+
+<div class="question"><strong>13.</strong> A firecracker at rest explodes into two pieces: a 0.30 kg piece moves at 25 m/s to the right. The other piece (0.20 kg) moves in the opposite direction. Find its velocity.</div>
+
+<div class="question"><strong>14.</strong> A 3.0 kg cart moving at 6.0 m/s collides with a 3.0 kg cart at rest. After collision, the first cart moves at 2.0 m/s. Calculate the second cart's velocity.</div>
+
+<div class="question"><strong>15.</strong> Two bumper cars collide head-on and stick together. Car A (300 kg) travels east at 4.0 m/s while car B (250 kg) travels west at 3.0 m/s. Determine their combined velocity. (East is positive.)</div>
+
+<div class="question"><strong>16.</strong> A 0.15 kg baseball moving at 40 m/s is struck by a bat and reverses direction at 50 m/s. Calculate the change in the ball's momentum.</div>
+
+<div class="question"><strong>17.</strong> A 900 kg car moving east at 25 m/s collides with a 1100 kg car at rest and they stick together. Find their velocity after collision.</div>
+
+<div class="question"><strong>18.</strong> Two children on ice push apart from rest. Child A (40 kg) moves west at 2.5 m/s. Determine child B's (30 kg) velocity.</div>
+
+<div class="question"><strong>19.</strong> A 1.5 kg dynamics cart at 5.0 m/s collides with a 2.5 kg cart at rest. They stick together. Calculate their final velocity.</div>
+
+<div class="question"><strong>20.</strong> During a space walk, an 85 kg astronaut throws a 20 kg equipment pack at 4.0 m/s. Find the astronaut's recoil velocity.</div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A 2.0 kg cart moving at 3.0 m/s collides with a 1.0 kg cart at rest. After the collision, the 2.0 kg cart moves at 1.0 m/s in the same direction. First calculate the total momentum before collision, then use conservation to find the velocity of the 1.0 kg cart after collision.</div>
+
+<div class="question"><strong>2.</strong> A 1500 kg car traveling east at 25 m/s collides head-on with a 1200 kg car traveling west at 20 m/s. They stick together. First calculate the momentum of each car separately (east is positive), then find their combined velocity after collision.</div>
+
+<div class="question"><strong>3.</strong> An engineer tests vehicle safety by colliding a 1000 kg car moving at 15 m/s with a 1500 kg SUV at rest. They stick together upon impact. Calculate the car's initial momentum, then use conservation to determine their combined velocity after collision.</div>
+
+<div class="question"><strong>4.</strong> A 0.45 kg soccer ball moving east at 12 m/s collides with a 0.45 kg ball moving west at 8.0 m/s. After the collision, the first ball moves west at 3.0 m/s. Calculate the initial momentum of each ball separately, then find the final velocity of the second ball.</div>
+
+<div class="question"><strong>5.</strong> Two railroad cars collide and couple together. Car A (12,000 kg) moves at 5.0 m/s while car B (8,000 kg) moves at 3.0 m/s in the same direction. Calculate the momentum of each car, find the total momentum, then determine their combined velocity.</div>
+
+<div class="question"><strong>6.</strong> A rifle with mass 3.5 kg fires a 0.015 kg bullet. The bullet leaves at 850 m/s. Assuming the system starts at rest, first calculate the bullet's momentum, then use conservation to find the rifle's recoil velocity.</div>
+
+<div class="question"><strong>7.</strong> In a loading dock, a 1200 kg cart moving at 2.5 m/s collides with a stationary 800 kg cart. After collision, the 1200 kg cart continues at 1.0 m/s. Calculate the initial total momentum, then determine the final velocity of the 800 kg cart.</div>
+
+<div class="question"><strong>8.</strong> During a space mission, a 2500 kg satellite separates into two parts. Part A (1500 kg) moves forward at 4.0 m/s. Since the satellite was initially at rest, calculate the momentum of part A, then find the velocity of part B (1000 kg).</div>
+
+<div class="question"><strong>9.</strong> A physics demonstration involves two dynamics carts on a track. Cart A (0.50 kg) at 3.0 m/s collides with cart B (0.30 kg) at rest. After collision, cart A moves at 0.60 m/s. Calculate both initial and final total momentum, then find cart B's final velocity.</div>
+
+<div class="question"><strong>10.</strong> A hockey player strikes a 0.16 kg puck initially at rest with a stick. After a second collision with another stationary 0.16 kg puck, the first puck moves at 8.0 m/s and the second at 12 m/s in the same direction. Determine the first puck's velocity just before the second collision.</div>
+
+<div class="question"><strong>11.</strong> Two cars approach an intersection at right angles but we consider only east-west motion. Car A (1000 kg) travels east at 18 m/s, car B (1500 kg) travels west at 12 m/s. After collision, they stick together. Calculate each car's momentum (east positive), then find their combined velocity.</div>
+
+<div class="question"><strong>12.</strong> A 70 kg astronaut is initially at rest outside a spacecraft. She throws a 15 kg oxygen tank away at 6.0 m/s. Calculate the tank's momentum, then determine the astronaut's recoil velocity.</div>
+
+<div class="question"><strong>13.</strong> An explosion separates a 600 kg object at rest into two pieces. Piece A (250 kg) flies off at 8.0 m/s to the right. Calculate piece A's momentum, then use conservation to find the velocity of piece B (350 kg).</div>
+
+<div class="question"><strong>14.</strong> A 60 kg person stands on a 15 kg stationary raft. The person jumps forward at 4.0 m/s relative to the water. First calculate the person's momentum, then find the raft's recoil velocity.</div>
+
+<div class="question"><strong>15.</strong> Two billiard balls (each 0.17 kg) collide. Ball A moving at 5.0 m/s strikes ball B at rest. After collision, ball A moves at 1.0 m/s. Calculate the total momentum before and after, then find ball B's final velocity.</div>
+
+<div class="question"><strong>16.</strong> A truck (2500 kg) traveling north at 20 m/s collides with a car (1000 kg) traveling south at 15 m/s. They stick together. Calculate each vehicle's momentum (north positive), find the total, then determine their combined velocity and direction.</div>
+
+<div class="question"><strong>17.</strong> A 0.058 kg tennis ball approaches a racket at 30 m/s and rebounds at 40 m/s in the opposite direction. The racket (mass 0.35 kg) was initially at rest. Calculate the ball's change in momentum, then find the racket's final velocity.</div>
+
+<div class="question"><strong>18.</strong> In a physics lab, a 1.2 kg glider at 2.5 m/s collides with a 0.80 kg glider moving at 1.5 m/s in the opposite direction. After collision, the 1.2 kg glider moves at 0.50 m/s in its original direction. Calculate the initial total momentum, then find the 0.80 kg glider's final velocity.</div>
+
+<div class="question"><strong>19.</strong> A 4500 kg truck at 12 m/s rear-ends a 1500 kg car at 8.0 m/s (both moving in the same direction). After collision, the truck's velocity is 10 m/s. Calculate the initial momentum of each vehicle, find the total, then determine the car's final velocity.</div>
+
+<div class="question"><strong>20.</strong> An ice skater (55 kg) initially moving at 6.0 m/s catches a 5.0 kg box thrown to her at 10 m/s in the same direction. Calculate the skater's initial momentum, the box's momentum, their total, then find their combined velocity after the catch.</div>
+
+<hr>
+<h2>Answer Key</h2>
+
+<h3>Bank 1 – Vocabulary</h3>
+<ol>
+<li>B</li><li>C</li><li>B</li><li>B</li><li>C</li>
+<li>C</li><li>A</li><li>B</li><li>D</li><li>B</li>
+<li>B</li><li>C</li><li>C</li><li>B</li><li>B</li>
+<li>B</li><li>B</li><li>C</li><li>B</li><li>A</li>
+</ol>
+
+<h3>Bank 2 – Conceptual</h3>
+<ol>
+<li>C</li><li>C</li><li>B</li><li>C</li><li>C</li>
+<li>C</li><li>C</li><li>B</li><li>A</li><li>B</li>
+<li>C</li><li>C</li><li>B</li><li>C</li><li>D</li>
+<li>B</li><li>C</li><li>B</li><li>C</li><li>C</li>
+</ol>
+
+<h3>Bank 3 – Single-Step Calculations</h3>
+<ol>
+<li>1.6 m/s</li>
+<li>3.75 m/s</li>
+<li>16 m/s</li>
+<li>1.33 m/s (to the left/opposite direction)</li>
+<li>0.67 m/s (opposite direction)</li>
+<li>5.0 m/s</li>
+<li>2.0 m/s</li>
+<li>6.0 m/s west</li>
+<li>15 m/s</li>
+<li>5.6 m/s</li>
+<li>2.0 m/s (opposite direction)</li>
+<li>0.19 m/s</li>
+<li>37.5 m/s (to the left)</li>
+<li>4.0 m/s</li>
+<li>0.82 m/s east</li>
+<li>13.5 kg·m/s</li>
+<li>11.25 m/s</li>
+<li>3.33 m/s east</li>
+<li>1.875 m/s</li>
+<li>0.94 m/s (opposite direction)</li>
+</ol>
+
+<h3>Bank 4 – Multi-Step Calculations</h3>
+<ol>
+<li>Total momentum before = 6.0 kg·m/s; v_2f = 4.0 m/s</li>
+<li>Car: 37500 kg·m/s; Truck: -24000 kg·m/s; Combined v_f = 5.0 m/s east</li>
+<li>Initial p = 15000 kg·m/s; v_f = 6.0 m/s</li>
+<li>Ball 1: 5.4 kg·m/s; Ball 2: -3.6 kg·m/s; v_2f = 8.4 m/s east</li>
+<li>Car A: 60000 kg·m/s; Car B: 24000 kg·m/s; Total: 84000 kg·m/s; v_f = 4.2 m/s</li>
+<li>Bullet p = 12.75 kg·m/s; Rifle v = 3.64 m/s (backward)</li>
+<li>Initial total p = 3000 kg·m/s; v_2f = 2.25 m/s</li>
+<li>Part A p = 6000 kg·m/s; Part B v = 6.0 m/s backward</li>
+<li>Total p before and after = 1.5 kg·m/s; v_Bf = 4.8 m/s</li>
+<li>v_1 before second collision = 20 m/s</li>
+<li>Car A: 18000 kg·m/s; Car B: -18000 kg·m/s; v_f = 0 m/s</li>
+<li>Tank p = 90 kg·m/s; Astronaut v = 1.29 m/s (opposite)</li>
+<li>Piece A p = 2000 kg·m/s; Piece B v = 5.71 m/s (to the left)</li>
+<li>Person p = 240 kg·m/s; Raft v = 16 m/s (backward)</li>
+<li>Total p = 0.85 kg·m/s (before and after); v_Bf = 4.0 m/s</li>
+<li>Truck: 50000 kg·m/s; Car: -15000 kg·m/s; Total: 35000 kg·m/s; v_f = 10 m/s north</li>
+<li>Δp = 4.06 kg·m/s; Racket v = 11.6 m/s</li>
+<li>Total p = 1.8 kg·m/s; v_2f = 2.75 m/s (in original direction)</li>
+<li>Truck: 54000 kg·m/s; Car: 12000 kg·m/s; Total: 66000 kg·m/s; Car v_f = 14 m/s</li>
+<li>Skater: 330 kg·m/s; Box: 50 kg·m/s; Total: 380 kg·m/s; v_f = 6.33 m/s</li>
+</ol>
+
+</body>
+</html>
