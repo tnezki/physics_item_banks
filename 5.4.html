@@ -2,7 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>5.4 Conservation of Momentum</title>
+<title>5.4 Sound Waves</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 <style>
 body { font-family: Arial, sans-serif; line-height: 1.6; }
 h1, h2, h3 { color: #003366; }
@@ -11,371 +20,440 @@ h1, h2, h3 { color: #003366; }
 </head>
 <body>
 
-<h1>Section 5.4 – Conservation of Momentum</h1>
+<h1>Section 5.4 – Sound Waves</h1>
 
 <h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
 
-<div class="question"><strong>1.</strong> Conservation of momentum states that, in an isolated system,<br>
-A. kinetic energy remains constant<br>
-B. velocity remains constant<br>
-C. total momentum remains constant<br>
-D. force remains constant<br>
-E. acceleration remains constant</div>
+<div class="question"><strong>1.</strong> A sound wave is<br>
+A. a transverse wave<br>
+B. a longitudinal wave that travels through a medium<br>
+C. an electromagnetic wave<br>
+D. only able to travel in vacuum<br>
+E. a wave that doesn't require a medium</div>
 
-<div class="question"><strong>2.</strong> A system is considered isolated when<br>
-A. objects move at constant speed<br>
-B. kinetic energy is conserved<br>
-C. no net external force acts on the system<br>
-D. objects have equal mass<br>
-E. collisions are elastic</div>
+<div class="question"><strong>2.</strong> Sound waves are produced by<br>
+A. stationary objects<br>
+B. vibrating objects<br>
+C. light sources<br>
+D. temperature changes only<br>
+E. magnetic fields</div>
 
-<div class="question"><strong>3.</strong> Which quantity is conserved in all collisions within an isolated system?<br>
-A. kinetic energy<br>
-B. velocity<br>
-C. momentum<br>
-D. force<br>
-E. acceleration</div>
+<div class="question"><strong>3.</strong> Pitch is<br>
+A. the amplitude of sound<br>
+B. the perceived frequency of a sound<br>
+C. the speed of sound<br>
+D. the loudness of sound<br>
+E. independent of frequency</div>
 
-<div class="question"><strong>4.</strong> Momentum conservation applies before and after a collision because<br>
-A. forces are zero<br>
-B. energy is conserved<br>
-C. internal forces cancel in pairs<br>
-D. objects stop moving<br>
-E. mass changes</div>
+<div class="question"><strong>4.</strong> Loudness is related to<br>
+A. frequency only<br>
+B. the amplitude of the sound wave<br>
+C. the wavelength only<br>
+D. the speed of sound<br>
+E. the medium only</div>
 
-<div class="question"><strong>5.</strong> In conservation-of-momentum problems, the system typically includes<br>
-A. only one object<br>
-B. the fastest object<br>
-C. all objects interacting<br>
-D. only objects that move<br>
-E. the environment</div>
+<div class="question"><strong>5.</strong> The decibel (dB) is a unit used to measure<br>
+A. frequency<br>
+B. wavelength<br>
+C. sound intensity level<br>
+D. wave speed<br>
+E. pitch</div>
 
-<div class="question"><strong>6.</strong> If two objects collide in an isolated system, the total momentum after the collision is<br>
-A. greater than before<br>
-B. less than before<br>
-C. the same as before<br>
-D. zero<br>
-E. reversed</div>
+<div class="question"><strong>6.</strong> The Doppler effect is<br>
+A. the reflection of sound<br>
+B. the change in frequency due to relative motion between source and observer<br>
+C. the absorption of sound<br>
+D. constant for all situations<br>
+E. only applies to light</div>
 
-<div class="question"><strong>7.</strong> Conservation of momentum is most useful when<br>
-A. forces are constant<br>
-B. collisions occur over short times<br>
-C. acceleration is constant<br>
-D. energy is conserved<br>
-E. objects move slowly</div>
+<div class="question"><strong>7.</strong> When a sound source moves toward a stationary observer, the observed frequency<br>
+A. decreases<br>
+B. increases<br>
+C. remains constant<br>
+D. becomes zero<br>
+E. becomes infinite</div>
 
-<div class="question"><strong>8.</strong> In a closed system, external forces are<br>
-A. large<br>
-B. unbalanced<br>
-C. negligible<br>
-D. dominant<br>
-E. increasing</div>
+<div class="question"><strong>8.</strong> When a sound source moves away from a stationary observer, the observed frequency<br>
+A. increases<br>
+B. decreases<br>
+C. remains constant<br>
+D. doubles<br>
+E. becomes zero</div>
 
-<div class="question"><strong>9.</strong> Which statement correctly describes momentum conservation?<br>
-A. Momentum is conserved only in elastic collisions<br>
-B. Momentum is conserved only in inelastic collisions<br>
-C. Momentum is conserved regardless of collision type<br>
-D. Momentum is conserved only when objects stick together<br>
-E. Momentum is conserved only at rest</div>
+<div class="question"><strong>9.</strong> The speed of sound in air at 20°C is approximately<br>
+A. 34 m/s<br>
+B. 343 m/s<br>
+C. 3000 m/s<br>
+D. 3.0 × 10⁸ m/s<br>
+E. 1500 m/s</div>
 
-<div class="question"><strong>10.</strong> When analyzing momentum conservation, velocities are treated as<br>
-A. scalars only<br>
-B. vectors with direction<br>
-C. always positive<br>
-D. independent of mass<br>
-E. constant</div>
+<div class="question"><strong>10.</strong> Sound typically travels fastest in<br>
+A. vacuum<br>
+B. air<br>
+C. water<br>
+D. solids like steel<br>
+E. all media equally</div>
 
-<div class="question"><strong>11.</strong> Which situation best represents an isolated system?<br>
-A. a car braking on a road<br>
-B. a box sliding across carpet<br>
-C. two ice skaters pushing off on frictionless ice<br>
-D. a falling object through air<br>
-E. a runner sprinting</div>
+<div class="question"><strong>11.</strong> Sound cannot travel through<br>
+A. air<br>
+B. water<br>
+C. steel<br>
+D. a vacuum<br>
+E. any liquid</div>
 
-<div class="question"><strong>12.</strong> Conservation of momentum is derived from<br>
-A. Newton’s first law<br>
-B. Newton’s second law<br>
-C. Newton’s third law<br>
-D. conservation of energy<br>
-E. kinematics</div>
+<div class="question"><strong>12.</strong> As temperature increases, the speed of sound in air<br>
+A. decreases<br>
+B. increases<br>
+C. remains constant<br>
+D. becomes zero<br>
+E. becomes infinite</div>
 
-<div class="question"><strong>13.</strong> In momentum problems, the sign of velocity is important because<br>
-A. momentum is scalar<br>
-B. momentum depends on speed only<br>
-C. momentum has direction<br>
-D. force is always positive<br>
-E. mass can be negative</div>
+<div class="question"><strong>13.</strong> The equation for speed of sound in air as a function of temperature is approximately<br>
+A. $v = 331 + 0.6T$<br>
+B. $v = 343T$<br>
+C. $v = 331T$<br>
+D. $v = T + 343$<br>
+E. $v = 0.6T$</div>
 
-<div class="question"><strong>14.</strong> If the total momentum of a system is zero before a collision, then after the collision it<br>
-A. must be positive<br>
-B. must be negative<br>
-C. must remain zero<br>
-D. must increase<br>
-E. must reverse</div>
+<div class="question"><strong>14.</strong> In the Doppler effect equation, the plus sign in the denominator is used when<br>
+A. source moves toward observer<br>
+B. source moves away from observer<br>
+C. observer is stationary<br>
+D. source is stationary<br>
+E. there is no motion</div>
 
-<div class="question"><strong>15.</strong> Conservation laws are useful because they<br>
-A. eliminate the need for math<br>
-B. reduce complex interactions to simple relationships<br>
-C. apply only in ideal systems<br>
-D. ignore forces<br>
-E. depend on time</div>
+<div class="question"><strong>15.</strong> Ultrasound refers to sound waves with frequencies<br>
+A. below 20 Hz<br>
+B. between 20 Hz and 20,000 Hz<br>
+C. above 20,000 Hz<br>
+D. exactly 343 Hz<br>
+E. at any frequency</div>
 
-<div class="question"><strong>16.</strong> Which quantity is conserved in both elastic and inelastic collisions?<br>
-A. kinetic energy<br>
-B. speed<br>
-C. momentum<br>
-D. acceleration<br>
-E. force</div>
+<div class="question"><strong>16.</strong> Infrasound refers to sound waves with frequencies<br>
+A. below 20 Hz<br>
+B. between 20 Hz and 20,000 Hz<br>
+C. above 20,000 Hz<br>
+D. exactly 20 Hz<br>
+E. in the visible range</div>
 
-<div class="question"><strong>17.</strong> External forces break momentum conservation because they<br>
-A. change mass<br>
-B. add or remove momentum from the system<br>
-C. increase energy<br>
-D. change velocity instantly<br>
-E. reduce time</div>
+<div class="question"><strong>17.</strong> The typical human hearing range is approximately<br>
+A. 0 to 20 Hz<br>
+B. 20 Hz to 20,000 Hz<br>
+C. 20,000 Hz to 200,000 Hz<br>
+D. all frequencies<br>
+E. above 100,000 Hz</div>
 
-<div class="question"><strong>18.</strong> In one-dimensional momentum problems, motion is analyzed along<br>
-A. any direction<br>
-B. perpendicular axes<br>
-C. a single straight line<br>
-D. circular paths<br>
-E. curved trajectories</div>
+<div class="question"><strong>18.</strong> Resonance occurs when<br>
+A. frequency is zero<br>
+B. a system is driven at its natural frequency<br>
+C. amplitude is zero<br>
+D. there is no vibration<br>
+E. waves cancel out</div>
 
-<div class="question"><strong>19.</strong> Which statement about momentum conservation is always true?<br>
-A. kinetic energy is conserved<br>
-B. momentum is conserved in isolated systems<br>
-C. velocity is conserved<br>
-D. force is conserved<br>
-E. time is conserved</div>
+<div class="question"><strong>19.</strong> A sonic boom is produced when<br>
+A. sound reflects<br>
+B. an object travels faster than the speed of sound<br>
+C. sound diffracts<br>
+D. sound refracts<br>
+E. frequency is very low</div>
 
-<div class="question"><strong>20.</strong> Conservation of momentum is most often applied to<br>
-A. uniform circular motion<br>
-B. collisions and explosions<br>
-C. thermal processes<br>
-D. steady motion<br>
-E. projectile motion only</div>
+<div class="question"><strong>20.</strong> Compressions and rarefactions in sound waves correspond to<br>
+A. different frequencies<br>
+B. high and low pressure regions<br>
+C. different speeds<br>
+D. different media<br>
+E. standing waves only</div>
 
-<h2>Bank 2 – Conceptual & Application (Multiple Choice)</h2>
+<div class="question"><strong>21.</strong> Sound intensity is measured in<br>
+A. hertz<br>
+B. decibels<br>
+C. watts per square meter<br>
+D. meters per second<br>
+E. newtons</div>
 
-<div class="question"><strong>1.</strong> Two ice skaters initially at rest push off from one another on frictionless ice. Which statement is correct?<br>
-A. Only the heavier skater has momentum<br>
-B. The total momentum after the push is zero<br>
-C. Momentum is created during the push<br>
-D. Only kinetic energy is conserved<br>
-E. The skaters move with equal speeds</div>
+<div class="question"><strong>22.</strong> The threshold of hearing for humans is approximately<br>
+A. 0 dB<br>
+B. 100 dB<br>
+C. 120 dB<br>
+D. -10 dB<br>
+E. 1000 dB</div>
 
-<div class="question"><strong>2.</strong> A firework explodes in midair into two pieces. Just after the explosion, the total momentum of the pieces is<br>
-A. greater than before<br>
-B. less than before<br>
-C. the same as before<br>
-D. zero only if masses are equal<br>
-E. undefined</div>
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
 
-<div class="question"><strong>3.</strong> Why does a gun recoil backward when a bullet is fired forward?<br>
-A. Energy conservation<br>
-B. Gravity<br>
-C. Conservation of momentum<br>
-D. Air resistance<br>
-E. Friction</div>
+<div class="question"><strong>1.</strong> Which statement about sound is correct?<br>
+A. sound is a transverse wave<br>
+B. sound requires a medium to travel<br>
+C. sound travels fastest in vacuum<br>
+D. sound is an electromagnetic wave<br>
+E. sound doesn't carry energy</div>
 
-<div class="question"><strong>4.</strong> A person standing on a skateboard throws a heavy backpack forward. As a result, the person and skateboard move backward. This occurs because<br>
-A. kinetic energy is conserved<br>
-B. external forces act on the system<br>
-C. total momentum of the system must remain constant<br>
-D. force is conserved<br>
-E. mass changes</div>
+<div class="question"><strong>2.</strong> A higher frequency sound is perceived as having<br>
+A. lower pitch<br>
+B. higher pitch<br>
+C. greater loudness<br>
+D. slower speed<br>
+E. longer wavelength</div>
 
-<div class="question"><strong>5.</strong> Two carts collide and stick together on a frictionless track. Why can momentum conservation be applied?<br>
-A. The carts have equal mass<br>
-B. The collision time is long<br>
-C. External forces are negligible<br>
-D. Kinetic energy is conserved<br>
-E. Velocity remains constant</div>
+<div class="question"><strong>3.</strong> A sound with greater amplitude is perceived as<br>
+A. higher pitch<br>
+B. lower pitch<br>
+C. louder<br>
+D. faster<br>
+E. having shorter wavelength</div>
 
-<div class="question"><strong>6.</strong> A rocket moves forward as it expels gas backward. This motion is best explained by<br>
-A. Newton’s first law<br>
-B. conservation of energy<br>
-C. conservation of momentum<br>
-D. gravity<br>
-E. friction</div>
-
-<div class="question"><strong>7.</strong> Why is momentum conservation valid during very short collisions even if forces are large?<br>
-A. Forces cancel exactly<br>
-B. External forces are small compared to internal forces<br>
-C. Velocity is constant<br>
-D. Energy is conserved<br>
-E. Time is irrelevant</div>
-
-<div class="question"><strong>8.</strong> Two objects collide in space far from any planets. Compared to collisions on Earth, momentum conservation in space is<br>
-A. less accurate<br>
-B. more accurate<br>
-C. impossible to apply<br>
-D. dependent on mass only<br>
-E. dependent on speed only</div>
-
-<div class="question"><strong>9.</strong> A system’s total momentum changes when<br>
-A. objects collide elastically<br>
-B. objects collide inelastically<br>
-C. an external force acts on the system<br>
-D. objects stick together<br>
-E. kinetic energy changes</div>
-
-<div class="question"><strong>10.</strong> A swimmer pushes water backward with their hands. The swimmer moves forward because<br>
-A. energy is conserved<br>
-B. water exerts no force<br>
-C. total momentum of swimmer–water system is conserved<br>
-D. velocity is constant<br>
-E. mass is transferred</div>
-
-<div class="question"><strong>11.</strong> Two carts move toward each other with equal and opposite momenta. What is the total momentum of the system?<br>
-A. maximum<br>
-B. positive<br>
-C. negative<br>
-D. zero<br>
-E. undefined</div>
-
-<div class="question"><strong>12.</strong> Why is it important to define the system clearly when applying conservation of momentum?<br>
-A. To identify acceleration<br>
-B. To determine which forces are internal or external<br>
-C. To measure time accurately<br>
-D. To conserve energy<br>
-E. To ignore velocity</div>
-
-<div class="question"><strong>13.</strong> A collision occurs on a rough surface with significant friction. Momentum conservation<br>
-A. always applies<br>
-B. never applies<br>
-C. applies only to one object<br>
-D. may not apply because of external forces<br>
-E. applies only if masses are equal</div>
-
-<div class="question"><strong>14.</strong> Two objects collide and bounce apart. Compared to before the collision, the total momentum after the collision is<br>
-A. greater<br>
-B. smaller<br>
+<div class="question"><strong>4.</strong> An ambulance siren approaches you. Compared to the actual frequency emitted, you hear a frequency that is<br>
+A. lower<br>
+B. higher<br>
 C. the same<br>
 D. zero<br>
-E. reversed</div>
+E. infinite</div>
 
-<div class="question"><strong>15.</strong> A person jumps off a boat initially at rest, causing the boat to move backward. Which statement is correct?<br>
-A. Momentum is created<br>
-B. The boat gains kinetic energy only<br>
-C. Total momentum of the system remains zero<br>
-D. The person’s momentum is larger<br>
-E. External forces dominate</div>
+<div class="question"><strong>5.</strong> After an ambulance passes and moves away, you hear a frequency that is<br>
+A. higher than actual<br>
+B. lower than actual<br>
+C. the same as actual<br>
+D. zero<br>
+E. doubled</div>
 
-<div class="question"><strong>16.</strong> Which system best demonstrates conservation of momentum?<br>
-A. a braking car<br>
-B. a falling object<br>
-C. two carts colliding on a frictionless track<br>
-D. a runner slowing down<br>
-E. a box pushed across carpet</div>
+<div class="question"><strong>6.</strong> Sound travels approximately how many times faster in water than in air?<br>
+A. the same speed<br>
+B. 2 times faster<br>
+C. 4 times faster<br>
+D. 0.5 times as fast<br>
+E. cannot travel in water</div>
 
-<div class="question"><strong>17.</strong> Why does a heavier object generally experience a smaller change in velocity during a momentum-conserving interaction?<br>
-A. It experiences less force<br>
-B. It has greater mass for the same momentum change<br>
-C. It moves more slowly<br>
-D. It has less momentum<br>
-E. It loses energy</div>
+<div class="question"><strong>7.</strong> Thunder and lightning occur simultaneously, but we see lightning before hearing thunder because<br>
+A. light travels faster than sound<br>
+B. sound travels faster than light<br>
+C. they don't occur simultaneously<br>
+D. light requires no medium<br>
+E. sound is absorbed</div>
 
-<div class="question"><strong>18.</strong> In conservation-of-momentum problems, why is direction important?<br>
-A. Momentum depends on speed only<br>
-B. Momentum is scalar<br>
-C. Momentum is a vector quantity<br>
-D. Force is always positive<br>
-E. Mass can be negative</div>
+<div class="question"><strong>8.</strong> On a hot day, sound travels<br>
+A. slower than on a cold day<br>
+B. faster than on a cold day<br>
+C. at the same speed as on a cold day<br>
+D. not at all<br>
+E. only vertically</div>
 
-<div class="question"><strong>19.</strong> Two objects interact and exchange momentum. Which quantity is guaranteed to be conserved in an isolated system?<br>
-A. kinetic energy<br>
-B. velocity<br>
-C. momentum<br>
-D. acceleration<br>
-E. force</div>
+<div class="question"><strong>9.</strong> When sound reflects off a hard surface like a cliff, we hear<br>
+A. a sonic boom<br>
+B. an echo<br>
+C. ultrasound<br>
+D. infrasound<br>
+E. nothing</div>
 
-<div class="question"><strong>20.</strong> Conservation of momentum allows prediction of motion<br>
-A. only before collisions<br>
-B. only after collisions<br>
-C. both before and after interactions<br>
-D. only when energy is conserved<br>
-E. only when forces are zero</div>
+<div class="question"><strong>10.</strong> Bats use ultrasound for navigation because<br>
+A. it is in the audible range<br>
+B. it has very long wavelengths<br>
+C. high frequencies provide better resolution<br>
+D. it travels slower<br>
+E. it cannot reflect</div>
+
+<div class="question"><strong>11.</strong> Musical instruments produce sound by<br>
+A. reflecting light<br>
+B. causing something to vibrate<br>
+C. remaining perfectly still<br>
+D. absorbing all sound<br>
+E. electromagnetic radiation</div>
+
+<div class="question"><strong>12.</strong> A sound that is 10 dB louder represents an intensity that is<br>
+A. twice as great<br>
+B. ten times as great<br>
+C. half as great<br>
+D. the same<br>
+E. 100 times as great</div>
+
+<div class="question"><strong>13.</strong> Prolonged exposure to sounds above 85 dB can cause<br>
+A. improved hearing<br>
+B. hearing damage<br>
+C. increased pitch perception<br>
+D. no effect<br>
+E. ultrasonic hearing</div>
+
+<div class="question"><strong>14.</strong> Sound waves interfere according to the same principles as<br>
+A. only light waves<br>
+B. all waves<br>
+C. only transverse waves<br>
+D. no other waves<br>
+E. only in vacuum</div>
+
+<div class="question"><strong>15.</strong> When two sound waves of slightly different frequencies interfere, the resulting phenomenon is called<br>
+A. diffraction<br>
+B. beats<br>
+C. refraction<br>
+D. reflection<br>
+E. absorption</div>
+
+<div class="question"><strong>16.</strong> Sonar systems use<br>
+A. light waves<br>
+B. radio waves<br>
+C. sound waves (often ultrasound)<br>
+D. gamma rays<br>
+E. microwaves</div>
+
+<div class="question"><strong>17.</strong> A sound of 120 dB is at the<br>
+A. threshold of hearing<br>
+B. comfortable listening level<br>
+C. threshold of pain<br>
+D. inaudible level<br>
+E. ultrasonic range</div>
+
+<div class="question"><strong>18.</strong> When a car horn honks while moving past you, the pitch seems to suddenly drop. This is an example of<br>
+A. reflection<br>
+B. the Doppler effect<br>
+C. resonance<br>
+D. interference<br>
+E. diffraction</div>
+
+<div class="question"><strong>19.</strong> The quality or timbre of a musical note depends on<br>
+A. amplitude only<br>
+B. frequency only<br>
+C. the mixture of harmonics present<br>
+D. loudness only<br>
+E. the medium</div>
+
+<div class="question"><strong>20.</strong> An organ pipe produces sound by<br>
+A. plucking a string<br>
+B. creating standing waves in an air column<br>
+C. hitting a membrane<br>
+D. electromagnetic induction<br>
+E. friction</div>
 
 <h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
 
-<div class="question"><strong>1.</strong> A 2.0 kg cart moving at 3.0 m/s collides with a 1.0 kg cart initially at rest. If the carts stick together, determine the final velocity of the system.</div>
-<div class="question"><strong>2.</strong> Determine the final velocity when a 0.40 kg ball moving at 5.0 m/s collides with a stationary 0.60 kg ball and the two stick together.</div>
-<div class="question"><strong>3.</strong> Two carts on a frictionless track collide and lock together. Cart A has a mass of 1.5 kg and moves at 4.0 m/s, while Cart B has a mass of 2.5 kg and is initially at rest. Calculate the final velocity.</div>
-<div class="question"><strong>4.</strong> Calculate the speed after collision when a 1,200 kg car traveling at 18 m/s collides with a stopped 800 kg car and the vehicles stick together.</div>
-<div class="question"><strong>5.</strong> A 0.25 kg puck slides east at 12 m/s and collides with a 0.50 kg puck at rest. Determine the final velocity if the pucks stick together.</div>
-<div class="question"><strong>6.</strong> Find the final speed of the system when a 900 kg motorcycle moving at 25 m/s collides with a 1,100 kg car initially at rest and the two move together.</div>
-<div class="question"><strong>7.</strong> Two skaters push off from rest. One skater has a mass of 60 kg and moves away at 2.5 m/s. Determine the speed of the second skater if their mass is 75 kg.</div>
-<div class="question"><strong>8.</strong> Determine the final velocity after a 3.0 kg cart moving east at 4.0 m/s collides with a 1.5 kg cart moving east at 1.0 m/s and the carts stick together.</div>
-<div class="question"><strong>9.</strong> A 20,000 kg train car rolling at 2.0 m/s couples with a stationary 15,000 kg car. Calculate the final speed after coupling.</div>
-<div class="question"><strong>10.</strong> Find the final velocity of the system when a 2.0 kg object sliding east at 5.0 m/s collides with a 1.0 kg object sliding west at 3.0 m/s and the objects stick together.</div>
-<div class="question"><strong>11.</strong> A 1.2 kg ball moving at 7.0 m/s collides with a stationary 0.80 kg ball. Calculate the final velocity if the balls stick together.</div>
-<div class="question"><strong>12.</strong> A runner jumps from a movable platform. If a 70 kg runner lands with a horizontal speed of 4.0 m/s and the platform has a mass of 350 kg, determine the platform’s speed after the jump.</div>
-<div class="question"><strong>13.</strong> A 0.30 kg ball moves at 10 m/s and collides with a 0.90 kg ball initially at rest. Determine the final velocity if the balls stick together.</div>
-<div class="question"><strong>14.</strong> Determine the final speed when a 1,000 kg car moving at 12 m/s collides with a 500 kg car traveling at 4.0 m/s in the same direction and the cars lock together.</div>
-<div class="question"><strong>15.</strong> Two carts collide and stick together. Cart A has a mass of 1.0 kg and moves at 5.0 m/s, while Cart B has a mass of 4.0 kg and is initially at rest. Calculate the final velocity.</div>
-<div class="question"><strong>16.</strong> Two identical objects collide. If a 0.50 kg object moving at 8.0 m/s collides with another identical object at rest and the objects stick together, find the final velocity.</div>
-<div class="question"><strong>17.</strong> A person of mass 65 kg pushes a 35 kg crate initially at rest. After the push, the person moves backward at 1.5 m/s. Determine the speed of the crate.</div>
-<div class="question"><strong>18.</strong> Calculate the final velocity when a 2.5 kg object traveling at 6.0 m/s collides with a stationary 2.5 kg object and the two stick together.</div>
-<div class="question"><strong>19.</strong> A 1,200 kg car moving at 15 m/s collides with a 1,200 kg car traveling at 5.0 m/s in the opposite direction. Determine the final velocity if the cars lock together.</div>
-<div class="question"><strong>20.</strong> Two students on roller skates push off from rest. One student (50 kg) moves backward at 2.0 m/s. Determine the speed of the second student if their mass is 65 kg.</div>
+<div class="question"><strong>1.</strong> Calculate the speed of sound in air at a temperature of 20°C using $v = 331 + 0.6T$ (in m/s).</div>
 
-<h2>Bank 4 – Multi-Step Calculations (Numeric Response, HARD)</h2>
+<div class="question"><strong>2.</strong> Determine the speed of sound in air at 0°C.</div>
 
-<div class="question"><strong>1.</strong> Determine the final velocity of the system when a 60 kg skateboarder moving at 4.0 m/s jumps off a skateboard that continues forward at 2.0 m/s. The skateboard has a mass of 3.0 kg.</div>
-<div class="question"><strong>2.</strong> Two ice skaters push off from rest on frictionless ice. One skater has a mass of 50 kg and moves away at 3.0 m/s. Calculate the speed of the second skater, whose mass is 70 kg.</div>
-<div class="question"><strong>3.</strong> A 0.20 kg hockey puck sliding east at 12 m/s collides with a stationary puck of mass 0.30 kg. Find the final velocity if the pucks stick together after the collision.</div>
-<div class="question"><strong>4.</strong> Find the common velocity of the two vehicles when a 1,200 kg car traveling at 18 m/s rear-ends a stopped 900 kg car and the cars lock together.</div>
-<div class="question"><strong>5.</strong> A baseball is thrown horizontally at 40 m/s and is caught by a glove, coming to rest. Calculate the change in momentum of the 0.15 kg baseball.</div>
-<div class="question"><strong>6.</strong> Determine the person’s speed after the throw when a 75 kg person standing on a frictionless surface throws a 2.0 kg ball forward at 10 m/s.</div>
-<div class="question"><strong>7.</strong> Two carts move toward each other on a track. Cart A has a mass of 2.0 kg and moves at 3.0 m/s to the right, while Cart B has a mass of 1.5 kg and moves at 4.0 m/s to the left. Calculate the total momentum of the system before the collision.</div>
-<div class="question"><strong>8.</strong> Two carts move toward each other on a track. Cart A has a mass of 2.0 kg and moves at 3.0 m/s to the right, while Cart B has a mass of 1.5 kg and moves at 4.0 m/s to the left. After the collision, the carts stick together. Calculate the velocity of the combined carts.</div>
-<div class="question"><strong>9.</strong> Determine the final speed when a 900 kg motorcycle and rider moving at 25 m/s collide with a 1,100 kg car moving at 10 m/s in the same direction and the vehicles lock together.</div>
-<div class="question"><strong>10.</strong> Calculate the recoil speed of the cannon when a cannon of mass 800 kg fires a 5.0 kg projectile at 120 m/s.</div>
-<div class="question"><strong>11.</strong> A 0.50 kg ball moving at 6.0 m/s collides head-on with an identical ball moving at 2.0 m/s in the opposite direction. Determine their final velocity if the balls stick together.</div>
-<div class="question"><strong>12.</strong> Find the platform’s speed after the jump when a 70 kg runner jumps forward off a stationary platform and lands with a horizontal speed of 4.0 m/s. The platform has a mass of 350 kg and is free to roll.</div>
-<div class="question"><strong>13.</strong> Two carts collide and stick together. Cart A has a mass of 1.0 kg and a velocity of 5.0 m/s, while Cart B has a mass of 3.0 kg and is initially at rest. Determine the final velocity of the combined system.</div>
-<div class="question"><strong>14.</strong> A tennis ball strikes a wall at 20 m/s and rebounds straight back at 18 m/s. Calculate the change in momentum of the 0.10 kg tennis ball.</div>
-<div class="question"><strong>15.</strong> Determine the final speed after coupling when a 20,000 kg freight train car rolling at 2.0 m/s couples with a stationary car of mass 15,000 kg.</div>
-<div class="question"><strong>16.</strong> A 2.0 kg object sliding east at 6.0 m/s collides with a 1.0 kg object sliding west at 4.0 m/s. Calculate the final velocity of the system if the objects stick together.</div>
-<div class="question"><strong>17.</strong> Find the speed of the crate after the push when a 65 kg person pushes a 35 kg crate initially at rest and then moves backward at 1.5 m/s.</div>
-<div class="question"><strong>18.</strong> A 0.25 kg puck moves at 14 m/s and collides with a 0.50 kg puck at rest. Determine their final velocity if the pucks stick together.</div>
-<div class="question"><strong>19.</strong> Explain quantitatively why the rocket moves forward by calculating the rocket’s momentum change when 2.0 kg of gas is expelled backward at 500 m/s.</div>
-<div class="question"><strong>20.</strong> Two students on roller skates push off from rest. One student has a mass of 45 kg and moves backward at 2.5 m/s. Calculate the speed of the second student, whose mass is 60 kg.</div>
+<div class="question"><strong>3.</strong> Find the speed of sound in air when the temperature is 30°C.</div>
+
+<div class="question"><strong>4.</strong> A sound wave in air at 20°C has a frequency of 256 Hz. Calculate its wavelength using $v = 343$ m/s.</div>
+
+<div class="question"><strong>5.</strong> Calculate the frequency of a sound wave with wavelength 0.50 m traveling through air at 343 m/s.</div>
+
+<div class="question"><strong>6.</strong> A sound wave has wavelength 2.0 m in air where the speed is 340 m/s. Determine its frequency.</div>
+
+<div class="question"><strong>7.</strong> Lightning is seen and thunder is heard 3.0 seconds later. If sound travels at 343 m/s, calculate the distance to the lightning strike.</div>
+
+<div class="question"><strong>8.</strong> Calculate the wavelength of a 440 Hz sound (musical note A) in air where sound travels at 343 m/s.</div>
+
+<div class="question"><strong>9.</strong> A sound wave travels 1500 m in 5.0 seconds. Calculate its speed.</div>
+
+<div class="question"><strong>10.</strong> Determine the frequency of a sound with wavelength 0.68 m traveling at 340 m/s.</div>
+
+<div class="question"><strong>11.</strong> Calculate the speed of sound in air at -10°C.</div>
+
+<div class="question"><strong>12.</strong> A sound wave in water travels at 1500 m/s with frequency 500 Hz. Calculate its wavelength.</div>
+
+<div class="question"><strong>13.</strong> Determine the frequency of ultrasound with wavelength 0.15 mm (0.00015 m) in tissue where sound travels at 1500 m/s.</div>
+
+<div class="question"><strong>14.</strong> Calculate the time for sound to travel 1.0 km in air at 343 m/s.</div>
+
+<div class="question"><strong>15.</strong> A sound wave has frequency 1000 Hz in air at 340 m/s. Find its wavelength.</div>
+
+<div class="question"><strong>16.</strong> Calculate the speed of sound in air at 25°C.</div>
+
+<div class="question"><strong>17.</strong> Determine the wavelength of a 50 Hz sound (very low bass) in air at 340 m/s.</div>
+
+<div class="question"><strong>18.</strong> A sonar pulse travels to the ocean floor and back in 4.0 s. Sound travels at 1500 m/s in water. Calculate the depth of the ocean (one-way distance).</div>
+
+<div class="question"><strong>19.</strong> Calculate the frequency of a sound with wavelength 0.17 m in air at 340 m/s.</div>
+
+<div class="question"><strong>20.</strong> Determine the speed of sound in air at 15°C.</div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A bat emits an ultrasonic pulse at 40,000 Hz. Sound travels at 343 m/s in air. Calculate the wavelength, then determine how many wavelengths are in a 10 m distance.</div>
+
+<div class="question"><strong>2.</strong> An observer sees a firework explode and hears the sound 2.0 seconds later. Calculate the distance using sound speed 343 m/s. Then determine how long light took to reach you (light speed = $3.0 \times 10^8$ m/s).</div>
+
+<div class="question"><strong>3.</strong> A train whistle operating at 500 Hz approaches a stationary observer at 30 m/s. Sound speed is 340 m/s. Calculate the observed frequency using $f' = f\frac{v}{v - v_s}$. Then calculate the wavelength of the sound perceived by the observer.</div>
+
+<div class="question"><strong>4.</strong> At 0°C, sound travels at 331 m/s through air. Calculate the wavelength of middle C (262 Hz) at this temperature. Then determine what the wavelength becomes at 30°C where sound travels at 349 m/s.</div>
+
+<div class="question"><strong>5.</strong> A physics demonstration uses a sound wave with wavelength 0.50 m in air at 20°C where v = 343 m/s. Calculate the frequency. This wave then enters water where sound travels at 1500 m/s. Determine the new wavelength in water (frequency unchanged).</div>
+
+<div class="question"><strong>6.</strong> Two tuning forks produce sounds at 440 Hz and 445 Hz. When sounded together, they create audible beats. Calculate the beat frequency (difference). Then determine the period of one beat.</div>
+
+<div class="question"><strong>7.</strong> A fire truck with a 1000 Hz siren moves away from you at 25 m/s. Sound speed is 340 m/s. Calculate the observed frequency using $f' = f\frac{v}{v + v_s}$. Then find the wavelength you observe.</div>
+
+<div class="question"><strong>8.</strong> You shout toward a cliff and hear an echo 2.0 seconds later. Sound travels at 343 m/s. Calculate the total distance sound traveled (to cliff and back). Then determine the distance to the cliff (half the total).</div>
+
+<div class="question"><strong>9.</strong> A dolphin uses echolocation with 100 kHz ($1.0 \times 10^5$ Hz) ultrasound in water where sound travels at 1500 m/s. Calculate the wavelength. Then determine how long it takes for the sound to travel 300 m to a fish and back.</div>
+
+<div class="question"><strong>10.</strong> An atmospheric scientist measures how sound speed changes with temperature. Calculate the speed at 10°C and at 30°C using $v = 331 + 0.6T$. Then verify that the difference equals 12 m/s.</div>
+
+<div class="question"><strong>11.</strong> A sound source moving toward you at 20 m/s emits 600 Hz. Sound speed is 340 m/s. Calculate the observed frequency using $f' = f\frac{v}{v - v_s}$. Then calculate the wavelength of what you hear.</div>
+
+<div class="question"><strong>12.</strong> You stand between two parallel canyon walls 680 m apart and shout. Sound travels at 340 m/s. Calculate the time for sound to reach the nearest wall (340 m away) and return. Then calculate the time for sound to reach the far wall and return.</div>
+
+<div class="question"><strong>13.</strong> A submarine's sonar detects a reflection 0.80 s after emitting a pulse. Sound travels at 1500 m/s in seawater. Calculate the total distance traveled. Then determine the distance to the reflecting object.</div>
+
+<div class="question"><strong>14.</strong> An acoustics lab measures a musical note with wavelength 0.78 m in air traveling at 340 m/s. Calculate its frequency. Then calculate the ratio of this frequency to A440 to identify the note.</div>
+
+<div class="question"><strong>15.</strong> An ambulance approaches you at 30 m/s with its 800 Hz siren blaring. Sound speed is 340 m/s. Calculate the frequency you hear as it approaches using $f' = f\frac{v}{v - v_s}$. Then calculate the frequency as it recedes using $f' = f\frac{v}{v + v_s}$.</div>
+
+<div class="question"><strong>16.</strong> Medical imaging requires high-resolution ultrasound at 3.0 MHz ($3.0 \times 10^6$ Hz) in tissue where sound travels at 1540 m/s. Calculate the wavelength. Then determine how many complete wavelengths fit in 3.0 cm of tissue.</div>
+
+<div class="question"><strong>17.</strong> Two musicians playing together notice an unpleasant warbling sound. Their instruments produce 256 Hz and 260 Hz. Calculate the beat frequency. Then determine how many times per second the loudness peaks occur.</div>
+
+<div class="question"><strong>18.</strong> A geology student investigates acoustics in a canyon. The canyon wall is 850 m away, and you clap your hands. Calculate the time for the echo to return using sound speed 340 m/s. Then determine what frequency sound would have wavelength equal to the canyon width.</div>
+
+<div class="question"><strong>19.</strong> A race car approaches at 60 m/s producing engine sound at 400 Hz. Sound speed is 340 m/s. Calculate the Doppler-shifted frequency you hear as it approaches. Then determine what you hear as it recedes at the same speed.</div>
+
+<div class="question"><strong>20.</strong> An engineer tests sound transmission through a 20 m steel beam. Sound travels at 5000 m/s in steel. A 500 Hz sound travels through the beam. Calculate the wavelength in steel. Then determine how many complete wavelengths fit in the beam.</div>
 
 <hr>
 <h2>Answer Key</h2>
 
-<h3>Bank 1</h3>
+<h3>Bank 1 – Vocabulary</h3>
 <ol>
-<li>C</li><li>C</li><li>C</li><li>C</li><li>C</li>
-<li>C</li><li>B</li><li>C</li><li>C</li><li>B</li>
-<li>C</li><li>C</li><li>C</li><li>C</li><li>B</li>
-<li>C</li><li>B</li><li>C</li><li>B</li><li>B</li>
+<li>B</li><li>B</li><li>B</li><li>B</li><li>C</li>
+<li>B</li><li>B</li><li>B</li><li>B</li><li>D</li>
+<li>D</li><li>B</li><li>A</li><li>B</li><li>C</li>
+<li>A</li><li>B</li><li>B</li><li>B</li><li>B</li>
+<li>C</li><li>A</li>
 </ol>
 
-<h3>Bank 2</h3>
+<h3>Bank 2 – Conceptual</h3>
 <ol>
-<li>B</li><li>C</li><li>C</li><li>C</li><li>C</li>
-<li>C</li><li>B</li><li>B</li><li>C</li><li>C</li>
-<li>D</li><li>B</li><li>D</li><li>C</li><li>C</li>
-<li>C</li><li>B</li><li>C</li><li>C</li><li>C</li>
+<li>B</li><li>B</li><li>C</li><li>B</li><li>B</li>
+<li>C</li><li>A</li><li>B</li><li>B</li><li>C</li>
+<li>B</li><li>B</li><li>B</li><li>B</li><li>B</li>
+<li>C</li><li>C</li><li>B</li><li>C</li><li>B</li>
 </ol>
 
-<h3>Bank 3</h3>
+<h3>Bank 3 – Single-Step Calculations</h3>
 <ol>
-<li>2.0 m/s</li><li>2.0 m/s</li><li>2.4 m/s</li><li>13.5 m/s</li><li>4.0 m/s</li>
-<li>13.6 m/s</li><li>2.0 m/s</li><li>3.0 m/s</li><li>1.14 m/s</li><li>1.33 m/s</li>
-<li>4.2 m/s</li><li>0.80 m/s</li><li>2.5 m/s</li><li>9.3 m/s</li><li>1.0 m/s</li>
-<li>4.0 m/s</li><li>2.8 m/s</li><li>3.0 m/s</li><li>4.2 m/s</li><li>1.5 m/s</li>
+<li>343 m/s</li><li>331 m/s</li><li>349 m/s</li><li>1.34 m</li><li>686 Hz</li>
+<li>170 Hz</li><li>1029 m</li><li>0.78 m</li><li>300 m/s</li><li>500 Hz</li>
+<li>325 m/s</li><li>3.0 m</li><li>1.0 × 10⁷ Hz</li><li>2.9 s</li><li>0.34 m</li>
+<li>346 m/s</li><li>6.8 m</li><li>3000 m</li><li>2000 Hz</li><li>340 m/s</li>
 </ol>
 
-<h3>Bank 4</h3>
+<h3>Bank 4 – Multi-Step Calculations</h3>
 <ol>
-<li>3.8 m/s</li><li>2.1 m/s</li><li>4.8 m/s</li><li>10.8 m/s</li><li>-6.0 kg·m/s</li>
-<li>0.29 m/s</li><li>0 kg·m/s</li><li>0.86 m/s</li><li>17.1 m/s</li><li>0.75 m/s</li>
-<li>2.0 m/s</li><li>0.80 m/s</li><li>1.25 m/s</li><li>-3.8 kg·m/s</li><li>1.1 m/s</li>
-<li>2.7 m/s</li><li>2.8 m/s</li><li>4.7 m/s</li><li>1000 kg·m/s</li><li>1.9 m/s</li>
+<li>Wavelength: 0.0086 m; Number: 1163 wavelengths</li>
+<li>Distance: 686 m; Light time: 2.3 × 10⁻⁶ s</li>
+<li>Observed frequency: 548 Hz; Wavelength: 0.62 m</li>
+<li>Wavelength at 0°C: 1.26 m; Wavelength at 30°C: 1.33 m</li>
+<li>Frequency: 686 Hz; Wavelength in water: 2.2 m</li>
+<li>Beat frequency: 5 Hz; Period: 0.20 s</li>
+<li>Observed frequency: 932 Hz; Wavelength: 0.36 m</li>
+<li>Total distance: 686 m; Distance to cliff: 343 m</li>
+<li>Wavelength: 0.015 m; Time: 0.40 s</li>
+<li>Speed at 10°C: 337 m/s; Speed at 30°C: 349 m/s; Difference: 12 m/s</li>
+<li>Observed frequency: 638 Hz; Wavelength: 0.53 m</li>
+<li>Time to near wall: 4.0 s; Time to far wall: 4.0 s</li>
+<li>Total distance: 1200 m; Distance to object: 600 m</li>
+<li>Frequency: 436 Hz; Ratio: 0.99 (close to A440)</li>
+<li>Approaching: 878 Hz; Receding: 732 Hz</li>
+<li>Wavelength: 5.1 × 10⁻⁴ m; Number: 58 wavelengths</li>
+<li>Beat frequency: 4 Hz; Peaks per second: 4</li>
+<li>Time: 5.0 s; Frequency: 0.40 Hz</li>
+<li>Approaching: 486 Hz; Receding: 340 Hz</li>
+<li>Wavelength: 10 m; Number: 2.0 wavelengths</li>
 </ol>
 
 </body>
