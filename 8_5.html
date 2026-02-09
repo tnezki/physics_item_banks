@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.5 Capacitors and Practical Applications</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #003366; }
+.question { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Section 8.5 – Capacitors and Practical Applications</h1>
+
+<h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> A capacitor is<br>
+A. a device that generates electricity<br>
+B. a device that stores electrical energy in an electric field<br>
+C. a type of battery<br>
+D. a wire connector<br>
+E. a resistor</div>
+
+<div class="question"><strong>2.</strong> A capacitor consists of<br>
+A. one metal plate<br>
+B. two metal plates separated by an insulator<br>
+C. no metal parts<br>
+D. a single wire<br>
+E. only an insulator</div>
+
+<div class="question"><strong>3.</strong> The insulating material between capacitor plates is called the<br>
+A. conductor<br>
+B. dielectric<br>
+C. resistor<br>
+D. inductor<br>
+E. semiconductor</div>
+
+<div class="question"><strong>4.</strong> Capacitance is defined as<br>
+A. the resistance of a capacitor<br>
+B. the charge stored per unit voltage<br>
+C. the energy dissipated<br>
+D. the current flow<br>
+E. the power consumed</div>
+
+<div class="question"><strong>5.</strong> The SI unit of capacitance is the<br>
+A. coulomb<br>
+B. volt<br>
+C. farad<br>
+D. ohm<br>
+E. ampere</div>
+
+<div class="question"><strong>6.</strong> When a capacitor is charging<br>
+A. current flows through the dielectric<br>
+B. charge accumulates on the plates creating an electric field<br>
+C. energy is destroyed<br>
+D. voltage becomes zero<br>
+E. resistance increases</div>
+
+<div class="question"><strong>7.</strong> When a capacitor is discharging<br>
+A. it stores more energy<br>
+B. stored charge flows through the connected load<br>
+C. voltage increases<br>
+D. it becomes a battery<br>
+E. it generates current from nothing</div>
+
+<div class="question"><strong>8.</strong> The formula for capacitance is<br>
+A. $C = QV$<br>
+B. $C = V/Q$<br>
+C. $C = Q/V$<br>
+D. $C = VR$<br>
+E. $C = IR$</div>
+
+<div class="question"><strong>9.</strong> Energy stored in a capacitor is calculated using<br>
+A. $E = CV$<br>
+B. $E = (1/2)CV^2$<br>
+C. $E = QV^2$<br>
+D. $E = IR$<br>
+E. $E = Pt$</div>
+
+<div class="question"><strong>10.</strong> The time constant in an RC circuit is<br>
+A. $\tau = R + C$<br>
+B. $\tau = RC$<br>
+C. $\tau = R/C$<br>
+D. $\tau = C/R$<br>
+E. $\tau = R - C$</div>
+
+<div class="question"><strong>11.</strong> A microfarad (μF) is equal to<br>
+A. $10^{-3}$ farads<br>
+B. $10^{-6}$ farads<br>
+C. $10^{-9}$ farads<br>
+D. $10^{6}$ farads<br>
+E. $10^{3}$ farads</div>
+
+<div class="question"><strong>12.</strong> Increasing plate area in a capacitor causes capacitance to<br>
+A. decrease<br>
+B. stay the same<br>
+C. increase<br>
+D. become zero<br>
+E. become infinite</div>
+
+<div class="question"><strong>13.</strong> Increasing the distance between capacitor plates causes capacitance to<br>
+A. increase<br>
+B. stay the same<br>
+C. decrease<br>
+D. double<br>
+E. become infinite</div>
+
+<div class="question"><strong>14.</strong> Capacitors are used in camera flashes to<br>
+A. block light<br>
+B. store energy and release it quickly for a bright flash<br>
+C. measure brightness<br>
+D. focus the lens<br>
+E. charge the battery</div>
+
+<div class="question"><strong>15.</strong> Touchscreen technology uses capacitors to<br>
+A. generate light<br>
+B. detect changes in capacitance when a finger touches the screen<br>
+C. provide power<br>
+D. display colors<br>
+E. heat the screen</div>
+
+<div class="question"><strong>16.</strong> In renewable energy systems, capacitors help<br>
+A. generate electricity<br>
+B. smooth power fluctuations and store energy<br>
+C. block current<br>
+D. increase resistance<br>
+E. destroy energy</div>
+
+<div class="question"><strong>17.</strong> Energy efficiency in electrical systems refers to<br>
+A. wasting all energy as heat<br>
+B. the ratio of useful energy output to total energy input<br>
+C. using the most expensive components<br>
+D. ignoring power loss<br>
+E. maximizing resistance</div>
+
+<div class="question"><strong>18.</strong> Chemical batteries and capacitors differ in that<br>
+A. they're identical<br>
+B. capacitors store energy in an electric field; batteries use chemical reactions<br>
+C. capacitors generate electricity from nothing<br>
+D. batteries store no energy<br>
+E. capacitors are only theoretical</div>
+
+<div class="question"><strong>19.</strong> Solar cells have the advantage of<br>
+A. working in complete darkness<br>
+B. providing energy from sunlight without consuming fuel<br>
+C. requiring no materials<br>
+D. infinite power output<br>
+E. zero cost</div>
+
+<div class="question"><strong>20.</strong> Practical applications of circuits include<br>
+A. nothing useful<br>
+B. smartphones, renewable energy, power distribution, and modern electronics<br>
+C. only lighting<br>
+D. only heating<br>
+E. only mechanical systems</div>
+
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> If you double the voltage across a capacitor, the energy stored<br>
+A. stays the same<br>
+B. doubles<br>
+C. triples<br>
+D. quadruples<br>
+E. is cut in half</div>
+
+<div class="question"><strong>2.</strong> A capacitor with capacitance of 1000 μF is the same as<br>
+A. 0.001 F<br>
+B. 0.000001 F<br>
+C. 1 F<br>
+D. 1000 F<br>
+E. 0.0001 F</div>
+
+<div class="question"><strong>3.</strong> When a fully charged capacitor is connected to a resistor, it will<br>
+A. charge more<br>
+B. discharge through the resistor<br>
+C. explode<br>
+D. remain fully charged forever<br>
+E. generate current indefinitely</div>
+
+<div class="question"><strong>4.</strong> During capacitor charging, the voltage across the capacitor<br>
+A. decreases to zero<br>
+B. increases until it equals the battery voltage<br>
+C. stays at zero<br>
+D. becomes infinite<br>
+E. reverses direction</div>
+
+<div class="question"><strong>5.</strong> A capacitor fully charged to 12V will provide what maximum voltage to a circuit when discharged?<br>
+A. 24V<br>
+B. 12V<br>
+C. 6V<br>
+D. 0V<br>
+E. infinite</div>
+
+<div class="question"><strong>6.</strong> If capacitance increases while voltage stays constant, the stored charge<br>
+A. decreases<br>
+B. stays the same<br>
+C. increases<br>
+D. becomes zero<br>
+E. becomes negative</div>
+
+<div class="question"><strong>7.</strong> Camera flashes use capacitors because they<br>
+A. generate light directly<br>
+B. can release stored energy very quickly<br>
+C. block current<br>
+D. reduce voltage<br>
+E. create resistance</div>
+
+<div class="question"><strong>8.</strong> The time constant $\tau = RC$ in an RC circuit indicates<br>
+A. total energy<br>
+B. how quickly the capacitor charges or discharges<br>
+C. final voltage<br>
+D. total resistance<br>
+E. power dissipated</div>
+
+<div class="question"><strong>9.</strong> If you increase resistance in an RC circuit, the time constant<br>
+A. decreases<br>
+B. stays the same<br>
+C. increases<br>
+D. becomes zero<br>
+E. becomes infinite</div>
+
+<div class="question"><strong>10.</strong> Power supplies use capacitors to<br>
+A. generate power<br>
+B. smooth out voltage fluctuations<br>
+C. increase voltage to infinite<br>
+D. block all current<br>
+E. create resistance</div>
+
+<div class="question"><strong>11.</strong> Solar energy systems benefit from capacitors by<br>
+A. generating more sunlight<br>
+B. storing excess energy and releasing it when sunlight is low<br>
+C. blocking solar energy<br>
+D. reducing efficiency<br>
+E. heating the panels</div>
+
+<div class="question"><strong>12.</strong> Compared to batteries, capacitors<br>
+A. store more energy per unit weight<br>
+B. can charge and discharge much faster<br>
+C. last a shorter time<br>
+D. generate electricity from chemicals<br>
+E. are always larger</div>
+
+<div class="question"><strong>13.</strong> The advantage of parallel circuits in home wiring is<br>
+A. all devices share current<br>
+B. each device gets full voltage and operates independently<br>
+C. one device failure stops all others<br>
+D. lower efficiency<br>
+E. higher resistance</div>
+
+<div class="question"><strong>14.</strong> Renewable energy faces the challenge that<br>
+A. it generates too much power<br>
+B. wind and solar are intermittent, requiring energy storage<br>
+C. it's always available<br>
+D. it requires no infrastructure<br>
+E. it's infinite</div>
+
+<div class="question"><strong>15.</strong> Energy efficiency is important because<br>
+A. wasting energy is free<br>
+B. it reduces cost, environmental impact, and resource use<br>
+C. it increases power loss<br>
+D. efficiency doesn't matter<br>
+E. it increases resistance</div>
+
+<div class="question"><strong>16.</strong> Modern electronics use capacitors extensively because<br>
+A. they're decorative<br>
+B. they store energy, filter signals, and stabilize power<br>
+C. they generate electricity<br>
+D. they replace all batteries<br>
+E. they increase resistance</div>
+
+<div class="question"><strong>17.</strong> If a 100 μF capacitor and a 200 μF capacitor are both charged to the same voltage, the 200 μF capacitor stores<br>
+A. half the energy<br>
+B. the same energy<br>
+C. twice the energy<br>
+D. four times the energy<br>
+E. one-fourth the energy</div>
+
+<div class="question"><strong>18.</strong> Energy storage is crucial for renewable energy because<br>
+A. the sun shines and wind blows constantly<br>
+B. renewable sources are variable and storage allows use when generation is low<br>
+C. storage generates extra energy<br>
+D. renewable energy doesn't work<br>
+E. storage is never needed</div>
+
+<div class="question"><strong>19.</strong> In circuit design, choosing between series and parallel depends on<br>
+A. random choice<br>
+B. whether components need the same voltage or same current<br>
+C. color preferences<br>
+D. cost only<br>
+E. ignoring requirements</div>
+
+<div class="question"><strong>20.</strong> Electric vehicles use batteries and capacitors together because<br>
+A. they're redundant<br>
+B. batteries store more energy; capacitors handle rapid charge/discharge cycles<br>
+C. they cancel each other<br>
+D. one doesn't work<br>
+E. it's unnecessary</div>
+
+<h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A capacitor has 0.0012 coulombs of charge at 6.0 volts. Calculate the capacitance using $C = Q/V$. <strong>Answer in microfarads (μF).</strong></div>
+
+<div class="question"><strong>2.</strong> Calculate the charge on a 500 μF capacitor charged to 12 volts. <strong>Answer in coulombs.</strong></div>
+
+<div class="question"><strong>3.</strong> A 2000 μF capacitor is charged to 10 volts. Calculate the energy stored using $E = (1/2)CV^2$. <strong>Answer in joules.</strong></div>
+
+<div class="question"><strong>4.</strong> Calculate the energy stored in a 1500 μF capacitor at 8.0 volts. <strong>Answer in joules.</strong></div>
+
+<div class="question"><strong>5.</strong> A 100 μF capacitor stores 0.5 joules. Calculate the voltage across it using $E = (1/2)CV^2$. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>6.</strong> Calculate the time constant for a circuit with $R = 10$ kΩ and $C = 100$ μF. <strong>Answer in seconds.</strong></div>
+
+<div class="question"><strong>7.</strong> Determine the time constant when $R = 5000$ Ω and $C = 200$ μF. <strong>Answer in seconds.</strong></div>
+
+<div class="question"><strong>8.</strong> A 500 μF capacitor is charged to 20 volts. Calculate the charge stored. <strong>Answer in coulombs.</strong></div>
+
+<div class="question"><strong>9.</strong> Calculate the energy stored in a 3000 μF capacitor at 6.0 volts. <strong>Answer in joules.</strong></div>
+
+<div class="question"><strong>10.</strong> A capacitor has 0.006 C of charge at 12 volts. Calculate its capacitance. <strong>Answer in microfarads.</strong></div>
+
+<div class="question"><strong>11.</strong> Determine the voltage across a 800 μF capacitor with 0.0096 C of charge. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>12.</strong> Calculate energy in a 250 μF capacitor charged to 24 volts. <strong>Answer in joules.</strong></div>
+
+<div class="question"><strong>13.</strong> A circuit has $R = 2.0$ MΩ and $C = 10$ μF. Calculate the time constant. <strong>Answer in seconds.</strong></div>
+
+<div class="question"><strong>14.</strong> Determine charge on a 1000 μF capacitor at 15 volts. <strong>Answer in coulombs.</strong></div>
+
+<div class="question"><strong>15.</strong> Calculate energy stored in a 600 μF capacitor at 10 volts. <strong>Answer in joules.</strong></div>
+
+<div class="question"><strong>16.</strong> A 470 μF capacitor is at 9.0 volts. Calculate the charge. <strong>Answer in coulombs.</strong></div>
+
+<div class="question"><strong>17.</strong> Calculate the capacitance if 0.003 C produces 10 volts. <strong>Answer in microfarads.</strong></div>
+
+<div class="question"><strong>18.</strong> Determine energy in a 1200 μF capacitor at 5.0 volts. <strong>Answer in joules.</strong></div>
+
+<div class="question"><strong>19.</strong> Calculate the time constant for $R = 50$ kΩ and $C = 47$ μF. <strong>Answer in seconds.</strong></div>
+
+<div class="question"><strong>20.</strong> A capacitor stores 0.08 J at 20 volts. Calculate its capacitance. <strong>Answer in microfarads.</strong></div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A 2200 μF capacitor is charged to 12 volts. Calculate: (a) charge stored, (b) energy stored. <strong>Answer: energy in joules.</strong></div>
+
+<div class="question"><strong>2.</strong> A camera flash capacitor stores 10 J of energy. If its capacitance is 1000 μF, determine the charging voltage. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>3.</strong> A circuit has a 100 kΩ resistor in series with a 220 μF capacitor. Calculate the time constant. Then determine how many seconds until the capacitor is about 63% charged (which equals one time constant). <strong>Answer: time in seconds.</strong></div>
+
+<div class="question"><strong>4.</strong> Two capacitors of 100 μF each are in parallel. Calculate the total capacitance, then determine the charge when charged to 9.0 volts. <strong>Answer: charge in coulombs.</strong></div>
+
+<div class="question"><strong>5.</strong> A 500 μF capacitor charged to 20V discharges through a 10 kΩ resistor. Calculate: (a) initial energy, (b) time constant. <strong>Answer: time constant in seconds.</strong></div>
+
+<div class="question"><strong>6.</strong> Calculate the energy stored in a 3300 μF capacitor at 15 volts, then determine how much power would be delivered if this energy is released in 0.01 seconds. <strong>Answer: power in watts.</strong></div>
+
+<div class="question"><strong>7.</strong> A power supply uses a 4700 μF capacitor charged to 25 volts. Calculate stored energy, then determine the charge. <strong>Answer: charge in coulombs.</strong></div>
+
+<div class="question"><strong>8.</strong> Two capacitors are in series: 200 μF and 300 μF. For series capacitors, $1/C_{total} = 1/C_1 + 1/C_2$. Calculate total capacitance, then find charge when charged to 12 volts. <strong>Answer: charge in coulombs.</strong></div>
+
+<div class="question"><strong>9.</strong> A 1000 μF capacitor stores 0.18 J. Calculate the voltage, then determine what charge is stored. <strong>Answer: charge in coulombs.</strong></div>
+
+<div class="question"><strong>10.</strong> An RC circuit has $R = 22$ kΩ and needs a time constant of 2.0 seconds. Calculate the required capacitance. <strong>Answer in microfarads.</strong></div>
+
+<div class="question"><strong>11.</strong> A solar energy system uses a capacitor bank with 10,000 μF total capacitance at 400 volts. Calculate the stored energy. <strong>Answer in kilojoules.</strong></div>
+
+<div class="question"><strong>12.</strong> A 680 μF capacitor at 18 volts discharges to 9.0 volts (half voltage). Calculate: (a) initial energy, (b) final energy, (c) energy released. <strong>Answer: energy released in joules.</strong></div>
+
+<div class="question"><strong>13.</strong> Three identical capacitors of 150 μF each are in parallel. Calculate total capacitance, then find total charge at 20 volts. <strong>Answer: charge in coulombs.</strong></div>
+
+<div class="question"><strong>14.</strong> A touchscreen sensor has 50 pF capacitance. When touched, it changes to 60 pF. At 3.3 volts, calculate the change in stored charge. <strong>Answer in picocoulombs (pC).</strong></div>
+
+<div class="question"><strong>15.</strong> A defibrillator capacitor of 32 μF is charged to 5000 volts. Calculate the stored energy. <strong>Answer in joules.</strong></div>
+
+<div class="question"><strong>16.</strong> An electric vehicle uses capacitors for regenerative braking. A 10 F (yes, 10 full farads) capacitor is charged to 48 volts. Calculate stored energy. <strong>Answer in kilojoules.</strong></div>
+
+<div class="question"><strong>17.</strong> A 1500 μF capacitor is charged by a constant 2.0 mA current for 10 seconds. Calculate the charge accumulated, then the final voltage. <strong>Answer: voltage in volts.</strong></div>
+
+<div class="question"><strong>18.</strong> Two capacitors in parallel: 470 μF and 1000 μF. Calculate total capacitance. At 12 volts, calculate total stored energy. <strong>Answer: energy in joules.</strong></div>
+
+<div class="question"><strong>19.</strong> A flash charges a 2000 μF capacitor to 300 volts in 5.0 seconds. Calculate stored energy, then average charging power. <strong>Answer: power in watts.</strong></div>
+
+<div class="question"><strong>20.</strong> A circuit has two capacitors in series: 100 μF and 200 μF (use reciprocal formula). Calculate equivalent capacitance, then find energy stored at 30 volts. <strong>Answer: energy in joules.</strong></div>
+
+<h2>Answer Key</h2>
+
+<h3>Bank 1 – Vocabulary</h3>
+<p>1. B | 2. B | 3. B | 4. B | 5. C | 6. B | 7. B | 8. C | 9. B | 10. B | 11. B | 12. C | 13. C | 14. B | 15. B | 16. B | 17. B | 18. B | 19. B | 20. B</p>
+
+<h3>Bank 2 – Conceptual</h3>
+<p>1. D | 2. A | 3. B | 4. B | 5. B | 6. C | 7. B | 8. B | 9. C | 10. B | 11. B | 12. B | 13. B | 14. B | 15. B | 16. B | 17. C | 18. B | 19. B | 20. B</p>
+
+<h3>Bank 3 – Single-Step Calculations</h3>
+<p>1. 200 μF | 2. 0.006 C (or 6.0 mC) | 3. 0.10 J | 4. 0.048 J | 5. 100 V | 6. 1.0 s | 7. 1.0 s | 8. 0.010 C | 9. 0.054 J | 10. 500 μF | 11. 12 V | 12. 0.072 J | 13. 20 s | 14. 0.015 C | 15. 0.030 J | 16. 0.00423 C (or 4.2 mC) | 17. 300 μF | 18. 0.015 J | 19. 2.35 s (or 2.4 s) | 20. 400 μF</p>
+
+<h3>Bank 4 – Multi-Step Calculations</h3>
+<p>1. 0.158 J (or 0.16 J) | 2. 141 V | 3. 22 s | 4. 0.0018 C (or 1.8 mC) | 5. 5.0 s | 6. 37,100 W (or 37 kW) | 7. 0.118 C (or 0.12 C) | 8. 0.00144 C (or 1.4 mC) | 9. 0.006 C (or 6.0 mC) | 10. 90.9 μF (or 91 μF) | 11. 800 kJ | 12. 0.0826 J (or 0.083 J) | 13. 0.009 C (or 9.0 mC) | 14. 33 pC | 15. 400 J | 16. 11.5 kJ | 17. 13.3 V | 18. 0.106 J | 19. 18 W | 20. 0.030 J</p>
+
+</body>
+</html>
