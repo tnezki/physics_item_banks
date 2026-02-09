@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6.2 Refraction and Snell's Law</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #003366; }
+.question { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Section 6.2 – Refraction and Snell's Law</h1>
+
+<h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> Refraction is<br>
+A. light bouncing off a surface<br>
+B. light bending as it passes between different materials<br>
+C. light being absorbed<br>
+D. light traveling in a straight line<br>
+E. light reflecting multiple times</div>
+
+<div class="question"><strong>2.</strong> Refraction occurs because<br>
+A. light reflects at boundaries<br>
+B. light changes speed when entering a different medium<br>
+C. light is absorbed<br>
+D. light always travels at the same speed<br>
+E. surfaces are rough</div>
+
+<div class="question"><strong>3.</strong> Snell's Law describes<br>
+A. reflection of light<br>
+B. the relationship between angles and indices of refraction<br>
+C. the speed of light in vacuum<br>
+D. absorption of light<br>
+E. diffraction patterns</div>
+
+<div class="question"><strong>4.</strong> The mathematical form of Snell's Law is<br>
+A. $n_1 \sin \theta_1 = n_2 \sin \theta_2$<br>
+B. $n_1 \cos \theta_1 = n_2 \cos \theta_2$<br>
+C. $\theta_1 = \theta_2$<br>
+D. $n_1 + n_2 = \sin \theta$<br>
+E. $v_1 = v_2$</div>
+
+<div class="question"><strong>5.</strong> The index of refraction is<br>
+A. the angle light makes with a surface<br>
+B. a dimensionless number indicating how much light slows in a material<br>
+C. measured in meters per second<br>
+D. always equal to 1<br>
+E. the speed of light in vacuum</div>
+
+<div class="question"><strong>6.</strong> The index of refraction $n$ is calculated as<br>
+A. $n = v/c$<br>
+B. $n = c/v$<br>
+C. $n = c \times v$<br>
+D. $n = \sin \theta$<br>
+E. $n = \lambda f$</div>
+
+<div class="question"><strong>7.</strong> In Snell's Law, $\theta_1$ represents<br>
+A. the angle of incidence<br>
+B. the angle of reflection<br>
+C. the index of refraction<br>
+D. the wavelength<br>
+E. the speed of light</div>
+
+<div class="question"><strong>8.</strong> In Snell's Law, $\theta_2$ represents<br>
+A. the angle of incidence<br>
+B. the angle of refraction<br>
+C. the speed in medium 1<br>
+D. the index of the first medium<br>
+E. the reflected angle</div>
+
+<div class="question"><strong>9.</strong> The symbol $n$ represents<br>
+A. the normal to the surface<br>
+B. the number of waves<br>
+C. the index of refraction<br>
+D. the angle of refraction<br>
+E. newtons</div>
+
+<div class="question"><strong>10.</strong> The speed of light in vacuum is represented by<br>
+A. $v$<br>
+B. $n$<br>
+C. $c$<br>
+D. $f$<br>
+E. $\lambda$</div>
+
+<div class="question"><strong>11.</strong> The index of refraction of vacuum is<br>
+A. 0<br>
+B. 1<br>
+C. 1.5<br>
+D. 3.00 × 10⁸<br>
+E. infinite</div>
+
+<div class="question"><strong>12.</strong> A medium with a higher index of refraction is considered<br>
+A. less optically dense<br>
+B. more optically dense<br>
+C. transparent<br>
+D. reflective<br>
+E. opaque</div>
+
+<div class="question"><strong>13.</strong> Optical density refers to<br>
+A. the physical mass per volume<br>
+B. how much a material slows down light<br>
+C. the color of a material<br>
+D. the transparency<br>
+E. the thickness</div>
+
+<div class="question"><strong>14.</strong> When light enters a more optically dense medium, it<br>
+A. speeds up<br>
+B. slows down<br>
+C. maintains constant speed<br>
+D. stops<br>
+E. reflects completely</div>
+
+<div class="question"><strong>15.</strong> When light enters a less optically dense medium, it<br>
+A. slows down<br>
+B. speeds up<br>
+C. maintains constant speed<br>
+D. is absorbed<br>
+E. cannot enter</div>
+
+<div class="question"><strong>16.</strong> When light bends toward the normal, it is<br>
+A. entering a less optically dense medium<br>
+B. entering a more optically dense medium<br>
+C. reflecting<br>
+D. maintaining its speed<br>
+E. experiencing total internal reflection</div>
+
+<div class="question"><strong>17.</strong> When light bends away from the normal, it is<br>
+A. entering a more optically dense medium<br>
+B. entering a less optically dense medium<br>
+C. speeding up in a denser medium<br>
+D. reflecting<br>
+E. being absorbed</div>
+
+<div class="question"><strong>18.</strong> The typical index of refraction for water is approximately<br>
+A. 1.00<br>
+B. 1.33<br>
+C. 1.50<br>
+D. 2.42<br>
+E. 3.00</div>
+
+<div class="question"><strong>19.</strong> The typical index of refraction for glass is approximately<br>
+A. 1.00<br>
+B. 1.33<br>
+C. 1.50<br>
+D. 2.00<br>
+E. 3.00</div>
+
+<div class="question"><strong>20.</strong> The typical index of refraction for diamond is approximately<br>
+A. 1.00<br>
+B. 1.33<br>
+C. 1.50<br>
+D. 2.42<br>
+E. 3.00</div>
+
+<div class="question"><strong>21.</strong> The typical index of refraction for air is approximately<br>
+A. 0.00<br>
+B. 1.00<br>
+C. 1.33<br>
+D. 1.50<br>
+E. 2.00</div>
+
+<div class="question"><strong>22.</strong> In the equation $n = c/v$, the variable $v$ represents<br>
+A. the speed of light in vacuum<br>
+B. the speed of light in the material<br>
+C. the index of refraction<br>
+D. the angle<br>
+E. volume</div>
+
+<div class="question"><strong>23.</strong> Angles in Snell's Law are always measured from<br>
+A. the surface<br>
+B. the normal<br>
+C. the horizontal<br>
+D. the refracted ray<br>
+E. any reference line</div>
+
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> A light ray travels from air into water. The ray will<br>
+A. bend away from the normal<br>
+B. bend toward the normal<br>
+C. not change direction<br>
+D. reflect completely<br>
+E. increase in speed</div>
+
+<div class="question"><strong>2.</strong> A light ray travels from water into air. The ray will<br>
+A. bend toward the normal<br>
+B. bend away from the normal<br>
+C. not change direction<br>
+D. always reflect completely<br>
+E. decrease in speed</div>
+
+<div class="question"><strong>3.</strong> A pencil partially submerged in water appears bent at the water surface because<br>
+A. water dissolves the pencil<br>
+B. refraction causes light from the submerged part to bend<br>
+C. water reflects light<br>
+D. the pencil actually bends<br>
+E. water absorbs light</div>
+
+<div class="question"><strong>4.</strong> A swimming pool appears shallower than it actually is because<br>
+A. water absorbs light<br>
+B. refraction bends light rays from the bottom upward<br>
+C. water magnifies objects<br>
+D. reflection occurs at the surface<br>
+E. the water is transparent</div>
+
+<div class="question"><strong>5.</strong> When light travels from a material with $n = 1.5$ to a material with $n = 1.0$, the light<br>
+A. slows down and bends toward the normal<br>
+B. speeds up and bends away from the normal<br>
+C. maintains speed and direction<br>
+D. slows down and bends away from the normal<br>
+E. reflects completely</div>
+
+<div class="question"><strong>6.</strong> If light enters a new medium perpendicular to the surface (along the normal), it will<br>
+A. bend toward the normal<br>
+B. bend away from the normal<br>
+C. continue straight without bending<br>
+D. reflect completely<br>
+E. stop at the boundary</div>
+
+<div class="question"><strong>7.</strong> Diamond has a higher index of refraction than glass. This means light<br>
+A. travels faster in diamond than in glass<br>
+B. travels slower in diamond than in glass<br>
+C. travels at the same speed in both<br>
+D. does not refract in diamond<br>
+E. reflects more in glass</div>
+
+<div class="question"><strong>8.</strong> A material with index of refraction $n = 2.0$ compared to one with $n = 1.5$<br>
+A. is less optically dense<br>
+B. is more optically dense<br>
+C. has the same optical density<br>
+D. allows light to travel faster<br>
+E. cannot refract light</div>
+
+<div class="question"><strong>9.</strong> White light entering a prism separates into colors because<br>
+A. different colors travel at the same speed in glass<br>
+B. different colors have slightly different indices of refraction<br>
+C. the prism creates colors<br>
+D. reflection causes color separation<br>
+E. colors are absorbed differently</div>
+
+<div class="question"><strong>10.</strong> Red light and blue light enter glass from air at the same angle. Which bends more?<br>
+A. Red light bends more<br>
+B. Blue light bends more<br>
+C. They bend equally<br>
+D. Neither bends<br>
+E. Both reflect instead</div>
+
+<div class="question"><strong>11.</strong> A light ray traveling through glass ($n = 1.5$) enters water ($n = 1.33$). The light will<br>
+A. bend toward the normal<br>
+B. bend away from the normal<br>
+C. not change direction<br>
+D. reflect completely<br>
+E. stop at the boundary</div>
+
+<div class="question"><strong>12.</strong> When light slows down entering a new medium, the wavelength<br>
+A. increases<br>
+B. decreases<br>
+C. stays the same<br>
+D. becomes zero<br>
+E. doubles</div>
+
+<div class="question"><strong>13.</strong> The frequency of light<br>
+A. changes when light enters a new medium<br>
+B. remains constant when light enters a new medium<br>
+C. always increases in denser media<br>
+D. depends on the index of refraction<br>
+E. becomes zero at boundaries</div>
+
+<div class="question"><strong>14.</strong> A fish looking up from underwater sees a person on shore. Due to refraction, the person appears<br>
+A. closer to the water than they actually are<br>
+B. farther from the water than they actually are<br>
+C. at the correct position<br>
+D. underwater<br>
+E. invisible</div>
+
+<div class="question"><strong>15.</strong> Mirages on hot roads occur because<br>
+A. water actually forms on the road<br>
+B. hot air near the road has a different index than cooler air above<br>
+C. roads reflect light like mirrors<br>
+D. roads emit light<br>
+E. dust scatters light</div>
+
+<div class="question"><strong>16.</strong> Light travels from medium A ($n = 1.2$) to medium B ($n = 1.8$) at an angle of incidence of 30°. The angle of refraction will be<br>
+A. greater than 30°<br>
+B. less than 30°<br>
+C. equal to 30°<br>
+D. 90°<br>
+E. 0°</div>
+
+<div class="question"><strong>17.</strong> Light travels from diamond ($n = 2.42$) to water ($n = 1.33$) at 20° to the normal. The refracted ray will<br>
+A. bend toward the normal<br>
+B. bend away from the normal<br>
+C. travel straight<br>
+D. reflect completely<br>
+E. be absorbed</div>
+
+<div class="question"><strong>18.</strong> The sparkle of a diamond is enhanced by<br>
+A. its low index of refraction<br>
+B. its high index of refraction causing significant refraction<br>
+C. reflection only<br>
+D. absorption of light<br>
+E. its color</div>
+
+<div class="question"><strong>19.</strong> Eyeglasses correct vision by<br>
+A. reflecting light<br>
+B. using refraction to bend light to focus properly on the retina<br>
+C. absorbing excess light<br>
+D. blocking light<br>
+E. scattering light</div>
+
+<div class="question"><strong>20.</strong> When light passes through a parallel-sided glass block at an angle, it<br>
+A. emerges parallel to its original direction but displaced<br>
+B. emerges at a different angle than it entered<br>
+C. reflects back<br>
+D. is completely absorbed<br>
+E. stops in the glass</div>
+
+<div class="question"><strong>21.</strong> Atmospheric refraction causes the sun to appear<br>
+A. higher in the sky than it actually is near the horizon<br>
+B. lower in the sky than it actually is<br>
+C. in its correct position<br>
+D. multiple times<br>
+E. invisible</div>
+
+<div class="question"><strong>22.</strong> Fiber optic cables use refraction to<br>
+A. create light<br>
+B. guide light through cables by repeated refractions at boundaries<br>
+C. block light<br>
+D. reflect all light<br>
+E. absorb signals</div>
+
+<h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> Calculate the index of refraction for a material in which light travels at $2.00 \times 10^8$ m/s. Use $c = 3.00 \times 10^8$ m/s.</div>
+
+<div class="question"><strong>2.</strong> Determine the index of refraction for a material where light travels at $1.97 \times 10^8$ m/s.</div>
+
+<div class="question"><strong>3.</strong> An optical engineer is testing a new glass formulation with an index of refraction of 1.52. Calculate the speed of light in this material in m/s using $c = 3.00 \times 10^8$ m/s.</div>
+
+<div class="question"><strong>4.</strong> Determine the speed of light in diamond ($n = 2.42$) in m/s. Use $c = 3.00 \times 10^8$ m/s.</div>
+
+<div class="question"><strong>5.</strong> Light travels at $2.25 \times 10^8$ m/s in water. Calculate the index of refraction for water.</div>
+
+<div class="question"><strong>6.</strong> A manufacturer needs to verify the optical properties of glass with $n = 1.60$. Calculate the speed of light in this glass in m/s.</div>
+
+<div class="question"><strong>7.</strong> Light enters glass ($n = 1.50$) from air ($n = 1.00$) at an angle of incidence of 30.0°. Use Snell's Law to calculate the angle of refraction in degrees.</div>
+
+<div class="question"><strong>8.</strong> Calculate the angle of refraction in air when a light ray travels from water ($n = 1.33$) into air ($n = 1.00$) at an angle of incidence of 25.0°.</div>
+
+<div class="question"><strong>9.</strong> A diver underwater shines a flashlight toward the surface at 45.0° to the normal. Light passes from water ($n = 1.33$) into air ($n = 1.00$). Determine the angle of refraction in degrees.</div>
+
+<div class="question"><strong>10.</strong> A light beam enters diamond ($n = 2.42$) from air at an angle of incidence of 20.0°. Calculate the angle of refraction in degrees.</div>
+
+<div class="question"><strong>11.</strong> Light travels from glass ($n = 1.50$) into water ($n = 1.33$) at an angle of incidence of 35.0°. Determine the angle of refraction in degrees.</div>
+
+<div class="question"><strong>12.</strong> Calculate the index of refraction of a liquid when a laser beam in air strikes the surface at 48.0° to the normal and the refracted ray is at 32.0° to the normal.</div>
+
+<div class="question"><strong>13.</strong> Light enters a material at 55.0° to the normal and refracts to 28.0°. If the incident material is air ($n = 1.00$), calculate the index of refraction of the material.</div>
+
+<div class="question"><strong>14.</strong> A researcher is testing optical fiber materials. A light ray passes from a material with $n = 1.80$ into air at an angle of incidence of 22.0°. Calculate the angle of refraction in degrees.</div>
+
+<div class="question"><strong>15.</strong> Light travels from air into a material at an angle of incidence of 60.0°. The angle of refraction is 35.0°. Determine the index of refraction of the material.</div>
+
+<div class="question"><strong>16.</strong> Calculate the speed of light in a material with an index of refraction of 1.75 in m/s.</div>
+
+<div class="question"><strong>17.</strong> Determine the angle of refraction in air when light in glass ($n = 1.52$) strikes the glass-air boundary at 28.0° to the normal.</div>
+
+<div class="question"><strong>18.</strong> A light ray enters water ($n = 1.33$) from air at 50.0° to the normal. Determine the angle of refraction in degrees.</div>
+
+<div class="question"><strong>19.</strong> A jeweler examines how light behaves in a diamond. Light passes from diamond ($n = 2.42$) into glass ($n = 1.50$) at an angle of incidence of 15.0°. Calculate the angle of refraction in degrees.</div>
+
+<div class="question"><strong>20.</strong> Calculate the index of refraction for a substance in which light travels at $2.40 \times 10^8$ m/s.</div>
+
+<div class="question"><strong>21.</strong> Light travels from air into a material with $n = 1.45$ at an angle of incidence of 38.0°. Calculate the angle of refraction in degrees.</div>
+
+<div class="question"><strong>22.</strong> Determine the speed of light in a material with an index of refraction of 2.00 in m/s.</div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> Light enters a glass block ($n = 1.50$) from air at 40.0° to the normal. Calculate the difference between the angle of incidence and angle of refraction in degrees.</div>
+
+<div class="question"><strong>2.</strong> Calculate the angle of refraction in glass ($n = 1.50$) when a light ray travels from air into water ($n = 1.33$) at 50.0° to the normal, then from water into glass.</div>
+
+<div class="question"><strong>3.</strong> A physics student tests light transmission through a glass block. Light enters a rectangular glass block ($n = 1.52$) from air at 35.0° to the normal and exits into air on the opposite parallel face. Calculate the exit angle in air in degrees.</div>
+
+<div class="question"><strong>4.</strong> A light ray passes from air through a glass plate ($n = 1.60$) that is 2.0 cm thick. The angle of incidence is 45.0°. Calculate the angle of refraction inside the glass in degrees.</div>
+
+<div class="question"><strong>5.</strong> Light travels from air into Material A with $n = 1.40$ at 30.0° to the normal. The light then enters Material B from Material A at the same angle to a new normal. If the final angle of refraction in Material B is 25.0°, calculate the index of refraction of Material B.</div>
+
+<div class="question"><strong>6.</strong> Determine the final angle of refraction in glass ($n = 1.50$) when a laser beam in air strikes water ($n = 1.33$) at 55.0°, refracts through the water, and strikes a glass surface at the same angle to the new normal.</div>
+
+<div class="question"><strong>7.</strong> An optics researcher is measuring wavelength changes in different media. Light with wavelength 600 nm in air ($n = 1.00$) enters glass with $n = 1.50$. First calculate the speed of light in glass, then calculate the wavelength of light in glass in nanometers (nm).</div>
+
+<div class="question"><strong>8.</strong> A beam of light travels through three layers: air ($n = 1.00$), water ($n = 1.33$), and glass ($n = 1.52$). The incident angle in air is 40.0°. Calculate the angle of refraction in the glass in degrees.</div>
+
+<div class="question"><strong>9.</strong> Light enters a prism with $n = 1.60$ at 45.0° to the normal. After refracting at the first surface, the light travels through the prism and exits at a second surface into air. If the light hits the second surface at 30.0° to that surface's normal, calculate the exit angle into air in degrees.</div>
+
+<div class="question"><strong>10.</strong> Calculate by what angle the light ray is bent toward the normal when a light ray in air strikes a pond surface at 60.0° to the normal, given that water has $n = 1.33$.</div>
+
+<div class="question"><strong>11.</strong> A diver underwater ($n = 1.33$) shines a light at the water-air surface at 35.0° to the normal. Calculate the angle between the refracted ray in air and the water surface in degrees.</div>
+
+<div class="question"><strong>12.</strong> Determine by how much the ray direction changed when light enters a 3.0-cm-thick glass block ($n = 1.50$) from air at 50.0° and refracts.</div>
+
+<div class="question"><strong>13.</strong> An engineer is designing optical components and needs to know light speed changes. A material has an index of refraction of 1.80. Calculate the speed of light in this material, then determine what percentage of the speed of light in vacuum this represents.</div>
+
+<div class="question"><strong>14.</strong> Light travels from crown glass ($n = 1.52$) into flint glass ($n = 1.65$) at 28.0° to the normal. Calculate the angle of refraction in flint glass in degrees.</div>
+
+<div class="question"><strong>15.</strong> A light beam enters water ($n = 1.33$) from air at 48.0°. After traveling through 1.5 m of water, it enters a glass block ($n = 1.50$) below. If the water-glass boundary is parallel to the air-water boundary, calculate the angle of refraction in the glass in degrees.</div>
+
+<div class="question"><strong>16.</strong> Calculate the new wavelength in a material with $n = 2.00$ when light with a wavelength of 500 nm travels through air ($n = 1.00$) and enters this material.</div>
+
+<div class="question"><strong>17.</strong> A laser beam passes through a stack of three transparent materials: first with $n = 1.30$, second with $n = 1.50$, and third with $n = 1.70$. The incident angle in the first material is 25.0°. Calculate the angle of refraction in the third material in degrees.</div>
+
+<div class="question"><strong>18.</strong> Determine the angle between the refracted ray and the surface itself when light enters a material with $n = 1.45$ from air at 42.0° and refracts.</div>
+
+<div class="question"><strong>19.</strong> A jeweler tests how light behaves in a diamond. A beam of light in air ($n = 1.00$) strikes a diamond ($n = 2.42$) at 30.0° to the normal. Calculate the angle of refraction in diamond, then determine the speed of light in the diamond in m/s. Give the speed as your answer.</div>
+
+<div class="question"><strong>20.</strong> Light passes from air into an unknown liquid at 50.0° and refracts to 32.0°. Calculate the index of refraction of the liquid, then calculate the speed of light in this liquid in m/s. Give the speed as your answer.</div>
+
+<div class="question"><strong>21.</strong> Calculate the total change in angle from initial direction in air to final direction in air when a light ray enters a triangular glass prism ($n = 1.50$) at 40.0° to the normal on one face, refracts through the glass, strikes the opposite face at 25.0° to that surface's normal, and exits into air.</div>
+
+<div class="question"><strong>22.</strong> An astronomer is studying how light wavelength changes in different media. Light with frequency $5.00 \times 10^{14}$ Hz travels in air where its wavelength is 600 nm. Calculate the wavelength when this light enters water ($n = 1.33$) in nanometers (nm), given that frequency remains constant.</div>
+
+<h2>Answer Key</h2>
+
+<h3>Bank 1 – Vocabulary</h3>
+<p>1. B | 2. B | 3. B | 4. A | 5. B | 6. B | 7. A | 8. B | 9. C | 10. C | 11. B | 12. B | 13. B | 14. B | 15. B | 16. B | 17. B | 18. B | 19. C | 20. D | 21. B | 22. B | 23. B</p>
+
+<h3>Bank 2 – Conceptual</h3>
+<p>1. B | 2. B | 3. B | 4. B | 5. B | 6. C | 7. B | 8. B | 9. B | 10. B | 11. B | 12. B | 13. B | 14. A | 15. B | 16. B | 17. B | 18. B | 19. B | 20. A | 21. A | 22. B</p>
+
+<h3>Bank 3 – Single-Step Calculations</h3>
+<p>1. 1.50 | 2. 1.52 | 3. 1.97 × 10⁸ m/s | 4. 1.24 × 10⁸ m/s | 5. 1.33 | 6. 1.88 × 10⁸ m/s | 7. 19.5° | 8. 33.7° | 9. 32.1° | 10. 8.17° | 11. 39.6° | 12. 1.45 | 13. 1.75 | 14. 40.9° | 15. 1.51 | 16. 1.71 × 10⁸ m/s | 17. 44.6° | 18. 35.2° | 19. 24.6° | 20. 1.25 | 21. 25.3° | 22. 1.50 × 10⁸ m/s</p>
+
+<h3>Bank 4 – Multi-Step Calculations</h3>
+<p>1. 14.5° | 2. 32.0° | 3. 35.0° | 4. 26.4° | 5. 1.47 | 6. 33.1° | 7. 400 nm | 8. 24.3° | 9. 50.6° | 10. 19.9° | 11. 52.2° | 12. 18.9° | 13. 55.6% | 14. 25.7° | 15. 29.1° | 16. 250 nm | 17. 19.1° | 18. 61.6° | 19. 1.24 × 10⁸ m/s | 20. 2.20 × 10⁸ m/s | 21. 80.6° | 22. 451 nm</p>
+
+</body>
+</html>
