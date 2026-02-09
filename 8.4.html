@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.4 Complex Circuit Analysis</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #003366; }
+.question { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Section 8.4 – Complex Circuit Analysis</h1>
+
+<h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> A complex circuit is one that<br>
+A. has only series connections<br>
+B. has only parallel connections<br>
+C. combines both series and parallel connections<br>
+D. has no resistors<br>
+E. cannot be analyzed</div>
+
+<div class="question"><strong>2.</strong> An equivalent resistance is<br>
+A. the largest resistance in a circuit<br>
+B. a single resistance that produces the same effect as a combination<br>
+C. always zero<br>
+D. the average resistance<br>
+E. infinite</div>
+
+<div class="question"><strong>3.</strong> When analyzing a complex circuit, you should first<br>
+A. calculate power<br>
+B. identify which components are in series and which are in parallel<br>
+C. measure voltage<br>
+D. replace the battery<br>
+E. disconnect all components</div>
+
+<div class="question"><strong>4.</strong> In a series-parallel circuit, resistors in series should be<br>
+A. ignored<br>
+B. combined by adding their resistances<br>
+C. combined using the parallel formula<br>
+D. left unchanged<br>
+E. removed</div>
+
+<div class="question"><strong>5.</strong> In a series-parallel circuit, resistors in parallel should be<br>
+A. combined by adding resistances<br>
+B. combined using the reciprocal formula<br>
+C. ignored<br>
+D. multiplied together<br>
+E. left separate</div>
+
+<div class="question"><strong>6.</strong> To simplify a complex circuit, you should<br>
+A. start with the most complex part<br>
+B. work from the inside out, reducing small groups first<br>
+C. never combine resistors<br>
+D. only look at series connections<br>
+E. remove all parallel connections</div>
+
+<div class="question"><strong>7.</strong> After finding total resistance in a complex circuit, the next step is typically to calculate<br>
+A. voltage across each resistor<br>
+B. total current from the battery<br>
+C. power in each resistor<br>
+D. time<br>
+E. charge</div>
+
+<div class="question"><strong>8.</strong> In circuit design, if you want components to operate independently, use<br>
+A. series connections<br>
+B. parallel connections<br>
+C. no connections<br>
+D. series only<br>
+E. single resistor</div>
+
+<div class="question"><strong>9.</strong> In circuit design, if you need to reduce voltage, use<br>
+A. parallel resistors<br>
+B. series resistors as voltage dividers<br>
+C. no resistors<br>
+D. only capacitors<br>
+E. short circuits</div>
+
+<div class="question"><strong>10.</strong> When designing a circuit, you must verify that<br>
+A. all resistors are the same<br>
+B. no component exceeds its power rating<br>
+C. voltage is zero<br>
+D. current is infinite<br>
+E. there are no batteries</div>
+
+<div class="question"><strong>11.</strong> A nested circuit is one that<br>
+A. has only one resistor<br>
+B. has multiple levels of series and parallel combinations<br>
+C. has no connections<br>
+D. cannot be solved<br>
+E. has infinite resistance</div>
+
+<div class="question"><strong>12.</strong> To find current through a specific resistor in a complex circuit, first find<br>
+A. only the resistance of that resistor<br>
+B. the voltage across that resistor, then apply Ohm's Law<br>
+C. the power<br>
+D. the time<br>
+E. nothing</div>
+
+<div class="question"><strong>13.</strong> In a series-parallel circuit with a series section and then parallel branches, the current through the series section equals<br>
+A. zero<br>
+B. the total current from the battery<br>
+C. the current in one parallel branch<br>
+D. half the total current<br>
+E. infinite</div>
+
+<div class="question"><strong>14.</strong> Circuit diagrams use<br>
+A. photographs only<br>
+B. standard symbols to represent components<br>
+C. random drawings<br>
+D. no symbols<br>
+E. only words</div>
+
+<div class="question"><strong>15.</strong> When two resistors are in series with each other and this combination is in parallel with a third resistor, to find total resistance you should<br>
+A. add all three resistances<br>
+B. first add the two series resistors, then use parallel formula with the third<br>
+C. use parallel formula for all three<br>
+D. multiply all resistances<br>
+E. give up</div>
+
+<div class="question"><strong>16.</strong> A power rating on a resistor indicates<br>
+A. how much power it generates<br>
+B. the maximum power it can safely dissipate<br>
+C. the voltage it requires<br>
+D. the current it produces<br>
+E. nothing important</div>
+
+<div class="question"><strong>17.</strong> If a resistor's power dissipation exceeds its rating, it will<br>
+A. work better<br>
+B. overheat and possibly be damaged<br>
+C. produce more current<br>
+D. cool down<br>
+E. become a battery</div>
+
+<div class="question"><strong>18.</strong> The formula $P = I^2R$ is used to calculate<br>
+A. voltage<br>
+B. power dissipated in a resistor<br>
+C. current<br>
+D. resistance<br>
+E. time</div>
+
+<div class="question"><strong>19.</strong> In complex circuit analysis, working backward means<br>
+A. never solving the circuit<br>
+B. after finding total current, using it to find voltages and branch currents<br>
+C. starting with the answer<br>
+D. removing components<br>
+E. reversing the battery</div>
+
+<div class="question"><strong>20.</strong> Engineers design circuits to meet specific requirements such as<br>
+A. making them as complicated as possible<br>
+B. target current, voltage, efficiency, and safety<br>
+C. using all available components<br>
+D. avoiding any calculations<br>
+E. ignoring Ohm's Law</div>
+
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> A circuit has $R_1 = 10$Ω in series with ($R_2 = 20$Ω parallel with $R_3 = 30$Ω). Which is the correct order of operations to find total resistance?<br>
+A. Add all three, then use parallel formula<br>
+B. First find equivalent of $R_2$ and $R_3$ in parallel, then add $R_1$<br>
+C. Use parallel formula for all three<br>
+D. Multiply all three<br>
+E. Cannot be solved</div>
+
+<div class="question"><strong>2.</strong> If you simplify a complex circuit and get $R_{total} = 15$Ω with a 45V battery, the total current is<br>
+A. 0.33 A<br>
+B. 30 A<br>
+C. 3.0 A<br>
+D. 675 A<br>
+E. Cannot be determined</div>
+
+<div class="question"><strong>3.</strong> In a circuit with $R_1$ in series with ($R_2$ parallel with $R_3$), if the total current is 2.0 A, the current through $R_1$ is<br>
+A. 1.0 A<br>
+B. 2.0 A<br>
+C. 4.0 A<br>
+D. 0.5 A<br>
+E. varies</div>
+
+<div class="question"><strong>4.</strong> Two 30Ω resistors in parallel give an equivalent of 15Ω. If this combination is in series with a 10Ω resistor, the total resistance is<br>
+A. 10Ω<br>
+B. 15Ω<br>
+C. 25Ω<br>
+D. 30Ω<br>
+E. 55Ω</div>
+
+<div class="question"><strong>5.</strong> A circuit has three resistors. You measure: total voltage is 24V, current through a series resistor is 2.0A. This series resistor has 12Ω. The voltage across it is<br>
+A. 2.0 V<br>
+B. 6.0 V<br>
+C. 12 V<br>
+D. 24 V<br>
+E. 48 V</div>
+
+<div class="question"><strong>6.</strong> If the voltage across a series resistor is 12V and total battery voltage is 24V, the voltage across the rest of the circuit is<br>
+A. 36 V<br>
+B. 24 V<br>
+C. 12 V<br>
+D. 6 V<br>
+E. 0 V</div>
+
+<div class="question"><strong>7.</strong> In a properly designed circuit for LEDs, you would typically use<br>
+A. only series connections<br>
+B. only parallel connections<br>
+C. series resistors for current limiting, with LEDs in parallel for brightness<br>
+D. no resistors<br>
+E. short circuits</div>
+
+<div class="question"><strong>8.</strong> A car interior light system with 4 lights should use<br>
+A. series so all get equal current<br>
+B. parallel so each gets full voltage<br>
+C. no connections<br>
+D. series for safety<br>
+E. one light only</div>
+
+<div class="question"><strong>9.</strong> If a 10Ω resistor is rated for 5W maximum power, the maximum safe current is approximately<br>
+A. 0.5 A<br>
+B. 0.71 A<br>
+C. 2.0 A<br>
+D. 50 A<br>
+E. Cannot be determined</div>
+
+<div class="question"><strong>10.</strong> A circuit has ($R_1$ parallel with $R_2$) in series with $R_3$. If $R_1 = R_2 = 20$Ω and $R_3 = 10$Ω, the total resistance is<br>
+A. 50Ω<br>
+B. 30Ω<br>
+C. 20Ω<br>
+D. 15Ω<br>
+E. 10Ω</div>
+
+<div class="question"><strong>11.</strong> In a complex circuit, if you know the voltage across parallel branches and the resistance of each branch, you can find<br>
+A. nothing<br>
+B. the current through each branch using Ohm's Law<br>
+C. the battery brand<br>
+D. the temperature<br>
+E. the color of wires</div>
+
+<div class="question"><strong>12.</strong> Three resistors $R_1 = 5$Ω, $R_2 = 10$Ω, $R_3 = 15$Ω are configured as: ($R_1$ series with $R_2$) parallel with $R_3$. The equivalent resistance of the ($R_1 + R_2$) branch is<br>
+A. 5Ω<br>
+B. 10Ω<br>
+C. 15Ω<br>
+D. 25Ω<br>
+E. 30Ω</div>
+
+<div class="question"><strong>13.</strong> Using the configuration from Q12, the next step is to find the equivalent of 15Ω parallel with 15Ω, which is<br>
+A. 30Ω<br>
+B. 15Ω<br>
+C. 7.5Ω<br>
+D. 3.75Ω<br>
+E. 0Ω</div>
+
+<div class="question"><strong>14.</strong> When designing a circuit with a 12V battery to power devices needing different voltages, you would use<br>
+A. only parallel connections<br>
+B. series resistors as voltage dividers<br>
+C. no components<br>
+D. multiple batteries<br>
+E. magic</div>
+
+<div class="question"><strong>15.</strong> If a resistor dissipates 10W of power at 5A of current, its resistance is<br>
+A. 2Ω<br>
+B. 0.4Ω<br>
+C. 50Ω<br>
+D. 10Ω<br>
+E. 5Ω</div>
+
+<div class="question"><strong>16.</strong> A circuit design is verified by<br>
+A. guessing<br>
+B. calculating all voltages, currents, and powers to ensure they're safe<br>
+C. ignoring all calculations<br>
+D. hoping it works<br>
+E. using the biggest resistors</div>
+
+<div class="question"><strong>17.</strong> Complex circuits are simplified by<br>
+A. removing all components<br>
+B. step-by-step combining equivalent resistances<br>
+C. adding more resistors<br>
+D. increasing voltage to infinity<br>
+E. ignoring series connections</div>
+
+<div class="question"><strong>18.</strong> If total circuit resistance is 8Ω and battery voltage is 24V, but you measure only 20V at the battery terminals under load, this suggests<br>
+A. everything is perfect<br>
+B. the battery has internal resistance causing voltage drop<br>
+C. the meter is broken<br>
+D. resistance is too low<br>
+E. current is negative</div>
+
+<div class="question"><strong>19.</strong> A well-designed circuit protects components by<br>
+A. using the highest possible voltages<br>
+B. ensuring current and power ratings are not exceeded<br>
+C. making everything series<br>
+D. removing all resistors<br>
+E. ignoring safety</div>
+
+<div class="question"><strong>20.</strong> When analyzing nested circuits, you should<br>
+A. panic<br>
+B. identify the innermost series or parallel groups first<br>
+C. give up<br>
+D. ignore all but one resistor<br>
+E. use random numbers</div>
+
+<h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> Two resistors of 12Ω and 18Ω are in parallel. This combination is in series with a 5.0Ω resistor. First find the parallel equivalent, which is 7.2Ω. Now calculate the total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>2.</strong> Calculate the equivalent resistance of 20Ω in parallel with 30Ω. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>3.</strong> A 10Ω resistor is in series with the equivalent from Q2 (12Ω). Calculate total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>4.</strong> Two 40Ω resistors in series give 80Ω. This is in parallel with a 40Ω resistor. Calculate total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>5.</strong> A circuit has total resistance of 15Ω and is powered by 45V. Calculate the total current. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>6.</strong> If 3.0A flows through a 12Ω series resistor, calculate the voltage drop across it. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>7.</strong> A battery supplies 60V. A series resistor drops 20V. Determine the voltage remaining for the rest of the circuit. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>8.</strong> A parallel section has 24V across it with branches of 12Ω and 24Ω. Calculate current through the 12Ω branch. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>9.</strong> Determine current through a 24Ω branch when 24V is across it. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>10.</strong> If currents of 2.0A and 1.0A flow through two parallel branches, calculate the total current. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>11.</strong> A resistor has 6.0A flowing through it and 18Ω resistance. Calculate power dissipated using $P = I^2R$. <strong>Answer in watts.</strong></div>
+
+<div class="question"><strong>12.</strong> Calculate power dissipated in a resistor with 12V across it and 3.0Ω resistance using $P = V^2/R$. <strong>Answer in watts.</strong></div>
+
+<div class="question"><strong>13.</strong> Three resistors in series: 8Ω, 12Ω, and 20Ω. Calculate total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>14.</strong> Three resistors of 6.0Ω, 12Ω, and 18Ω are in parallel. Calculate $1/R_{total}$, which equals $1/6 + 1/12 + 1/18 = 0.333$. Now calculate $R_{total}$. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>15.</strong> A 5.0Ω resistor in series with the result from Q14 (3.0Ω). Calculate total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>16.</strong> Calculate equivalent resistance: ($R_1 = 15$Ω series with $R_2 = 25$Ω) = 40Ω. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>17.</strong> The 40Ω from Q16 is in parallel with 60Ω. Calculate total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>18.</strong> If 4.0A flows and creates a 20V drop, calculate the resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>19.</strong> A 10Ω resistor is rated for 25W. Calculate maximum safe current using $P = I^2R$. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>20.</strong> Calculate power when 5.0A flows through 8.0Ω. <strong>Answer in watts.</strong></div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A circuit has $R_1 = 8$Ω in series with ($R_2 = 12$Ω parallel with $R_3 = 12$Ω), powered by 28V. Calculate: (a) parallel equivalent, (b) total resistance, (c) total current. <strong>Answer: total current in amperes.</strong></div>
+
+<div class="question"><strong>2.</strong> Using the circuit from Q1, calculate the voltage drop across $R_1$ using the total current of 2.0A. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>3.</strong> From Q1-Q2: If voltage across $R_1$ is 16V and battery is 28V, calculate voltage across the parallel section. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>4.</strong> A circuit has ($R_1 = 30$Ω parallel with $R_2 = 60$Ω) in series with $R_3 = 15$Ω, powered by 105V. Calculate: (a) parallel equivalent, (b) total resistance, (c) total current. <strong>Answer: total current in amperes.</strong></div>
+
+<div class="question"><strong>5.</strong> From Q4: with 3.0A total current and $R_3 = 15$Ω, calculate voltage drop across $R_3$. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>6.</strong> From Q4-Q5: Total voltage 105V minus 45V across $R_3$ leaves voltage for parallel section. Calculate current through 30Ω branch. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>7.</strong> Three resistors: $R_1 = 10$Ω, $R_2 = 20$Ω, $R_3 = 30$Ω. Circuit: $R_1$ series with ($R_2$ parallel $R_3$). Calculate total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>8.</strong> Using Q7 result and a 48V battery, calculate total current. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>9.</strong> From Q7-Q8: Calculate voltage drop across $R_1 = 10$Ω with current from Q8. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>10.</strong> Two 50Ω resistors in series give 100Ω. This is in parallel with a 100Ω resistor. Calculate total resistance, then find current from a 50V battery. <strong>Answer: current in amperes.</strong></div>
+
+<div class="question"><strong>11.</strong> Design problem: You have 24V and need to provide 12V at 2.0A to a load. A series resistor will drop the extra 12V. Calculate required series resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>12.</strong> From Q11: Calculate power dissipated in the 6.0Ω series resistor carrying 2.0A. <strong>Answer in watts.</strong></div>
+
+<div class="question"><strong>13.</strong> A circuit has three parallel branches: 10Ω, 20Ω, and 30Ω, powered by 60V. Calculate equivalent resistance (use reciprocal formula). <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>14.</strong> From Q13: With equivalent of 5.45Ω and 60V, calculate total current. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>15.</strong> From Q13-Q14: Calculate current through the 10Ω branch. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>16.</strong> A circuit: $R_1 = 5$Ω series with ($R_2 = 15$Ω series with $R_3 = 25$Ω) parallel with $R_4 = 20$Ω. First calculate ($R_2 + R_3$), then equivalent with $R_4$ parallel, then total with $R_1$. <strong>Answer: total resistance in ohms.</strong></div>
+
+<div class="question"><strong>17.</strong> Using Q16 result and 40V battery, calculate total current. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>18.</strong> From Q16-Q17: Calculate voltage drop across $R_1 = 5$Ω. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>19.</strong> A power strip has 4 devices in parallel: 100Ω, 200Ω, 300Ω, and 600Ω, at 120V. Calculate equivalent resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>20.</strong> From Q19: Calculate total current drawn from the 120V outlet. <strong>Answer in amperes.</strong></div>
+
+<h2>Answer Key</h2>
+
+<h3>Bank 1 – Vocabulary</h3>
+<p>1. C | 2. B | 3. B | 4. B | 5. B | 6. B | 7. B | 8. B | 9. B | 10. B | 11. B | 12. B | 13. B | 14. B | 15. B | 16. B | 17. B | 18. B | 19. B | 20. B</p>
+
+<h3>Bank 2 – Conceptual</h3>
+<p>1. B | 2. C | 3. B | 4. C | 5. D | 6. C | 7. C | 8. B | 9. B | 10. C | 11. B | 12. C | 13. C | 14. B | 15. B | 16. B | 17. B | 18. B | 19. B | 20. B</p>
+
+<h3>Bank 3 – Single-Step Calculations</h3>
+<p>1. 12.2 Ω (or 12 Ω) | 2. 12 Ω | 3. 22 Ω | 4. 27 Ω (or 26.7 Ω) | 5. 3.0 A | 6. 36 V | 7. 40 V | 8. 2.0 A | 9. 1.0 A | 10. 3.0 A | 11. 648 W (or 650 W) | 12. 48 W | 13. 40 Ω | 14. 3.0 Ω | 15. 8.0 Ω | 16. 40 Ω | 17. 24 Ω | 18. 5.0 Ω | 19. 1.58 A (or 1.6 A) | 20. 200 W</p>
+
+<h3>Bank 4 – Multi-Step Calculations</h3>
+<p>1. 2.0 A | 2. 16 V | 3. 12 V | 4. 3.0 A | 5. 45 V | 6. 2.0 A | 7. 22 Ω | 8. 2.18 A (or 2.2 A) | 9. 21.8 V (or 22 V) | 10. 1.0 A | 11. 6.0 Ω | 12. 24 W | 13. 5.45 Ω | 14. 11.0 A | 15. 6.0 A | 16. 21 Ω | 17. 1.9 A | 18. 9.5 V | 19. 60 Ω | 20. 2.0 A</p>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.3 Series and Parallel Circuits</title>
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #003366; }
+.question { margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Section 8.3 – Series and Parallel Circuits</h1>
+
+<h2>Bank 1 – Vocabulary (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> A series circuit is one where<br>
+A. components are connected in multiple paths<br>
+B. all components are connected in a single path<br>
+C. voltage is the same everywhere<br>
+D. current splits among branches<br>
+E. components work independently</div>
+
+<div class="question"><strong>2.</strong> A parallel circuit is one where<br>
+A. all components are in a single path<br>
+B. components are connected so there are multiple paths for current<br>
+C. current is the same everywhere<br>
+D. voltages add up<br>
+E. if one fails, all fail</div>
+
+<div class="question"><strong>3.</strong> In a series circuit, the current<br>
+A. splits among components<br>
+B. is different at each component<br>
+C. is the same everywhere in the circuit<br>
+D. increases at each resistor<br>
+E. becomes zero at the last component</div>
+
+<div class="question"><strong>4.</strong> In a series circuit, the voltages across components<br>
+A. are all equal<br>
+B. add up to equal the source voltage<br>
+C. are all zero<br>
+D. cancel each other out<br>
+E. are infinite</div>
+
+<div class="question"><strong>5.</strong> In a series circuit, the total resistance is calculated by<br>
+A. adding all resistances: $R_{total} = R_1 + R_2 + R_3$<br>
+B. adding reciprocals: $\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2}$<br>
+C. multiplying all resistances<br>
+D. averaging all resistances<br>
+E. using only the largest resistance</div>
+
+<div class="question"><strong>6.</strong> In a parallel circuit, the voltage<br>
+A. divides among the components<br>
+B. is the same across all components<br>
+C. adds up across components<br>
+D. is zero in some branches<br>
+E. increases in each branch</div>
+
+<div class="question"><strong>7.</strong> In a parallel circuit, the currents in the branches<br>
+A. are all equal<br>
+B. add up to equal the total current<br>
+C. are all zero<br>
+D. are the same everywhere<br>
+E. cancel out</div>
+
+<div class="question"><strong>8.</strong> In a parallel circuit, the total resistance is calculated using<br>
+A. $R_{total} = R_1 + R_2 + R_3$<br>
+B. $\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$<br>
+C. $R_{total} = R_1 \times R_2 \times R_3$<br>
+D. $R_{total} = \frac{R_1 + R_2}{2}$<br>
+E. $R_{total}$ equals the largest resistance</div>
+
+<div class="question"><strong>9.</strong> Adding resistors in series causes the total resistance to<br>
+A. decrease<br>
+B. stay the same<br>
+C. increase<br>
+D. become zero<br>
+E. become infinite</div>
+
+<div class="question"><strong>10.</strong> Adding resistors in parallel causes the total resistance to<br>
+A. increase<br>
+B. stay the same<br>
+C. decrease<br>
+D. equal the sum of resistances<br>
+E. become infinite</div>
+
+<div class="question"><strong>11.</strong> The total resistance of resistors in parallel is always<br>
+A. larger than the largest individual resistance<br>
+B. equal to the average resistance<br>
+C. less than the smallest individual resistance<br>
+D. equal to the sum of resistances<br>
+E. infinite</div>
+
+<div class="question"><strong>12.</strong> In a series circuit, if one component fails<br>
+A. other components continue working<br>
+B. voltage increases<br>
+C. the entire circuit stops working<br>
+D. current increases<br>
+E. nothing happens</div>
+
+<div class="question"><strong>13.</strong> In a parallel circuit, if one component fails<br>
+A. the entire circuit stops<br>
+B. other components continue working<br>
+C. voltage decreases to zero<br>
+D. all current stops<br>
+E. total resistance becomes infinite</div>
+
+<div class="question"><strong>14.</strong> Household electrical outlets are wired in<br>
+A. series so they share voltage<br>
+B. parallel so each gets full voltage<br>
+C. series so current is the same<br>
+D. neither series nor parallel<br>
+E. series for safety</div>
+
+<div class="question"><strong>15.</strong> Old Christmas light strings where one burned bulb caused all lights to go out were wired in<br>
+A. parallel<br>
+B. series<br>
+C. a combination<br>
+D. neither<br>
+E. reverse parallel</div>
+
+<div class="question"><strong>16.</strong> For two equal resistors $R$ in parallel, the total resistance is<br>
+A. $2R$<br>
+B. $R$<br>
+C. $\frac{R}{2}$<br>
+D. $\frac{R}{4}$<br>
+E. $4R$</div>
+
+<div class="question"><strong>17.</strong> In a series circuit with resistors of different values, the component with the highest resistance will have<br>
+A. the lowest voltage drop<br>
+B. the highest voltage drop<br>
+C. no voltage drop<br>
+D. the same voltage as all others<br>
+E. zero current</div>
+
+<div class="question"><strong>18.</strong> In a parallel circuit with resistors of different values, the branch with the lowest resistance will carry<br>
+A. the least current<br>
+B. the most current<br>
+C. no current<br>
+D. the same current as all others<br>
+E. infinite current</div>
+
+<div class="question"><strong>19.</strong> The formula $V_{total} = V_1 + V_2 + V_3$ applies to<br>
+A. parallel circuits only<br>
+B. series circuits only<br>
+C. neither series nor parallel<br>
+D. both series and parallel<br>
+E. only circuits with equal resistances</div>
+
+<div class="question"><strong>20.</strong> The formula $I_{total} = I_1 + I_2 + I_3$ applies to<br>
+A. series circuits only<br>
+B. parallel circuits only<br>
+C. neither series nor parallel<br>
+D. both series and parallel<br>
+E. only circuits with equal resistances</div>
+
+<div class="question"><strong>21.</strong> An equivalent resistance is<br>
+A. the largest resistance in a circuit<br>
+B. a single resistance that could replace a combination while producing the same effect<br>
+C. always equal to the smallest resistance<br>
+D. the average of all resistances<br>
+E. zero for all circuits</div>
+
+<div class="question"><strong>22.</strong> A circuit diagram is<br>
+A. a photograph of a circuit<br>
+B. a simplified representation using standard symbols<br>
+C. only for parallel circuits<br>
+D. not used by engineers<br>
+E. only shows batteries</div>
+
+<h2>Bank 2 – Conceptual (Multiple Choice)</h2>
+
+<div class="question"><strong>1.</strong> Three identical 6-ohm resistors are connected in series. The total resistance is<br>
+A. 2 ohms<br>
+B. 6 ohms<br>
+C. 12 ohms<br>
+D. 18 ohms<br>
+E. 24 ohms</div>
+
+<div class="question"><strong>2.</strong> Three identical 6-ohm resistors are connected in parallel. The total resistance is<br>
+A. 18 ohms<br>
+B. 6 ohms<br>
+C. 3 ohms<br>
+D. 2 ohms<br>
+E. 1 ohm</div>
+
+<div class="question"><strong>3.</strong> A series circuit has a 12-volt battery and three identical resistors. The voltage across each resistor is<br>
+A. 12 volts<br>
+B. 6 volts<br>
+C. 4 volts<br>
+D. 3 volts<br>
+E. 36 volts</div>
+
+<div class="question"><strong>4.</strong> A parallel circuit has a 12-volt battery and three identical resistors. The voltage across each resistor is<br>
+A. 36 volts<br>
+B. 12 volts<br>
+C. 6 volts<br>
+D. 4 volts<br>
+E. 3 volts</div>
+
+<div class="question"><strong>5.</strong> If you have resistors of 10Ω and 20Ω in series, which has the larger voltage drop?<br>
+A. The 10Ω resistor<br>
+B. The 20Ω resistor<br>
+C. They have equal voltage drops<br>
+D. Neither has a voltage drop<br>
+E. Cannot be determined</div>
+
+<div class="question"><strong>6.</strong> If you have resistors of 10Ω and 20Ω in parallel, which branch carries more current?<br>
+A. The 10Ω branch<br>
+B. The 20Ω branch<br>
+C. They carry equal current<br>
+D. Neither carries current<br>
+E. Cannot be determined</div>
+
+<div class="question"><strong>7.</strong> In your home, you turn on a lamp. This action causes the total current from the circuit breaker to<br>
+A. decrease because resistance increased<br>
+B. increase because you added a parallel path<br>
+C. stay exactly the same<br>
+D. become zero<br>
+E. reverse direction</div>
+
+<div class="question"><strong>8.</strong> You have two 40Ω resistors. To get the highest total resistance, you should connect them<br>
+A. in series<br>
+B. in parallel<br>
+C. either way gives the same result<br>
+D. not connect them at all<br>
+E. in a triangle</div>
+
+<div class="question"><strong>9.</strong> You have two 40Ω resistors. To get the lowest total resistance, you should connect them<br>
+A. in series<br>
+B. in parallel<br>
+C. either way gives the same result<br>
+D. not connect them at all<br>
+E. in a square</div>
+
+<div class="question"><strong>10.</strong> A series circuit has 2 amperes of current at the battery. At the third resistor down the line, the current is<br>
+A. 6 amperes<br>
+B. 2 amperes<br>
+C. 0.67 amperes<br>
+D. 0 amperes<br>
+E. variable</div>
+
+<div class="question"><strong>11.</strong> A parallel circuit has 6 amperes total current from the battery. If three equal branches split the current, each branch has<br>
+A. 18 amperes<br>
+B. 6 amperes<br>
+C. 2 amperes<br>
+D. 0.67 amperes<br>
+E. 12 amperes</div>
+
+<div class="question"><strong>12.</strong> You measure a circuit and find that one bulb is much dimmer than others. In a series circuit, this suggests<br>
+A. the dim bulb has higher resistance<br>
+B. the dim bulb has lower resistance<br>
+C. all bulbs should be equally dim<br>
+D. the battery is dead<br>
+E. it's wired incorrectly</div>
+
+<div class="question"><strong>13.</strong> In a parallel circuit with identical bulbs, if one bulb is removed, the other bulbs will<br>
+A. get dimmer<br>
+B. get brighter<br>
+C. stay at the same brightness<br>
+D. go out<br>
+E. flicker</div>
+
+<div class="question"><strong>14.</strong> In a series circuit with identical bulbs, if one bulb is removed, the other bulbs will<br>
+A. get brighter<br>
+B. stay the same<br>
+C. get dimmer<br>
+D. go out<br>
+E. explode</div>
+
+<div class="question"><strong>15.</strong> A circuit has a 12V battery and a total current of 3A. If you add more resistors in parallel, the total current will<br>
+A. decrease<br>
+B. stay at 3A<br>
+C. increase<br>
+D. become zero<br>
+E. reverse</div>
+
+<div class="question"><strong>16.</strong> A circuit has a 12V battery and a total current of 3A. If you add more resistors in series, the total current will<br>
+A. increase<br>
+B. stay at 3A<br>
+C. decrease<br>
+D. double<br>
+E. become infinite</div>
+
+<div class="question"><strong>17.</strong> Two resistors in series have resistances of 30Ω and 70Ω. The total resistance is<br>
+A. 40Ω<br>
+B. 50Ω<br>
+C. 21Ω<br>
+D. 100Ω<br>
+E. 2100Ω</div>
+
+<div class="question"><strong>18.</strong> Two resistors in parallel have resistances of 60Ω and 30Ω. The total resistance is<br>
+A. 90Ω<br>
+B. 45Ω<br>
+C. 30Ω<br>
+D. 20Ω<br>
+E. 15Ω</div>
+
+<div class="question"><strong>19.</strong> A technician needs exactly 15Ω total resistance. Which combination works?<br>
+A. 10Ω and 5Ω in series<br>
+B. 30Ω and 30Ω in parallel<br>
+C. 10Ω and 5Ω in parallel<br>
+D. 20Ω and 5Ω in parallel<br>
+E. Both A and B</div>
+
+<div class="question"><strong>20.</strong> Which statement is TRUE about household wiring?<br>
+A. All devices share the same current<br>
+B. Turning on one device reduces voltage to others<br>
+C. Each outlet receives full voltage independently<br>
+D. If one device fails, all devices stop<br>
+E. Voltage adds up across all devices</div>
+
+<h2>Bank 3 – Single-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> Two resistors of 15 ohms and 25 ohms are connected in series. Calculate the total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>2.</strong> Calculate the total resistance when resistors of 20 ohms, 30 ohms, and 50 ohms are connected in series. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>3.</strong> Two identical 40-ohm resistors are connected in parallel. Determine the total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>4.</strong> Calculate the total resistance for three identical 90-ohm resistors connected in parallel. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>5.</strong> A series circuit has a 24-volt battery and a total resistance of 8.0 ohms. Calculate the current. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>6.</strong> Determine the current in a series circuit with a 120-volt source and resistors of 20 ohms, 30 ohms, and 10 ohms. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>7.</strong> A series circuit has three resistors: 10 ohms, 20 ohms, and 30 ohms. If the current is 2.0 amperes, calculate the voltage across the 20-ohm resistor. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>8.</strong> In a series circuit with 3.0 amperes of current, find the voltage drop across a 15-ohm resistor. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>9.</strong> A parallel circuit has a 12-volt battery. Calculate the current through a 6.0-ohm branch. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>10.</strong> Determine the current in a branch with 30 ohms of resistance in a parallel circuit powered by 90 volts. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>11.</strong> Two resistors of 20 ohms and 30 ohms are in parallel. Use the reciprocal formula to calculate the total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>12.</strong> Calculate the total resistance for resistors of 10 ohms and 40 ohms connected in parallel. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>13.</strong> A series circuit has resistors of 5.0 ohms and 15 ohms with 4.0 amperes of current. Calculate the total voltage. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>14.</strong> Determine the total voltage needed for a series circuit with resistors of 12 ohms, 18 ohms, and 30 ohms carrying 0.50 amperes. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>15.</strong> A parallel circuit with a 24-volt battery has branches of 8.0 ohms and 12 ohms. Calculate the current in the 8.0-ohm branch. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>16.</strong> In a parallel circuit at 60 volts, calculate the current through a 20-ohm branch. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>17.</strong> Four identical 80-ohm resistors are connected in series. Calculate the total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>18.</strong> Determine the total resistance when four identical 80-ohm resistors are connected in parallel. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>19.</strong> A series circuit has a 9.0-volt battery and resistors of 6.0 ohms and 12 ohms. Calculate the current. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>20.</strong> Calculate the current in a series circuit with 48 volts and resistors of 10 ohms, 14 ohms, and 24 ohms. <strong>Answer in amperes.</strong></div>
+
+<div class="question"><strong>21.</strong> Two resistors of 50 ohms and 100 ohms are in parallel. Calculate the total resistance. <strong>Answer in ohms.</strong></div>
+
+<div class="question"><strong>22.</strong> In a series circuit, resistors of 25 ohms and 35 ohms carry 2.0 amperes. Calculate the voltage across the 35-ohm resistor. <strong>Answer in volts.</strong></div>
+
+<div class="question"><strong>23.</strong> A parallel circuit at 18 volts has a 9.0-ohm branch. Determine the current through this branch. <strong>Answer in amperes.</strong></div>
+
+<h2>Bank 4 – Multi-Step Calculations (Numeric Response)</h2>
+
+<div class="question"><strong>1.</strong> A series circuit has three resistors: 10 ohms, 15 ohms, and 25 ohms connected to a 60-volt battery. First calculate the total resistance, then determine the current flowing through the circuit. <strong>Answer: current in amperes.</strong></div>
+
+<div class="question"><strong>2.</strong> Three resistors of 5.0 ohms, 10 ohms, and 15 ohms are in series with a battery. The current is 2.0 amperes. First find the total resistance, then calculate the battery voltage. <strong>Answer: voltage in volts.</strong></div>
+
+<div class="question"><strong>3.</strong> A series circuit has resistors of 20 ohms and 40 ohms with a 90-volt battery. Calculate the current, then determine the voltage drop across the 40-ohm resistor. <strong>Answer: voltage across 40Ω in volts.</strong></div>
+
+<div class="question"><strong>4.</strong> Two branches in parallel have resistances of 12 ohms and 24 ohms. First calculate the equivalent resistance, then determine the total current when connected to a 36-volt battery. <strong>Answer: total current in amperes.</strong></div>
+
+<div class="question"><strong>5.</strong> A parallel circuit has a 48-volt battery with two branches: 16 ohms and 24 ohms. Calculate the current in each branch, then find the total current. <strong>Answer: total current in amperes.</strong></div>
+
+<div class="question"><strong>6.</strong> A series circuit has a 12-volt battery and resistors of 8.0 ohms and 16 ohms. Find the current, then calculate the power dissipated by the 16-ohm resistor. <strong>Answer: power in watts.</strong></div>
+
+<div class="question"><strong>7.</strong> Three identical 60-ohm resistors are connected in series to a 180-volt source. Calculate the current, then determine the voltage across each resistor. <strong>Answer: voltage across one resistor in volts.</strong></div>
+
+<div class="question"><strong>8.</strong> Three identical 60-ohm resistors are connected in parallel to a 180-volt source. Calculate the equivalent resistance, then determine the total current. <strong>Answer: total current in amperes.</strong></div>
+
+<div class="question"><strong>9.</strong> A technician has three 30-ohm resistors and needs 10 ohms total resistance. Determine if this is possible using parallel connection. If yes, calculate the total resistance. <strong>Answer: total resistance in ohms.</strong></div>
+
+<div class="question"><strong>10.</strong> A circuit has a 24-volt battery in series with resistors of 4.0 ohms, 6.0 ohms, and 10 ohms. Calculate the current, then determine what percentage of the total voltage drops across the 10-ohm resistor. <strong>Answer: percentage.</strong></div>
+
+<div class="question"><strong>11.</strong> A parallel circuit has three branches: 10 ohms, 20 ohms, and 30 ohms, all connected to a 60-volt battery. Calculate the current in the 10-ohm branch, then the current in the 30-ohm branch. <strong>Answer: current in 30Ω branch in amperes.</strong></div>
+
+<div class="question"><strong>12.</strong> Two resistors in series (30 ohms and 70 ohms) are connected to a 200-volt source. Calculate the current, then find the voltage across the 30-ohm resistor. <strong>Answer: voltage in volts.</strong></div>
+
+<div class="question"><strong>13.</strong> An electrician connects two 20-ohm resistors in parallel, then connects this combination in series with a 10-ohm resistor. All are powered by a 60-volt battery. First find the equivalent resistance of the parallel pair, then the total circuit resistance, then the current. <strong>Answer: circuit current in amperes.</strong></div>
+
+<div class="question"><strong>14.</strong> A series circuit has four identical resistors and a total resistance of 120 ohms. Determine the resistance of each individual resistor. Then, if the same four resistors were connected in parallel, calculate the new total resistance. <strong>Answer: parallel total resistance in ohms.</strong></div>
+
+<div class="question"><strong>15.</strong> A home circuit has five 100-watt bulbs in parallel at 120 volts. First calculate the resistance of one bulb, then determine the total current when all five are on. <strong>Answer: total current in amperes.</strong></div>
+
+<div class="question"><strong>16.</strong> A battery delivers 2.0 amperes to a series circuit containing three resistors: 5.0 ohms, 10 ohms, and 15 ohms. Calculate the total resistance, then determine the battery voltage. Then find the power supplied by the battery. <strong>Answer: power in watts.</strong></div>
+
+<div class="question"><strong>17.</strong> Two parallel branches have 15 ohms and 30 ohms. First find the equivalent resistance. If this parallel combination is then placed in series with a 10-ohm resistor and powered by a 40-volt battery, determine the total circuit current. <strong>Answer: current in amperes.</strong></div>
+
+<div class="question"><strong>18.</strong> A series circuit has resistors of 12 ohms, 18 ohms, and 30 ohms. When connected to a battery, the voltage across the 18-ohm resistor is measured as 36 volts. Calculate the current, then determine the battery voltage. <strong>Answer: battery voltage in volts.</strong></div>
+
+<div class="question"><strong>19.</strong> A parallel circuit at 24 volts has four identical resistors. The total current is 8.0 amperes. Calculate the total resistance, then determine each individual resistor's resistance. <strong>Answer: individual resistance in ohms.</strong></div>
+
+<div class="question"><strong>20.</strong> An engineer needs 7.5 ohms total resistance from two resistors. One resistor is 30 ohms. If they are connected in parallel, calculate what the second resistor must be. <strong>Answer: second resistor in ohms.</strong></div>
+
+<div class="question"><strong>21.</strong> A battery supplies 3.0 amperes to a parallel circuit with three branches: 20 ohms, 30 ohms, and 60 ohms. Calculate the equivalent resistance, then determine the battery voltage. <strong>Answer: voltage in volts.</strong></div>
+
+<div class="question"><strong>22.</strong> A series circuit has five identical resistors and draws 0.40 amperes from a 20-volt battery. Calculate the total resistance, then determine each resistor's value. <strong>Answer: individual resistance in ohms.</strong></div>
+
+<h2>Answer Key</h2>
+
+<h3>Bank 1 – Vocabulary</h3>
+<p>1. B | 2. B | 3. C | 4. B | 5. A | 6. B | 7. B | 8. B | 9. C | 10. C | 11. C | 12. C | 13. B | 14. B | 15. B | 16. C | 17. B | 18. B | 19. B | 20. B | 21. B | 22. B</p>
+
+<h3>Bank 2 – Conceptual</h3>
+<p>1. D | 2. D | 3. C | 4. B | 5. B | 6. A | 7. B | 8. A | 9. B | 10. B | 11. C | 12. B | 13. C | 14. D | 15. C | 16. C | 17. D | 18. D | 19. E | 20. C</p>
+
+<h3>Bank 3 – Single-Step Calculations</h3>
+<p>1. 40 Ω | 2. 100 Ω | 3. 20 Ω | 4. 30 Ω | 5. 3.0 A | 6. 2.0 A | 7. 40 V | 8. 45 V | 9. 2.0 A | 10. 3.0 A | 11. 12 Ω | 12. 8.0 Ω | 13. 80 V | 14. 30 V | 15. 3.0 A | 16. 3.0 A | 17. 320 Ω | 18. 20 Ω | 19. 0.50 A | 20. 1.0 A | 21. 33 Ω (or 33.3 Ω) | 22. 70 V | 23. 2.0 A</p>
+
+<h3>Bank 4 – Multi-Step Calculations</h3>
+<p>1. 1.2 A | 2. 60 V | 3. 60 V | 4. 4.5 A | 5. 5.0 A | 6. 4.0 W | 7. 60 V | 8. 9.0 A | 9. 10 Ω | 10. 50% | 11. 2.0 A | 12. 60 V | 13. 3.0 A | 14. 7.5 Ω | 15. 4.2 A | 16. 60 W | 17. 2.0 A | 18. 120 V | 19. 12 Ω | 20. 10 Ω | 21. 30 V | 22. 10 Ω</p>
+
+</body>
+</html>
