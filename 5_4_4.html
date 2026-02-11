@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 5.4: Wave Properties and Behavior - Bank 4 (Multi-Step Calculations)</title>
+    
+    <script type="text/javascript">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$']],
+        displayMath: [['$$','$$']]
+      }
+    };
+    </script>
+    <script type="text/javascript" async
+       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f7fa; color: #333; line-height: 1.6; padding: 20px; margin: 0; }
+        .container { max-width: 1000px; margin: 0 auto; background-color: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 40px; }
+        header { background: linear-gradient(135deg, #2c3e50, #4a6491); color: white; padding: 30px 20px; text-align: center; margin: -40px -40px 40px -40px; border-radius: 10px 10px 0 0; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.1rem; margin: 5px 0; }
+        .toc-container { background-color: #f0f4f8; padding: 30px; border-radius: 8px; margin-bottom: 40px; border: 2px solid #000080; }
+        .toc-container h2 { color: #000080; margin-top: 0; font-size: 1.5rem; border-bottom: 2px solid #000080; padding-bottom: 15px; }
+        .toc-list { list-style: none; padding: 0; margin: 0; }
+        .toc-item { margin-bottom: 12px; }
+        .toc-item a { color: #4a6491; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .toc-item a:hover { color: #2c3e50; text-decoration: underline; }
+        .bank-section { margin-bottom: 50px; }
+        .bank-header { background: linear-gradient(135deg, #34495e, #5a7fa1); color: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        .bank-header h2 { margin: 0 0 10px 0; font-size: 1.8rem; }
+        .bank-info { font-size: 0.95rem; opacity: 0.95; }
+        .scenario-group { margin-bottom: 40px; }
+        .scenario-title { background: linear-gradient(135deg, #34495e, #5a7fa1); color: white; padding: 15px 20px; border-radius: 6px; margin-bottom: 20px; font-size: 1.2rem; font-weight: 700; }
+        .question-group { margin-bottom: 30px; background-color: #f9f9f9; padding: 20px; border-left: 4px solid #4a6491; border-radius: 4px; }
+        .question { margin-bottom: 20px; padding: 15px; background-color: white; border-radius: 4px; border: 1px solid #e0e0e0; }
+        .question-number { font-weight: 700; color: #2c3e50; margin-bottom: 8px; }
+        .question-text { margin-bottom: 12px; line-height: 1.7; }
+        .answer-blank { margin-top: 15px; padding: 15px; background-color: #fafafa; border: 1px dashed #999; border-radius: 4px; }
+        .answer-label { font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 0.95rem; }
+        .answer-key { background-color: #e8f5e9; border: 2px solid #4caf50; padding: 30px; border-radius: 8px; margin-top: 50px; }
+        .answer-key h2 { color: #2e7d32; margin-top: 0; }
+        .answer-key-section { margin-bottom: 30px; }
+        .answer-key-section-title { font-weight: 700; font-size: 1.1rem; color: #2e7d32; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #4caf50; }
+        .answer-row { display: grid; grid-template-columns: 100px 1fr; gap: 20px; padding: 12px; background-color: white; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ddd; align-items: start; }
+        .answer-number { font-weight: 700; color: #2e7d32; }
+        .answer-content { font-size: 0.95rem; line-height: 1.6; }
+        footer { text-align: center; padding: 20px; color: #666; border-top: 1px solid #e0e0e0; margin-top: 50px; }
+        .return-to-top { position: fixed; bottom: 30px; right: 30px; background-color: #2c3e50; color: white; border: none; padding: 12px 15px; border-radius: 50%; cursor: pointer; font-size: 20px; display: none; z-index: 1000; transition: background-color 0.3s; }
+        .return-to-top.show { display: block; }
+        .return-to-top:hover { background-color: #34495e; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Section 5.4: Wave Properties and Behavior</h1>
+            <p><strong>Bank 4: Multi-Step Calculations</strong></p>
+            <p>24 Numeric Response Questions | 4 Scenario Groups × 6 Questions Each</p>
+        </header>
+        
+        <div class="toc-container">
+            <h2>Assessment Bank</h2>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#calc-section">Bank 4: Multi-Step Calculations</a></li>
+                <li class="toc-item" style="margin-top: 20px;"><a href="#answers">Complete Answer Key</a></li>
+            </ul>
+        </div>
+        
+        <div class="bank-section" id="calc-section">
+            <div class="bank-header">
+                <h2>Bank 4: Multi-Step Calculations</h2>
+                <div class="bank-info">24 questions | 6 questions per scenario | Require 2+ calculation steps | No step-by-step hints</div>
+            </div>
+
+            <div class="scenario-group">
+                <div class="scenario-title">Scenario 1: Reflection & Law of Reflection</div>
+                <div class="question-group">
+                    <div class="question">
+                        <div class="question-number">4.1</div>
+                        <div class="question-text"><strong>A laser beam is aimed at a plane mirror. The angle between the incident beam and the surface of the mirror is 65°. Calculate the angle of incidence (measured from the normal) and then determine the angle of reflection.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Angle of incidence: _____ degrees; Angle of reflection: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.2</div>
+                        <div class="question-text"><strong>A periscope uses two mirrors arranged at 45° angles. If light enters the first mirror at an angle of 30° from the normal, trace the path through both mirrors. At what angle does the light exit the second mirror?</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Light exits at: _____ degrees from the normal</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.3</div>
+                        <div class="question-text"><strong>A sound wave in air reflects off a canyon wall. The wave travels at 343 m/s and takes 8 seconds for the echo to return. Calculate the distance to the wall and determine the angle of reflection if the angle of incidence was 25°.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Distance: _____ m; Angle of reflection: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.4</div>
+                        <div class="question-text"><strong>In a billiards game, a cue ball strikes a wall at an angle of incidence of 35° from the normal. After reflecting, the ball travels 2 meters before hitting another wall at an angle of incidence of 50°. Determine the angle at which it reflects from the second wall and explain the geometric relationship.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Angle from second wall: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.5</div>
+                        <div class="question-text"><strong>Two plane mirrors are positioned at a 60° angle to each other. A light ray enters the first mirror at 20° from the normal. Calculate the angle of reflection from the first mirror, then determine the angle of incidence on the second mirror.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Reflection from mirror 1: _____ degrees; Incidence on mirror 2: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.6</div>
+                        <div class="question-text"><strong>A 200-meter tall lighthouse beam reflects off the ocean surface at 12° from the normal. If an observer on a ship is positioned such that the reflected beam reaches them, calculate what angle the reflected beam makes with the water surface and determine the angle of incidence.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Angle with surface: _____ degrees; Angle of incidence: _____ degrees</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-group">
+                <div class="scenario-title">Scenario 2: Refraction & Snell's Law</div>
+                <div class="question-group">
+                    <div class="question">
+                        <div class="question-number">4.7</div>
+                        <div class="question-text"><strong>Light travels from diamond ($n_1 = 2.42$) into air ($n_2 = 1.00$) at an angle of 20° from the normal inside the diamond. Calculate the refraction angle in air and determine if total internal reflection occurs (critical angle for diamond is 24.4°).</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Refraction angle: _____ degrees; Total internal reflection: Yes/No</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.8</div>
+                        <div class="question-text"><strong>A light ray enters water ($n = 1.33$) from air at 45° from the normal. Calculate the refraction angle in water. Then, if this refracted ray exits the water into oil ($n = 1.46$), determine the new refraction angle.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Refraction in water: _____ degrees; Refraction in oil: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.9</div>
+                        <div class="question-text"><strong>An underwater explorer uses a light source to signal at an angle of 30° from the normal in water ($n = 1.33$). Calculate the refraction angle in air ($n = 1.00$) and determine the apparent depth of an object 15 meters deep when viewed from above at this angle.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Refraction angle: _____ degrees; Apparent depth: _____ m</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.10</div>
+                        <div class="question-text"><strong>Glass ($n = 1.52$) and water ($n = 1.33$) are in contact. Light travels from glass into water at an angle of incidence of 35° from the normal. Calculate the refraction angle, and determine the percentage change in the bending angle compared to light going from glass directly to air.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Refraction angle: _____ degrees; Percentage difference: _____ %</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.11</div>
+                        <div class="question-text"><strong>A fiber optic cable uses glass ($n = 1.50$) as the core surrounded by cladding ($n = 1.48$). Light enters the cable from air at 60° from the normal. Calculate the refraction angle in the glass core and the critical angle for total internal reflection at the glass-cladding interface.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Refraction angle: _____ degrees; Critical angle: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.12</div>
+                        <div class="question-text"><strong>Light passes through three media in sequence: air ($n_1 = 1.00$) → glass ($n_2 = 1.50$) → diamond ($n_3 = 2.42$). The incident angle in air is 30°. Calculate the refraction angles in glass and diamond, showing how light bends more severely in each successive medium.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">In glass: _____ degrees; In diamond: _____ degrees</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-group">
+                <div class="scenario-title">Scenario 3: Constructive & Destructive Interference</div>
+                <div class="question-group">
+                    <div class="question">
+                        <div class="question-number">4.13</div>
+                        <div class="question-text"><strong>Two speakers produce sound waves at 440 Hz (wavelength = 0.782 m). An observer stands at a point where the path difference is 1.564 m from speaker A and 3.128 m from speaker B. Determine the path difference and identify whether the interference is constructive or destructive.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Path difference: _____ m; Interference type: Constructive/Destructive</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.14</div>
+                        <div class="question-text"><strong>In a double-slit experiment with light ($\lambda = 600$ nm), interference fringes appear on a screen 2 meters away. The first bright fringe appears at a distance of 0.6 mm from the central maximum. If the slit separation is 0.5 mm, verify this distance and determine the order of the bright fringe.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Fringe order: $n$ = _____ ; Path difference: _____ nm</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.15</div>
+                        <div class="question-text"><strong>Two water waves originate from sources 3 meters apart and have wavelength 0.5 m. At a point on a line parallel to the sources, the distances are 5 m and 4 m respectively. Calculate the path difference and determine the interference pattern (constructive, destructive, or neither).</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Path difference: _____ m; Interference: Constructive/Destructive/Neither</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.16</div>
+                        <div class="question-text"><strong>A tuning fork produces sound at 256 Hz with wavelength 1.34 m. Two identical tuning forks are placed such that constructive interference occurs at a certain point with path difference of 2.68 m. Determine the order and verify that this is constructive interference. How many wavelengths fit in this path difference?</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Order: $n$ = _____; Number of wavelengths: _____</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.17</div>
+                        <div class="question-text"><strong>In a ripple tank, two vibrating sources create waves with wavelength 0.25 m. At point P, the waves travel distances of 2.5 m and 3.75 m respectively. At point Q, they travel 4.0 m and 4.5 m. Calculate path differences at both points and determine the interference type at each location.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Point P path difference: _____ m (___________); Point Q path difference: _____ m (___________)</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.18</div>
+                        <div class="question-text"><strong>Radar waves with frequency 10 GHz and speed $3 \times 10^8$ m/s are used in a radar system. Two reflected signals arrive with a path difference of 0.03 m. Calculate the wavelength, determine if this represents constructive or destructive interference, and find what order of interference this is.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Wavelength: _____ m; Order: $n$ = _____; Interference: Constructive/Destructive</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenario-group">
+                <div class="scenario-title">Scenario 4: Combined Wave Phenomena</div>
+                <div class="question-group">
+                    <div class="question">
+                        <div class="question-number">4.19</div>
+                        <div class="question-text"><strong>A light ray enters water at 40° from the normal ($n_{water} = 1.33$), travels through water, and then refracts again when exiting into air. Calculate the refraction angle in water and then the exit angle in air, showing how the ray returns to its original direction.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">In water: _____ degrees; Exiting to air: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.20</div>
+                        <div class="question-text"><strong>A mirror and a refracting surface are arranged perpendicular to each other. Light hits the mirror at 30° from the normal, reflects, and then hits the refracting surface (air to glass, $n = 1.50$) at the reflected angle. Calculate the reflection angle, incident angle on glass, and refraction angle in glass.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Reflection: _____ degrees; Incident on glass: _____ degrees; In glass: _____ degrees</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.21</div>
+                        <div class="question-text"><strong>Two coherent light sources (440 nm) are separated by 2 mm and shine on a screen 1 meter away. Calculate the wavelength in space, the path difference for the first bright fringe, and the fringe spacing on the screen.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Wavelength: _____ nm; Path difference: _____ nm; Fringe spacing: _____ mm</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.22</div>
+                        <div class="question-text"><strong>A laser beam reflects off a rough surface, creating diffuse reflection. If the surface has irregularities with dimensions of 0.5 mm and the laser wavelength is 633 nm, determine if diffuse reflection will occur and explain why. Calculate the ratio of surface roughness to wavelength.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Roughness/wavelength ratio: _____; Diffuse reflection: Yes/No</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.23</div>
+                        <div class="question-text"><strong>An optical system uses a glass prism ($n = 1.52$) to disperse white light. A ray enters at 45° from the normal. Calculate the refraction angle at the first surface, and then determine if total internal reflection occurs at the back surface (opposite side) if light hits at 30° from the normal inside the glass.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Refraction angle: _____ degrees; Critical angle: _____ degrees; TIR occurs: Yes/No</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4.24</div>
+                        <div class="question-text"><strong>A submarine sonar system detects a fish using 40 kHz ultrasound waves. The wave refracts at the salt water-fresh water boundary ($n_1 = 1.025$, $n_2 = 1.000$). If the incident angle is 25° from the normal and wavelength in salt water is 0.037 m, calculate the refraction angle, the wavelength in fresh water, and the frequency of the wave.</strong></div>
+                        <div class="answer-blank">
+                            <div class="answer-label">Refraction angle: _____ degrees; Wavelength: _____ m; Frequency: _____ Hz</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="answer-key" id="answers">
+            <h2>Complete Answer Key - Bank 4</h2>
+
+            <div class="answer-key-section">
+                <div class="answer-key-section-title">Scenario 1: Reflection & Law of Reflection</div>
+                <div class="answer-row">
+                    <div class="answer-number">4.1</div>
+                    <div class="answer-content"><strong>Answer:</strong> 25° incidence; 25° reflection | <strong>Key Concept:</strong> Angle from surface = 90° - angle from normal; law of reflection applies to both calculated angles</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.2</div>
+                    <div class="answer-content"><strong>Answer:</strong> 30° | <strong>Key Concept:</strong> Light reflects at 30° from first mirror, travels at 30° to second mirror, reflects at 30°; same angle throughout due to law of reflection</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.3</div>
+                    <div class="answer-content"><strong>Answer:</strong> 1372 m distance; 25° reflection | <strong>Key Concept:</strong> Echo travels round-trip distance = 343 × 8 / 2; law of reflection: $\theta_i = \theta_r = 25°$</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.4</div>
+                    <div class="answer-content"><strong>Answer:</strong> 50° | <strong>Key Concept:</strong> Each reflection obeys law of reflection independently; geometric relationship preserved at second wall</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.5</div>
+                    <div class="answer-content"><strong>Answer:</strong> 20° reflection from mirror 1; 40° incidence on mirror 2 | <strong>Key Concept:</strong> Reflection angle = 20°; geometry of 60° angle arrangement produces 40° incidence on second mirror</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.6</div>
+                    <div class="answer-content"><strong>Answer:</strong> 78° angle with surface; 12° angle of incidence | <strong>Key Concept:</strong> Angle with surface = 90° - 12° = 78°; law of reflection confirms angles from normal</div>
+                </div>
+            </div>
+
+            <div class="answer-key-section">
+                <div class="answer-key-section-title">Scenario 2: Refraction & Snell's Law</div>
+                <div class="answer-row">
+                    <div class="answer-number">4.7</div>
+                    <div class="answer-content"><strong>Answer:</strong> 55.4° refraction; No total internal reflection | <strong>Key Concept:</strong> Use Snell's law: $2.42 \sin(20°) = 1.00 \sin(\theta_r)$; incident angle (20°) < critical angle (24.4°), so light exits</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.8</div>
+                    <div class="answer-content"><strong>Answer:</strong> 32.1° in water; 30.8° in oil | <strong>Key Concept:</strong> Apply Snell's law twice: air→water, then water→oil; light bends less entering oil than entering water</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.9</div>
+                    <div class="answer-content"><strong>Answer:</strong> 41.8° refraction; 11.3 m apparent depth | <strong>Key Concept:</strong> Snell's law for refraction angle; apparent depth = real depth × $\cos(\theta_i)/\cos(\theta_r)$</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.10</div>
+                    <div class="answer-content"><strong>Answer:</strong> 38.3° refraction; 9.1% difference | <strong>Key Concept:</strong> Compare glass→water (38.3°) to glass→air (22.8°); water provides intermediate bending</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.11</div>
+                    <div class="answer-content"><strong>Answer:</strong> 35.3° in glass core; 81.9° critical angle | <strong>Key Concept:</strong> Snell's law for air→glass; critical angle = $\sin^{-1}(n_2/n_1) = \sin^{-1}(1.48/1.50)$</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.12</div>
+                    <div class="answer-content"><strong>Answer:</strong> 19.5° in glass; 11.7° in diamond | <strong>Key Concept:</strong> Sequential Snell's law applications; light bends increasingly in higher-index media (air→glass→diamond)</div>
+                </div>
+            </div>
+
+            <div class="answer-key-section">
+                <div class="answer-key-section-title">Scenario 3: Constructive & Destructive Interference</div>
+                <div class="answer-row">
+                    <div class="answer-number">4.13</div>
+                    <div class="answer-content"><strong>Answer:</strong> 1.564 m path difference; Constructive | <strong>Key Concept:</strong> Path difference = 1.564 m = 2 × 0.782 m = 2λ; constructive at order n = 2</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.14</div>
+                    <div class="answer-content"><strong>Answer:</strong> n = 1 (first order); Path difference = 600 nm | <strong>Key Concept:</strong> First bright fringe has n = 1; path difference = 1 × 600 nm for constructive interference</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.15</div>
+                    <div class="answer-content"><strong>Answer:</strong> 1 m path difference; Constructive | <strong>Key Concept:</strong> Path difference = |5 - 4| = 1 m = 2λ (constructive at n = 2)</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.16</div>
+                    <div class="answer-content"><strong>Answer:</strong> n = 2; 2 wavelengths | <strong>Key Concept:</strong> Path difference = 2.68 m = 2 × 1.34 m; constructive interference with n = 2</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.17</div>
+                    <div class="answer-content"><strong>Answer:</strong> Point P: 1.25 m (Constructive); Point Q: 0.5 m (Destructive) | <strong>Key Concept:</strong> Point P: 1.25 m = 5λ (constructive, n=5); Point Q: 0.5 m = 2λ (destructive, n=1)</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.18</div>
+                    <div class="answer-content"><strong>Answer:</strong> 0.03 m wavelength; n = 1 (constructive) | <strong>Key Concept:</strong> $\lambda = v/f = (3 \times 10^8)/(10 \times 10^9) = 0.03$ m; path difference = 1λ indicates first-order constructive</div>
+                </div>
+            </div>
+
+            <div class="answer-key-section">
+                <div class="answer-key-section-title">Scenario 4: Combined Wave Phenomena</div>
+                <div class="answer-row">
+                    <div class="answer-number">4.19</div>
+                    <div class="answer-content"><strong>Answer:</strong> 29.8° in water; 40° in air | <strong>Key Concept:</strong> Snell's law entering water; ray returns to original direction when exiting due to reversibility of refraction</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.20</div>
+                    <div class="answer-content"><strong>Answer:</strong> 30° reflection; 30° incident on glass; 19.4° in glass | <strong>Key Concept:</strong> Reflection angle = incident angle; reflected ray becomes incident ray on glass; final refraction via Snell's law</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.21</div>
+                    <div class="answer-content"><strong>Answer:</strong> 440 nm; Path difference = 440 nm; Fringe spacing = 0.22 mm | <strong>Key Concept:</strong> Double-slit interference produces fringes with spacing = $\lambda L / d$ where L = distance to screen, d = slit separation</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.22</div>
+                    <div class="answer-content"><strong>Answer:</strong> Ratio = 790; Yes, diffuse reflection | <strong>Key Concept:</strong> When surface roughness >> wavelength, diffuse reflection occurs; 0.5 mm >> 633 nm confirms diffuse scattering</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.23</div>
+                    <div class="answer-content"><strong>Answer:</strong> 28.7° refraction; 41.1° critical angle; Yes, TIR occurs | <strong>Key Concept:</strong> At back surface: incident angle (30°) < critical angle (41.1°), so light exits (no TIR); calculation shows ray does exit</div>
+                </div>
+                <div class="answer-row">
+                    <div class="answer-number">4.24</div>
+                    <div class="answer-content"><strong>Answer:</strong> 24.5° refraction; 0.0376 m wavelength; 40,000 Hz | <strong>Key Concept:</strong> Snell's law for refraction; frequency unchanged; wavelength = v/f changes based on wave speed in new medium</div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Section 5.4: Wave Properties and Behavior - Bank 4: Multi-Step Calculations</p>
+            <p>24 Numeric Response Questions | Ready for Canvas/LMS Integration</p>
+        </footer>
+    </div>
+
+    <button class="return-to-top" id="returnToTop">↑</button>
+
+    <script>
+        const returnToTopButton = document.getElementById('returnToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 200) {
+                returnToTopButton.classList.add('show');
+            } else {
+                returnToTopButton.classList.remove('show');
+            }
+        });
+        
+        returnToTopButton.addEventListener('click', function() {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>
