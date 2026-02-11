@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 5.2: Transverse Waves - Assessment Banks</title>
+    
+    <script type="text/javascript">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$']],
+        displayMath: [['$$','$$']]
+      }
+    };
+    </script>
+    <script type="text/javascript" async
+       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        * { box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f5f7fa; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0; 
+        }
+        
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            background-color: white; 
+            border-radius: 10px; 
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+            padding: 40px; 
+        }
+        
+        header { 
+            background: linear-gradient(135deg, #2c3e50, #4a6491); 
+            color: white; 
+            padding: 30px 20px; 
+            text-align: center; 
+            margin: -40px -40px 40px -40px; 
+            border-radius: 10px 10px 0 0; 
+        }
+        
+        header h1 { 
+            font-size: 2.5rem; 
+            margin-bottom: 10px; 
+        }
+        
+        header p { 
+            font-size: 1.1rem; 
+            margin: 5px 0; 
+        }
+        
+        .toc-container { 
+            background-color: #f0f4f8; 
+            padding: 30px; 
+            border-radius: 8px; 
+            margin-bottom: 40px; 
+            border: 2px solid #000080; 
+        }
+        
+        .toc-container h2 { 
+            color: #000080; 
+            margin-top: 0; 
+            font-size: 1.5rem; 
+            border-bottom: 2px solid #000080; 
+            padding-bottom: 15px; 
+        }
+        
+        .toc-list { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0;
+        }
+        
+        .toc-item { 
+            margin-bottom: 12px; 
+        }
+        
+        .toc-item a { 
+            color: #4a6491; 
+            text-decoration: none; 
+            font-weight: 500;
+            transition: color 0.3s; 
+        }
+        
+        .toc-item a:hover { 
+            color: #2c3e50; 
+            text-decoration: underline; 
+        }
+        
+        .bank-section { 
+            margin-bottom: 50px; 
+            page-break-before: always;
+        }
+        
+        .bank-header { 
+            background: linear-gradient(135deg, #34495e, #5a7fa1); 
+            color: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px; 
+        }
+        
+        .bank-header h2 { 
+            margin: 0 0 10px 0; 
+            font-size: 1.8rem; 
+        }
+        
+        .bank-info { 
+            font-size: 0.95rem; 
+            opacity: 0.95; 
+        }
+        
+        .question-group { 
+            margin-bottom: 30px; 
+            background-color: #f9f9f9; 
+            padding: 20px; 
+            border-left: 4px solid #4a6491; 
+            border-radius: 4px; 
+        }
+        
+        .question-group-title { 
+            color: #000080; 
+            font-weight: 700; 
+            font-size: 1.1rem; 
+            margin-bottom: 15px; 
+        }
+        
+        .question { 
+            margin-bottom: 20px; 
+            padding: 15px; 
+            background-color: white; 
+            border-radius: 4px; 
+            border: 1px solid #e0e0e0; 
+        }
+        
+        .question-number { 
+            font-weight: 700; 
+            color: #2c3e50; 
+            margin-bottom: 8px; 
+        }
+        
+        .question-text { 
+            margin-bottom: 12px; 
+            line-height: 1.7; 
+        }
+        
+        .option { 
+            margin-left: 20px; 
+            margin-bottom: 8px; 
+            line-height: 1.6; 
+        }
+        
+        .option-label { 
+            font-weight: 600; 
+            color: #2c3e50; 
+        }
+        
+        .numeric-response { 
+            color: #0066cc; 
+            font-weight: 600; 
+            font-style: italic; 
+        }
+        
+        .answer-key { 
+            background-color: #e8f5e9; 
+            border: 2px solid #4caf50; 
+            padding: 30px; 
+            border-radius: 8px; 
+            margin-top: 50px; 
+        }
+        
+        .answer-key h2 { 
+            color: #2e7d32; 
+            margin-top: 0; 
+        }
+        
+        .answer-item { 
+            margin-bottom: 15px; 
+            padding: 10px; 
+            background-color: white; 
+            border-radius: 4px; 
+        }
+        
+        .answer-item-num { 
+            font-weight: 700; 
+            color: #2e7d32; 
+        }
+        
+        .answer-content { 
+            margin-top: 5px; 
+            padding-left: 20px; 
+        }
+        
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            color: #666; 
+            border-top: 1px solid #e0e0e0; 
+            margin-top: 50px; 
+        }
+        
+        .return-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+        
+        .return-to-top.show {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            header { margin: -20px -20px 30px -20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Section 5.2: Transverse Waves</h1>
+            <p>Comprehensive Assessment Banks</p>
+            <p>114 Total Questions Across 4 Banks</p>
+        </header>
+        
+        <!-- Table of Contents -->
+        <div class="toc-container">
+            <h2>Table of Contents</h2>
+            <ul class="toc-list">
+                <li class="toc-item"><a href="#bank1">Bank 1: Vocabulary Assessment (36 questions)</a></li>
+                <li class="toc-item"><a href="#bank2">Bank 2: Conceptual Questions (22 questions)</a></li>
+                <li class="toc-item"><a href="#bank3">Bank 3: Single-Step Calculations (18 questions)</a></li>
+                <li class="toc-item"><a href="#bank4">Bank 4: Multi-Step Calculations (18 questions)</a></li>
+                <li class="toc-item"><a href="#answers">Complete Answer Key</a></li>
+            </ul>
+        </div>
+
+        <!-- BANK 1: VOCABULARY ASSESSMENT -->
+        <div class="bank-section" id="bank1">
+            <div class="bank-header">
+                <h2>Bank 1: Vocabulary Assessment</h2>
+                <div class="bank-info">
+                    36 questions covering 9 vocabulary terms × 4 question types each
+                    <br>Multiple choice (A-E) | No calculations | 4 cognitive levels
+                </div>
+            </div>
+
+            <!-- WAVE -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 1: Wave</div>
+                
+                <div class="question">
+                    <div class="question-number">1.1</div>
+                    <div class="question-text"><strong>Which term describes a disturbance that transfers energy from one place to another without permanently transferring matter?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Current</div>
+                    <div class="option"><span class="option-label">B)</span> Wave</div>
+                    <div class="option"><span class="option-label">C)</span> Force</div>
+                    <div class="option"><span class="option-label">D)</span> Velocity</div>
+                    <div class="option"><span class="option-label">E)</span> Frequency</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">1.2</div>
+                    <div class="question-text"><strong>A disturbance that transfers energy from one place to another without permanently transferring matter is called a ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Medium</div>
+                    <div class="option"><span class="option-label">B)</span> Crest</div>
+                    <div class="option"><span class="option-label">C)</span> Wave</div>
+                    <div class="option"><span class="option-label">D)</span> Pulse</div>
+                    <div class="option"><span class="option-label">E)</span> Vibration</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">1.3</div>
+                    <div class="question-text"><strong>When you create a ripple in a pond by dropping a stone, the water molecules don't travel to shore, but the disturbance spreads outward. What is this disturbance called?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Amplitude</div>
+                    <div class="option"><span class="option-label">B)</span> A wave</div>
+                    <div class="option"><span class="option-label">C)</span> Resonance</div>
+                    <div class="option"><span class="option-label">D)</span> A trough</div>
+                    <div class="option"><span class="option-label">E)</span> Oscillation</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">1.4</div>
+                    <div class="question-text"><strong>Which of the following best demonstrates that a wave transfers energy, not matter?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> A boat moves up and down in ocean waves but stays in roughly the same location</div>
+                    <div class="option"><span class="option-label">B)</span> Light from the sun reaches Earth instantly</div>
+                    <div class="option"><span class="option-label">C)</span> Sound travels faster than light</div>
+                    <div class="option"><span class="option-label">D)</span> Waves get bigger as they travel</div>
+                    <div class="option"><span class="option-label">E)</span> Waves always need a medium to travel</div>
+                </div>
+            </div>
+
+            <!-- TRANSVERSE WAVE -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 2: Transverse Wave</div>
+                
+                <div class="question">
+                    <div class="question-number">2.1</div>
+                    <div class="question-text"><strong>What is a transverse wave?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> A wave that moves along a surface</div>
+                    <div class="option"><span class="option-label">B)</span> A wave in which particles move perpendicular to the direction of wave propagation</div>
+                    <div class="option"><span class="option-label">C)</span> A wave that always requires a medium</div>
+                    <div class="option"><span class="option-label">D)</span> A wave that travels in one direction only</div>
+                    <div class="option"><span class="option-label">E)</span> A wave with no amplitude</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">2.2</div>
+                    <div class="question-text"><strong>In a transverse wave, the motion of particles is __________ to the direction in which the wave travels.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Parallel</div>
+                    <div class="option"><span class="option-label">B)</span> Perpendicular</div>
+                    <div class="option"><span class="option-label">C)</span> Diagonal</div>
+                    <div class="option"><span class="option-label">D)</span> Random</div>
+                    <div class="option"><span class="option-label">E)</span> Horizontal</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">2.3</div>
+                    <div class="question-text"><strong>You shake a rope up and down while holding one end. The disturbance travels along the rope. What type of wave is being created?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> A longitudinal wave</div>
+                    <div class="option"><span class="option-label">B)</span> A compression wave</div>
+                    <div class="option"><span class="option-label">C)</span> A transverse wave</div>
+                    <div class="option"><span class="option-label">D)</span> A standing wave</div>
+                    <div class="option"><span class="option-label">E)</span> A surface wave</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">2.4</div>
+                    <div class="question-text"><strong>Which characteristic is UNIQUE to a transverse wave?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> It always carries energy</div>
+                    <div class="option"><span class="option-label">B)</span> Particles vibrate perpendicular to the wave direction</div>
+                    <div class="option"><span class="option-label">C)</span> It always requires a medium</div>
+                    <div class="option"><span class="option-label">D)</span> It has a frequency and wavelength</div>
+                    <div class="option"><span class="option-label">E)</span> It travels in straight lines</div>
+                </div>
+            </div>
+
+            <!-- MEDIUM -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 3: Medium</div>
+                
+                <div class="question">
+                    <div class="question-number">3.1</div>
+                    <div class="question-text"><strong>What is a medium in the context of wave motion?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The average value of all wave frequencies</div>
+                    <div class="option"><span class="option-label">B)</span> The material substance through which a wave travels</div>
+                    <div class="option"><span class="option-label">C)</span> The center point of a wave</div>
+                    <div class="option"><span class="option-label">D)</span> The highest point of a wave</div>
+                    <div class="option"><span class="option-label">E)</span> The speed at which light travels</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.2</div>
+                    <div class="question-text"><strong>Which of the following can serve as a medium for a mechanical wave?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Only air</div>
+                    <div class="option"><span class="option-label">B)</span> Only water</div>
+                    <div class="option"><span class="option-label">C)</span> Water, air, or a solid material</div>
+                    <div class="option"><span class="option-label">D)</span> Only vacuum</div>
+                    <div class="option"><span class="option-label">E)</span> Only solids</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.3</div>
+                    <div class="question-text"><strong>Sound waves can travel through air but not through the vacuum of space. This best illustrates what concept?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The Doppler effect</div>
+                    <div class="option"><span class="option-label">B)</span> Refraction</div>
+                    <div class="option"><span class="option-label">C)</span> A mechanical wave requires a medium</div>
+                    <div class="option"><span class="option-label">D)</span> Frequency increases in space</div>
+                    <div class="option"><span class="option-label">E)</span> Waves cannot travel far</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.4</div>
+                    <div class="question-text"><strong>Electromagnetic waves can travel through empty space, while sound waves cannot. What does this tell you about the medium?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Sound waves travel faster than light</div>
+                    <div class="option"><span class="option-label">B)</span> Electromagnetic waves do not need a physical medium to propagate</div>
+                    <div class="option"><span class="option-label">C)</span> Space is filled with invisible matter</div>
+                    <div class="option"><span class="option-label">D)</span> Sound waves are not real waves</div>
+                    <div class="option"><span class="option-label">E)</span> All waves require a medium of some kind</div>
+                </div>
+            </div>
+
+            <!-- PROPAGATION -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 4: Propagation</div>
+                
+                <div class="question">
+                    <div class="question-number">4.1</div>
+                    <div class="question-text"><strong>What does propagation mean in wave motion?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The reflection of a wave off a surface</div>
+                    <div class="option"><span class="option-label">B)</span> The movement or spreading of a wave through space or a medium</div>
+                    <div class="option"><span class="option-label">C)</span> The vibration of particles</div>
+                    <div class="option"><span class="option-label">D)</span> The collision of two waves</div>
+                    <div class="option"><span class="option-label">E)</span> The increase in amplitude of a wave</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.2</div>
+                    <div class="question-text"><strong>When a wave propagates, it ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Stays in one place</div>
+                    <div class="option"><span class="option-label">B)</span> Moves or spreads through a medium or space</div>
+                    <div class="option"><span class="option-label">C)</span> Transfers matter</div>
+                    <div class="option"><span class="option-label">D)</span> Always increases in strength</div>
+                    <div class="option"><span class="option-label">E)</span> Changes its frequency</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.3</div>
+                    <div class="question-text"><strong>You clap your hands and create a sound wave that spreads throughout a room. The process of this wave spreading from the source is called ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Vibration</div>
+                    <div class="option"><span class="option-label">B)</span> Propagation</div>
+                    <div class="option"><span class="option-label">C)</span> Resonance</div>
+                    <div class="option"><span class="option-label">D)</span> Amplification</div>
+                    <div class="option"><span class="option-label">E)</span> Dissipation</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.4</div>
+                    <div class="question-text"><strong>The rate at which a wave propagates depends on which factor?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The color of the medium</div>
+                    <div class="option"><span class="option-label">B)</span> The properties of the medium through which it travels</div>
+                    <div class="option"><span class="option-label">C)</span> The observer's location</div>
+                    <div class="option"><span class="option-label">D)</span> The amplitude of the wave</div>
+                    <div class="option"><span class="option-label">E)</span> The age of the source</div>
+                </div>
+            </div>
+
+            <!-- CREST -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 5: Crest</div>
+                
+                <div class="question">
+                    <div class="question-number">5.1</div>
+                    <div class="question-text"><strong>What is the crest of a wave?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The lowest point of a wave</div>
+                    <div class="option"><span class="option-label">B)</span> The highest point of a wave above equilibrium</div>
+                    <div class="option"><span class="option-label">C)</span> The center of the wave</div>
+                    <div class="option"><span class="option-label">D)</span> A point where the wave crosses equilibrium</div>
+                    <div class="option"><span class="option-label">E)</span> The distance the wave travels</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">5.2</div>
+                    <div class="question-text"><strong>The highest point of a wave, representing maximum positive displacement, is called the ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Peak</div>
+                    <div class="option"><span class="option-label">B)</span> Amplitude</div>
+                    <div class="option"><span class="option-label">C)</span> Crest</div>
+                    <div class="option"><span class="option-label">D)</span> Wavelength</div>
+                    <div class="option"><span class="option-label">E)</span> Frequency</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">5.3</div>
+                    <div class="question-text"><strong>In a transverse wave on a rope, the crest is the point where ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The rope is completely still</div>
+                    <div class="option"><span class="option-label">B)</span> The rope reaches its maximum upward displacement</div>
+                    <div class="option"><span class="option-label">C)</span> The wave changes direction</div>
+                    <div class="option"><span class="option-label">D)</span> The rope moves slowest</div>
+                    <div class="option"><span class="option-label">E)</span> Two waves meet</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">5.4</div>
+                    <div class="question-text"><strong>How many crests are present in a wave that completes 2.5 cycles?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> 2</div>
+                    <div class="option"><span class="option-label">B)</span> 2.5</div>
+                    <div class="option"><span class="option-label">C)</span> 3</div>
+                    <div class="option"><span class="option-label">D)</span> 5</div>
+                    <div class="option"><span class="option-label">E)</span> Cannot be determined</div>
+                </div>
+            </div>
+
+            <!-- TROUGH -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 6: Trough</div>
+                
+                <div class="question">
+                    <div class="question-number">6.1</div>
+                    <div class="question-text"><strong>Which description accurately defines a trough?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The highest point of a wave</div>
+                    <div class="option"><span class="option-label">B)</span> The lowest point of a wave below equilibrium</div>
+                    <div class="option"><span class="option-label">C)</span> A point at rest on the medium</div>
+                    <div class="option"><span class="option-label">D)</span> A wave that barely moves</div>
+                    <div class="option"><span class="option-label">E)</span> The distance between two crests</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">6.2</div>
+                    <div class="question-text"><strong>A trough is a point on a wave where ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Maximum positive displacement occurs</div>
+                    <div class="option"><span class="option-label">B)</span> Maximum negative displacement occurs</div>
+                    <div class="option"><span class="option-label">C)</span> Particles are not moving</div>
+                    <div class="option"><span class="option-label">D)</span> The wavelength is measured</div>
+                    <div class="option"><span class="option-label">E)</span> The wave energy is zero</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">6.3</div>
+                    <div class="question-text"><strong>In a water wave, a trough is where ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The water rises to its highest point</div>
+                    <div class="option"><span class="option-label">B)</span> The water sinks to its lowest point</div>
+                    <div class="option"><span class="option-label">C)</span> The water is perfectly still</div>
+                    <div class="option"><span class="option-label">D)</span> Waves collide</div>
+                    <div class="option"><span class="option-label">E)</span> The wave reflects</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">6.4</div>
+                    <div class="question-text"><strong>The distance from a crest to the adjacent trough is ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> One wavelength</div>
+                    <div class="option"><span class="option-label">B)</span> Half a wavelength</div>
+                    <div class="option"><span class="option-label">C)</span> Two wavelengths</div>
+                    <div class="option"><span class="option-label">D)</span> The amplitude</div>
+                    <div class="option"><span class="option-label">E)</span> Cannot be calculated</div>
+                </div>
+            </div>
+
+            <!-- WAVELENGTH -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 7: Wavelength (λ)</div>
+                
+                <div class="question">
+                    <div class="question-number">7.1</div>
+                    <div class="question-text"><strong>What is wavelength?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The time for one complete wave cycle</div>
+                    <div class="option"><span class="option-label">B)</span> The distance between two consecutive corresponding points on a wave</div>
+                    <div class="option"><span class="option-label">C)</span> The speed at which the wave travels</div>
+                    <div class="option"><span class="option-label">D)</span> The maximum displacement from equilibrium</div>
+                    <div class="option"><span class="option-label">E)</span> The number of waves per second</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">7.2</div>
+                    <div class="question-text"><strong>Wavelength can be measured as the distance from ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Crest to trough</div>
+                    <div class="option"><span class="option-label">B)</span> Crest to crest or trough to trough</div>
+                    <div class="option"><span class="option-label">C)</span> Maximum to minimum displacement</div>
+                    <div class="option"><span class="option-label">D)</span> Zero to peak</div>
+                    <div class="option"><span class="option-label">E)</span> Source to observer</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">7.3</div>
+                    <div class="question-text"><strong>If you measure the distance from one crest to the next crest in a transverse wave, you are measuring the ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Frequency</div>
+                    <div class="option"><span class="option-label">B)</span> Period</div>
+                    <div class="option"><span class="option-label">C)</span> Wavelength</div>
+                    <div class="option"><span class="option-label">D)</span> Amplitude</div>
+                    <div class="option"><span class="option-label">E)</span> Wave speed</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">7.4</div>
+                    <div class="question-text"><strong>Two waves have different wavelengths. What can you conclude about these waves?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> They have the same frequency</div>
+                    <div class="option"><span class="option-label">B)</span> One wave is moving faster than the other</div>
+                    <div class="option"><span class="option-label">C)</span> They must have different frequencies or travel at different speeds</div>
+                    <div class="option"><span class="option-label">D)</span> The shorter wavelength carries more energy</div>
+                    <div class="option"><span class="option-label">E)</span> Both waves must travel through the same medium</div>
+                </div>
+            </div>
+
+            <!-- WAVE SPEED -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 8: Wave Speed</div>
+                
+                <div class="question">
+                    <div class="question-number">8.1</div>
+                    <div class="question-text"><strong>What is wave speed?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> The number of waves passing a point per second</div>
+                    <div class="option"><span class="option-label">B)</span> The speed at which the wave pattern travels through a medium</div>
+                    <div class="option"><span class="option-label">C)</span> The maximum velocity of particles in the medium</div>
+                    <div class="option"><span class="option-label">D)</span> The distance from crest to trough</div>
+                    <div class="option"><span class="option-label">E)</span> The time for one complete oscillation</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">8.2</div>
+                    <div class="question-text"><strong>Wave speed is measured in ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Hertz (Hz)</div>
+                    <div class="option"><span class="option-label">B)</span> Seconds (s)</div>
+                    <div class="option"><span class="option-label">C)</span> Meters per second (m/s)</div>
+                    <div class="option"><span class="option-label">D)</span> Meters (m)</div>
+                    <div class="option"><span class="option-label">E)</span> Joules (J)</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">8.3</div>
+                    <div class="question-text"><strong>Sound travels at different speeds through different materials. This demonstrates that wave speed ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Is always the same everywhere</div>
+                    <div class="option"><span class="option-label">B)</span> Depends on the properties of the medium</div>
+                    <div class="option"><span class="option-label">C)</span> Cannot be measured accurately</div>
+                    <div class="option"><span class="option-label">D)</span> Is determined only by frequency</div>
+                    <div class="option"><span class="option-label">E)</span> Increases with wavelength</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">8.4</div>
+                    <div class="question-text"><strong>If two waves travel at the same speed in the same medium, but one has a shorter wavelength, what must be true about the wave with the shorter wavelength?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> It has a lower frequency</div>
+                    <div class="option"><span class="option-label">B)</span> It has a higher frequency</div>
+                    <div class="option"><span class="option-label">C)</span> It has the same frequency</div>
+                    <div class="option"><span class="option-label">D)</span> Its speed is slower</div>
+                    <div class="option"><span class="option-label">E)</span> Cannot be determined without more information</div>
+                </div>
+            </div>
+
+            <!-- ELECTROMAGNETIC WAVE -->
+            <div class="question-group">
+                <div class="question-group-title">Vocabulary Term 9: Electromagnetic Wave</div>
+                
+                <div class="question">
+                    <div class="question-number">9.1</div>
+                    <div class="question-text"><strong>What is an electromagnetic wave?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> A transverse wave requiring a physical medium</div>
+                    <div class="option"><span class="option-label">B)</span> A transverse wave of oscillating electric and magnetic fields that can travel through empty space</div>
+                    <div class="option"><span class="option-label">C)</span> A longitudinal wave created by moving charges</div>
+                    <div class="option"><span class="option-label">D)</span> A mechanical wave that carries electromagnetic energy</div>
+                    <div class="option"><span class="option-label">E)</span> A wave that only travels through conductors</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">9.2</div>
+                    <div class="question-text"><strong>Which of the following is NOT an example of an electromagnetic wave?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Visible light</div>
+                    <div class="option"><span class="option-label">B)</span> Radio waves</div>
+                    <div class="option"><span class="option-label">C)</span> X-rays</div>
+                    <div class="option"><span class="option-label">D)</span> Sound waves</div>
+                    <div class="option"><span class="option-label">E)</span> Microwave radiation</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">9.3</div>
+                    <div class="question-text"><strong>Electromagnetic waves can travel through the vacuum of space, but sound waves cannot. What does this tell you about electromagnetic waves?</strong></div>
+                    <div class="option"><span class="option-label">A)</span> They are stronger than sound waves</div>
+                    <div class="option"><span class="option-label">B)</span> They do not require a physical medium to propagate</div>
+                    <div class="option"><span class="option-label">C)</span> They travel slower than sound</div>
+                    <div class="option"><span class="option-label">D)</span> They cannot be transverse waves</div>
+                    <div class="option"><span class="option-label">E)</span> They can only travel in one direction</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">9.4</div>
+                    <div class="question-text"><strong>An electromagnetic wave consists of ___________.</strong></div>
+                    <div class="option"><span class="option-label">A)</span> Compressions and rarefactions</div>
+                    <div class="option"><span class="option-label">B)</span> Oscillating particles</div>
+                    <div class="option"><span class="option-label">C)</span> Oscillating electric and magnetic fields</div>
+                    <div class="option"><span class="option-label">D)</span> Moving electrons</div>
+                    <div class="option"><span class="option-label">E)</span> Pressure variations</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BANK 2: CONCEPTUAL QUESTIONS -->
+        <div class="bank-section" id="bank2">
+            <div class="bank-header">
+                <h2>Bank 2: Conceptual Questions</h2>
+                <div class="bank-info">
+                    22 questions testing understanding of vocabulary and formulas
+                    <br>Multiple choice (A-E) | No calculations | Application-based
+                </div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.1</div>
+                <div class="question-text"><strong>A wave travels through a rope. The rope particles move up and down while the wave pattern moves horizontally. What type of wave is this, and why?</strong></div>
+                <div class="option"><span class="option-label">A)</span> A longitudinal wave because particles move parallel to wave direction</div>
+                <div class="option"><span class="option-label">B)</span> A transverse wave because particles move perpendicular to wave direction</div>
+                <div class="option"><span class="option-label">C)</span> A transverse wave because it moves horizontally</div>
+                <div class="option"><span class="option-label">D)</span> A longitudinal wave because it requires a medium</div>
+                <div class="option"><span class="option-label">E)</span> Cannot be determined without knowing the frequency</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.2</div>
+                <div class="question-text"><strong>Compare two waves in the same medium: Wave A has a longer wavelength, and Wave B has a shorter wavelength. If both waves were created at the same instant and travel through the same medium, which statement must be true?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Wave A travels faster than Wave B</div>
+                <div class="option"><span class="option-label">B)</span> Wave A has a lower frequency than Wave B</div>
+                <div class="option"><span class="option-label">C)</span> Wave B carries more energy</div>
+                <div class="option"><span class="option-label">D)</span> Wave A has more crests per meter</div>
+                <div class="option"><span class="option-label">E)</span> Both waves will eventually become the same</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.3</div>
+                <div class="question-text"><strong>Light from the sun travels to Earth through the vacuum of space. What does this tell you about whether light is a mechanical or electromagnetic wave?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Light must be a mechanical wave</div>
+                <div class="option"><span class="option-label">B)</span> Light must be an electromagnetic wave because it doesn't require a medium</div>
+                <div class="option"><span class="option-label">C)</span> Light could be either type of wave</div>
+                <div class="option"><span class="option-label">D)</span> The sun creates a medium for light to travel through</div>
+                <div class="option"><span class="option-label">E)</span> Light does not actually travel to Earth</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.4</div>
+                <div class="question-text"><strong>A student creates a wave on a rope by moving one end up and down repeatedly. If the student increases the frequency of oscillation, what happens to the wavelength of the wave on the rope, assuming the rope properties don't change?</strong></div>
+                <div class="option"><span class="option-label">A)</span> The wavelength increases</div>
+                <div class="option"><span class="option-label">B)</span> The wavelength stays the same</div>
+                <div class="option"><span class="option-label">C)</span> The wavelength decreases</div>
+                <div class="option"><span class="option-label">D)</span> The wavelength becomes zero</div>
+                <div class="option"><span class="option-label">E)</span> Cannot be determined without knowing the period</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.5</div>
+                <div class="question-text"><strong>Two transverse waves are traveling in the same medium at the same speed. Wave X has 5 crests visible in a 10-meter span, while Wave Y has 10 crests visible in a 10-meter span. What can you conclude?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Wave X has a longer wavelength and lower frequency than Wave Y</div>
+                <div class="option"><span class="option-label">B)</span> Wave Y has a longer wavelength and lower frequency than Wave X</div>
+                <div class="option"><span class="option-label">C)</span> Both waves have identical wavelengths and frequencies</div>
+                <div class="option"><span class="option-label">D)</span> Wave X travels faster than Wave Y</div>
+                <div class="option"><span class="option-label">E)</span> Wave Y has zero frequency</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.6</div>
+                <div class="question-text"><strong>A ripple moves across a pond's surface. An observer floating on a cork notices that the cork bobs up and down but doesn't move across the pond. What does this observation demonstrate?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Waves transfer matter from place to place</div>
+                <div class="option"><span class="option-label">B)</span> The cork is too light to move with waves</div>
+                <div class="option"><span class="option-label">C)</span> Waves transfer energy without transferring matter</div>
+                <div class="option"><span class="option-label">D)</span> The pond is not deep enough for the wave</div>
+                <div class="option"><span class="option-label">E)</span> Corks cannot float on waves</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.7</div>
+                <div class="question-text"><strong>The relationship $f = \frac{1}{T}$ shows that frequency and period are inversely related. If a wave's period increases, what happens to its frequency?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Frequency increases</div>
+                <div class="option"><span class="option-label">B)</span> Frequency stays the same</div>
+                <div class="option"><span class="option-label">C)</span> Frequency decreases</div>
+                <div class="option"><span class="option-label">D)</span> Frequency becomes zero</div>
+                <div class="option"><span class="option-label">E)</span> Cannot be determined without knowing wavelength</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.8</div>
+                <div class="question-text"><strong>Two observers measure a wave traveling through water. Observer A measures the wavelength as 2 meters. Observer B measures the period as 0.5 seconds. If both measurements are accurate, what is the relationship between these measurements?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Wave speed = 2 × 0.5 = 1 m/s</div>
+                <div class="option"><span class="option-label">B)</span> Wave speed = 2 ÷ 0.5 = 4 m/s</div>
+                <div class="option"><span class="option-label">C)</span> Wave speed = 0.5 ÷ 2 = 0.25 m/s</div>
+                <div class="option"><span class="option-label">D)</span> The measurements are inconsistent</div>
+                <div class="option"><span class="option-label">E)</span> Cannot determine wave speed from these measurements</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.9</div>
+                <div class="question-text"><strong>A wave on a string has a certain wavelength. If you increase the frequency at which you shake the string (increasing the number of oscillations per second), but the wave travels through the string at the same speed, how does the new wavelength compare to the original?</strong></div>
+                <div class="option"><span class="option-label">A)</span> The new wavelength is longer</div>
+                <div class="option"><span class="option-label">B)</span> The new wavelength is shorter</div>
+                <div class="option"><span class="option-label">C)</span> The wavelength remains unchanged</div>
+                <div class="option"><span class="option-label">D)</span> The wavelength becomes infinite</div>
+                <div class="option"><span class="option-label">E)</span> The relationship depends on the string material</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.10</div>
+                <div class="question-text"><strong>Red light and violet light are both electromagnetic waves traveling through space. Violet light has a shorter wavelength than red light. What must be true about their frequencies?</strong></div>
+                <div class="option"><span class="option-label">A)</span> They have the same frequency</div>
+                <div class="option"><span class="option-label">B)</span> Red light has higher frequency than violet light</div>
+                <div class="option"><span class="option-label">C)</span> Violet light has higher frequency than red light</div>
+                <div class="option"><span class="option-label">D)</span> One wave is transverse and one is longitudinal</div>
+                <div class="option"><span class="option-label">E)</span> Frequency cannot be compared without knowing wavelength</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.11</div>
+                <div class="question-text"><strong>In a transverse wave traveling along a rope, at the moment when a point on the rope is at a crest, what can you say about the velocity of that point?</strong></div>
+                <div class="option"><span class="option-label">A)</span> The point is moving upward at maximum speed</div>
+                <div class="option"><span class="option-label">B)</span> The point is moving downward at maximum speed</div>
+                <div class="option"><span class="option-label">C)</span> The point is momentarily at rest (zero velocity)</div>
+                <div class="option"><span class="option-label">D)</span> The point is moving at the wave speed</div>
+                <div class="option"><span class="option-label">E)</span> The point is moving horizontally</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.12</div>
+                <div class="question-text"><strong>Why is it possible for light to reach Earth from distant stars, but sound from those same stars cannot be heard?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Light travels faster than sound</div>
+                <div class="option"><span class="option-label">B)</span> Sound waves are too weak to travel far</div>
+                <div class="option"><span class="option-label">C)</span> Sound is a mechanical wave requiring a medium; space is a vacuum</div>
+                <div class="option"><span class="option-label">D)</span> The stars are too far away</div>
+                <div class="option"><span class="option-label">E)</span> Sound waves reflect off space dust</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.13</div>
+                <div class="question-text"><strong>A spring is stretched horizontally and oscillated back and forth (compressed and stretched). What type of wave is created, and how do the particles move relative to the wave motion?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Transverse wave; particles move perpendicular to wave propagation</div>
+                <div class="option"><span class="option-label">B)</span> Longitudinal wave; particles move parallel to wave propagation</div>
+                <div class="option"><span class="option-label">C)</span> Electromagnetic wave; particles don't move at all</div>
+                <div class="option"><span class="option-label">D)</span> Transverse wave; particles move parallel to wave propagation</div>
+                <div class="option"><span class="option-label">E)</span> Cannot determine without knowing the spring constant</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.14</div>
+                <div class="question-text"><strong>Sound travels at approximately 343 m/s in air at room temperature. If a sound wave has a frequency of 340 Hz, approximately how many complete wavelengths fit within a distance of 1 meter?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Approximately 1 wavelength</div>
+                <div class="option"><span class="option-label">B)</span> Approximately 340 wavelengths</div>
+                <div class="option"><span class="option-label">C)</span> Cannot be determined without knowing the period</div>
+                <div class="option"><span class="option-label">D)</span> Approximately 343 wavelengths</div>
+                <div class="option"><span class="option-label">E)</span> No complete wavelengths fit in 1 meter</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.15</div>
+                <div class="question-text"><strong>An elastic cord is shaken up and down, creating a transverse wave that travels along the cord at 2 m/s. The cord is shaken 4 times per second. What is the wavelength?</strong></div>
+                <div class="option"><span class="option-label">A)</span> 0.5 m</div>
+                <div class="option"><span class="option-label">B)</span> 2 m</div>
+                <div class="option"><span class="option-label">C)</span> 8 m</div>
+                <div class="option"><span class="option-label">D)</span> 0.25 m</div>
+                <div class="option"><span class="option-label">E)</span> Cannot be determined from this information</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.16</div>
+                <div class="question-text"><strong>A wave on a string has a wavelength of 3 meters and a period of 2 seconds. Which equation would you use to find the wave speed, and what is the result?</strong></div>
+                <div class="option"><span class="option-label">A)</span> $v = f\lambda$; result is 1.5 m/s</div>
+                <div class="option"><span class="option-label">B)</span> $v = f\lambda$; result is 6 m/s</div>
+                <div class="option"><span class="option-label">C)</span> $v = \lambda/T$; result is 1.5 m/s</div>
+                <div class="option"><span class="option-label">D)</span> $v = \lambda/T$; result is 6 m/s</div>
+                <div class="option"><span class="option-label">E)</span> $v = T/\lambda$; result is 0.67 m/s</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.17</div>
+                <div class="question-text"><strong>Two wave machines create transverse waves in water. Machine A creates waves at 2 Hz and Machine B creates waves at 4 Hz, both in the same water tank. Assuming water properties don't change, what is the relationship between the wavelengths?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Both waves have the same wavelength</div>
+                <div class="option"><span class="option-label">B)</span> Machine A's wavelength is twice Machine B's wavelength</div>
+                <div class="option"><span class="option-label">C)</span> Machine B's wavelength is twice Machine A's wavelength</div>
+                <div class="option"><span class="option-label">D)</span> Machine A's wavelength is four times Machine B's wavelength</div>
+                <div class="option"><span class="option-label">E)</span> Cannot be determined without knowing the wave speed</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.18</div>
+                <div class="question-text"><strong>A transverse wave travels at 10 m/s with a wavelength of 5 meters. What is the period of this wave?</strong></div>
+                <div class="option"><span class="option-label">A)</span> 0.5 s</div>
+                <div class="option"><span class="option-label">B)</span> 2 s</div>
+                <div class="option"><span class="option-label">C)</span> 50 s</div>
+                <div class="option"><span class="option-label">D)</span> 0.2 s</div>
+                <div class="option"><span class="option-label">E)</span> 15 s</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.19</div>
+                <div class="question-text"><strong>A radio wave and a visible light wave are both electromagnetic waves. The radio wave has a longer wavelength. What must be true about their frequencies while traveling through space?</strong></div>
+                <div class="option"><span class="option-label">A)</span> They have the same frequency</div>
+                <div class="option"><span class="option-label">B)</span> The radio wave has higher frequency</div>
+                <div class="option"><span class="option-label">C)</span> The visible light has higher frequency</div>
+                <div class="option"><span class="option-label">D)</span> Frequency cannot be compared between different wave types</div>
+                <div class="option"><span class="option-label">E)</span> Cannot be determined without knowing the period</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.20</div>
+                <div class="question-text"><strong>A student observes that increasing the tension in a rope causes the waves on that rope to travel faster. If the frequency remains constant, what happens to the wavelength?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Wavelength decreases</div>
+                <div class="option"><span class="option-label">B)</span> Wavelength increases</div>
+                <div class="option"><span class="option-label">C)</span> Wavelength remains constant</div>
+                <div class="option"><span class="option-label">D)</span> Wavelength becomes zero</div>
+                <div class="option"><span class="option-label">E)</span> Cannot determine from this information</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.21</div>
+                <div class="question-text"><strong>A wave completes 5 full cycles in 10 seconds. What is the frequency, and what does this frequency represent?</strong></div>
+                <div class="option"><span class="option-label">A)</span> Frequency is 0.5 Hz; it represents cycles per second</div>
+                <div class="option"><span class="option-label">B)</span> Frequency is 2 Hz; it represents seconds per cycle</div>
+                <div class="option"><span class="option-label">C)</span> Frequency is 50 Hz; it represents cycles per second</div>
+                <div class="option"><span class="option-label">D)</span> Frequency is 0.5 Hz; it represents seconds per cycle</div>
+                <div class="option"><span class="option-label">E)</span> Frequency cannot be determined from this information</div>
+            </div>
+
+            <div class="question-group">
+                <div class="question-number">2.22</div>
+                <div class="question-text"><strong>Which statement best explains why the electromagnetic spectrum (ranging from radio waves to gamma rays) can all be described using the same wave equations ($v = f\lambda$ and $f = \frac{1}{T}$)?</strong></div>
+                <div class="option"><span class="option-label">A)</span> They all have the same frequency and wavelength</div>
+                <div class="option"><span class="option-label">B)</span> They are all transverse waves traveling at the same speed in the same medium</div>
+                <div class="option"><span class="option-label">C)</span> They all travel at the speed of light and follow the same wave relationship rules</div>
+                <div class="option"><span class="option-label">D)</span> They require different equations for different types</div>
+                <div class="option"><span class="option-label">E)</span> They are not actually waves</E>
+                </div>
+            </div>
+        </div>
+
+        <!-- BANK 3: SINGLE-STEP CALCULATIONS -->
+        <div class="bank-section" id="bank3">
+            <div class="bank-header">
+                <h2>Bank 3: Single-Step Calculations</h2>
+                <div class="bank-info">
+                    18 questions covering 3 formulas × 6 questions each
+                    <br>Numeric response | Single calculation step | All variables given except one
+                </div>
+            </div>
+
+            <!-- FORMULA 1: Frequency-Period Relationship (f = 1/T) -->
+            <div class="question-group">
+                <div class="question-group-title">Formula 1: Frequency-Period Relationship: $f = \frac{1}{T}$</div>
+                
+                <div class="question">
+                    <div class="question-number">3.1</div>
+                    <div class="question-text"><strong>A vibrating tuning fork completes one full oscillation in 0.002 seconds. Determine the frequency of the tuning fork.</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.2</div>
+                    <div class="question-text"><strong>Determine the period of a wave if its frequency is 60 Hz.</strong></div>
+                    <div class="numeric-response">Answer: __________ s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.3</div>
+                    <div class="question-text"><strong>A musical instrument produces a note with a frequency of 440 Hz (the musical note A4). Calculate the period of this note's wave.</strong></div>
+                    <div class="numeric-response">Answer: __________ s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.4</div>
+                    <div class="question-text"><strong>Determine the frequency of a wave that has a period of 0.5 seconds.</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.5</div>
+                    <div class="question-text"><strong>A pendulum swings back and forth, completing 2 full cycles every 4 seconds. What is the frequency of the pendulum?</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.6</div>
+                    <div class="question-text"><strong>An oscillating spring has a period of 0.01 seconds. Find the frequency of oscillation.</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+            </div>
+
+            <!-- FORMULA 2: Wave Equation (v = fλ) -->
+            <div class="question-group">
+                <div class="question-group-title">Formula 2: Wave Equation: $v = f\lambda$</div>
+                
+                <div class="question">
+                    <div class="question-number">3.7</div>
+                    <div class="question-text"><strong>A transverse wave has a frequency of 50 Hz and a wavelength of 2 meters. Calculate the wave speed.</strong></div>
+                    <div class="numeric-response">Answer: __________ m/s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.8</div>
+                    <div class="question-text"><strong>A wave travels at 20 m/s with a frequency of 10 Hz. Determine the wavelength.</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.9</div>
+                    <div class="question-text"><strong>A water wave has a wavelength of 4 meters and travels at 8 m/s. Find the frequency of the wave.</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.10</div>
+                    <div class="question-text"><strong>Determine the wave speed of a wave with a frequency of 3 Hz and a wavelength of 6 meters.</strong></div>
+                    <div class="numeric-response">Answer: __________ m/s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.11</div>
+                    <div class="question-text"><strong>A light wave traveling through air has a frequency of $5 \times 10^{14}$ Hz and a wavelength of $6 \times 10^{-7}$ meters. Calculate its speed.</strong></div>
+                    <div class="numeric-response">Answer: __________ m/s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.12</div>
+                    <div class="question-text"><strong>A sound wave in water travels at 1500 m/s. If the frequency is 300 Hz, what is the wavelength?</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+            </div>
+
+            <!-- FORMULA 3: Wave Speed (Alternative) (v = λ/T) -->
+            <div class="question-group">
+                <div class="question-group-title">Formula 3: Wave Speed (Alternative): $v = \frac{\lambda}{T}$</div>
+                
+                <div class="question">
+                    <div class="question-number">3.13</div>
+                    <div class="question-text"><strong>A wave has a wavelength of 8 meters and a period of 2 seconds. Calculate the wave speed using the alternative formula.</strong></div>
+                    <div class="numeric-response">Answer: __________ m/s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.14</div>
+                    <div class="question-text"><strong>Determine the wavelength of a wave with a period of 0.5 seconds and a speed of 10 m/s.</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.15</div>
+                    <div class="question-text"><strong>A transverse wave on a string travels at 12 m/s. If the wavelength is 3 meters, find the period of the wave.</strong></div>
+                    <div class="numeric-response">Answer: __________ s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.16</div>
+                    <div class="question-text"><strong>Find the wave speed of a wave with a wavelength of 0.5 meters and a period of 0.1 seconds.</strong></div>
+                    <div class="numeric-response">Answer: __________ m/s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.17</div>
+                    <div class="question-text"><strong>A ripple on a pond has a period of 1.5 seconds and a wavelength of 0.75 meters. Calculate the speed of the ripple.</strong></div>
+                    <div class="numeric-response">Answer: __________ m/s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">3.18</div>
+                    <div class="question-text"><strong>Determine the period of a wave if it travels 5 meters in one complete cycle and moves at 20 m/s.</strong></div>
+                    <div class="numeric-response">Answer: __________ s</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BANK 4: MULTI-STEP CALCULATIONS -->
+        <div class="bank-section" id="bank4">
+            <div class="bank-header">
+                <h2>Bank 4: Multi-Step Calculations</h2>
+                <div class="bank-info">
+                    18 questions requiring 2+ calculation steps
+                    <br>Numeric response | Real-world scenarios | No step-by-step hints
+                </div>
+            </div>
+
+            <!-- SCENARIO 1: String/Rope Waves -->
+            <div class="question-group">
+                <div class="question-group-title">Scenario 1: String and Rope Waves (6 questions)</div>
+                
+                <div class="question">
+                    <div class="question-number">4.1</div>
+                    <div class="question-text"><strong>A guitar string is plucked and vibrates at a frequency of 220 Hz. The wave travels along the string at 80 m/s. What is the wavelength of the wave on the string?</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.2</div>
+                    <div class="question-text"><strong>Find the frequency of a wave on a rope if the wave speed is 12 m/s and the distance between consecutive crests is 0.4 meters.</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.3</div>
+                    <div class="question-text"><strong>A clothesline is shaken, creating a transverse wave that takes 2 seconds to travel 6 meters along the line. If the frequency of shaking is 5 Hz, calculate the wavelength.</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.4</div>
+                    <div class="question-text"><strong>A rope wave has a period of 0.02 seconds and travels 40 meters in 5 seconds. Determine the wavelength.</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.5</div>
+                    <div class="question-text"><strong>On a stretched string, waves travel at 15 m/s. If you observe 3 complete wavelengths fitting within a 1.5-meter section of the string, what is the frequency?</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.6</div>
+                    <div class="question-text"><strong>A drummer taps a drum skin at a frequency of 8 Hz, sending waves across the surface at 2 m/s. How many complete wavelengths occur in a 1-meter span?</strong></div>
+                    <div class="numeric-response">Answer: __________ (round to nearest whole number)</div>
+                </div>
+            </div>
+
+            <!-- SCENARIO 2: Water Waves -->
+            <div class="question-group">
+                <div class="question-group-title">Scenario 2: Water Waves and Ocean Waves (6 questions)</div>
+                
+                <div class="question">
+                    <div class="question-number">4.7</div>
+                    <div class="question-text"><strong>Ocean waves near a beach have a wavelength of 8 meters and a frequency of 0.1 Hz. Calculate the speed of the waves approaching the shore.</strong></div>
+                    <div class="numeric-response">Answer: __________ m/s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.8</div>
+                    <div class="question-text"><strong>A buoy on the ocean rises and falls as waves pass. If the buoy completes 4 oscillations in 20 seconds and the waves travel at 2 m/s, what is the wavelength?</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.9</div>
+                    <div class="question-text"><strong>Water waves in a lake take 3 seconds to travel 12 meters. If consecutive wave crests are 1.2 meters apart, what is the frequency of the waves?</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.10</div>
+                    <div class="question-text"><strong>A wave on a pond has a period of 0.5 seconds. If the wavelength is 0.25 meters, calculate how long it takes for the wave to travel 2 meters.</strong></div>
+                    <div class="numeric-response">Answer: __________ s</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.11</div>
+                    <div class="question-text"><strong>Ripples on water travel at 0.4 m/s and have a frequency of 2 Hz. How far does one complete wavelength extend, and what is the distance traveled in 5 seconds?</strong></div>
+                    <div class="numeric-response">Answer: Wavelength = __________ m; Distance in 5 sec = __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.12</div>
+                    <div class="question-text"><strong>A tsunami wave has a wavelength of 100 meters and travels at 200 m/s. What is the period of this wave?</strong></div>
+                    <div class="numeric-response">Answer: __________ s</div>
+                </div>
+            </div>
+
+            <!-- SCENARIO 3: Light and Electromagnetic Waves -->
+            <div class="question-group">
+                <div class="question-group-title">Scenario 3: Light and Electromagnetic Waves (6 questions)</div>
+                
+                <div class="question">
+                    <div class="question-number">4.13</div>
+                    <div class="question-text"><strong>Red light has a wavelength of 700 nanometers and travels at $3 \times 10^8$ m/s. Calculate the frequency of red light. (Note: 1 nanometer = $10^{-9}$ m)</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz (express in scientific notation)</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.14</div>
+                    <div class="question-text"><strong>Blue light has a frequency of $7.5 \times 10^{14}$ Hz and travels at $3 \times 10^8$ m/s. Determine the wavelength of blue light in nanometers.</strong></div>
+                    <div class="numeric-response">Answer: __________ nm</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.15</div>
+                    <div class="question-text"><strong>A radio station broadcasts at a frequency of 100 MHz ($100 \times 10^6$ Hz). If the radio waves travel at $3 \times 10^8$ m/s, what is the wavelength of these radio waves?</strong></div>
+                    <div class="numeric-response">Answer: __________ m</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.16</div>
+                    <div class="question-text"><strong>Microwave radiation used in a microwave oven has a wavelength of 0.01 meters and travels at $3 \times 10^8$ m/s. Calculate the frequency.</strong></div>
+                    <div class="numeric-response">Answer: __________ Hz (express in scientific notation)</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.17</div>
+                    <div class="question-text"><strong>X-rays have a frequency of $10^{18}$ Hz and travel at $3 \times 10^8$ m/s. Find the wavelength in nanometers.</strong></div>
+                    <div class="numeric-response">Answer: __________ nm</div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">4.18</div>
+                    <div class="question-text"><strong>A laser pointer emits light with a wavelength of 650 nanometers. If light travels at $3 \times 10^8$ m/s, calculate the period of this light wave.</strong></div>
+                    <div class="numeric-response">Answer: __________ s (express in scientific notation)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANSWER KEY -->
+        <div class="answer-key" id="answers">
+            <h2>Complete Answer Key</h2>
+
+            <h3>Bank 1: Vocabulary Assessment</h3>
+            
+            <div class="answer-item">
+                <div class="answer-item-num">1.1 - 1.4 (Wave)</div>
+                <div class="answer-content">1.1: B | 1.2: C | 1.3: B | 1.4: A</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">2.1 - 2.4 (Transverse Wave)</div>
+                <div class="answer-content">2.1: B | 2.2: B | 2.3: C | 2.4: B</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">3.1 - 3.4 (Medium)</div>
+                <div class="answer-content">3.1: B | 3.2: C | 3.3: C | 3.4: B</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">4.1 - 4.4 (Propagation)</div>
+                <div class="answer-content">4.1: B | 4.2: B | 4.3: B | 4.4: B</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">5.1 - 5.4 (Crest)</div>
+                <div class="answer-content">5.1: B | 5.2: C | 5.3: B | 5.4: B</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">6.1 - 6.4 (Trough)</div>
+                <div class="answer-content">6.1: B | 6.2: B | 6.3: B | 6.4: B</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">7.1 - 7.4 (Wavelength)</div>
+                <div class="answer-content">7.1: B | 7.2: B | 7.3: C | 7.4: C</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">8.1 - 8.4 (Wave Speed)</div>
+                <div class="answer-content">8.1: B | 8.2: C | 8.3: B | 8.4: B</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">9.1 - 9.4 (Electromagnetic Wave)</div>
+                <div class="answer-content">9.1: B | 9.2: D | 9.3: B | 9.4: C</div>
+            </div>
+
+            <h3>Bank 2: Conceptual Questions</h3>
+            
+            <div class="answer-item">
+                <div class="answer-item-num">2.1 - 2.10</div>
+                <div class="answer-content">2.1: B | 2.2: B | 2.3: B | 2.4: C | 2.5: A | 2.6: C | 2.7: C | 2.8: B | 2.9: B | 2.10: C</div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">2.11 - 2.22</div>
+                <div class="answer-content">2.11: C | 2.12: C | 2.13: B | 2.14: A | 2.15: A | 2.16: C | 2.17: B | 2.18: A | 2.19: C | 2.20: B | 2.21: A | 2.22: C</div>
+            </div>
+
+            <h3>Bank 3: Single-Step Calculations</h3>
+            
+            <div class="answer-item">
+                <div class="answer-item-num">3.1 - 3.6 (Frequency-Period: $f = \frac{1}{T}$)</div>
+                <div class="answer-content">
+                    3.1: 500 Hz | 3.2: 0.0167 s | 3.3: 0.00227 s | 3.4: 2 Hz | 3.5: 0.5 Hz | 3.6: 100 Hz
+                </div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">3.7 - 3.12 (Wave Equation: $v = f\lambda$)</div>
+                <div class="answer-content">
+                    3.7: 100 m/s | 3.8: 2 m | 3.9: 2 Hz | 3.10: 18 m/s | 3.11: $3 \times 10^8$ m/s | 3.12: 5 m
+                </div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">3.13 - 3.18 (Wave Speed Alternative: $v = \frac{\lambda}{T}$)</div>
+                <div class="answer-content">
+                    3.13: 4 m/s | 3.14: 5 m | 3.15: 0.25 s | 3.16: 5 m/s | 3.17: 0.5 m/s | 3.18: 0.25 s
+                </div>
+            </div>
+
+            <h3>Bank 4: Multi-Step Calculations</h3>
+            
+            <div class="answer-item">
+                <div class="answer-item-num">4.1 - 4.6 (String/Rope Waves)</div>
+                <div class="answer-content">
+                    4.1: 0.364 m | 4.2: 30 Hz | 4.3: 0.6 m | 4.4: 40 m | 4.5: 30 Hz | 4.6: 4
+                </div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">4.7 - 4.12 (Water Waves)</div>
+                <div class="answer-content">
+                    4.7: 0.8 m/s | 4.8: 10 m | 4.9: 3.33 Hz | 4.10: 0.5 s | 4.11: Wavelength = 0.2 m; Distance = 2 m | 4.12: 0.5 s
+                </div>
+            </div>
+
+            <div class="answer-item">
+                <div class="answer-item-num">4.13 - 4.18 (Light/EM Waves)</div>
+                <div class="answer-content">
+                    4.13: $4.3 \times 10^{14}$ Hz | 4.14: 400 nm | 4.15: 3 m | 4.16: $3 \times 10^9$ Hz | 4.17: 0.3 nm | 4.18: $2.17 \times 10^{-15}$ s
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>Section 5.2: Transverse Waves - Assessment Banks</strong></p>
+            <p>Total: 114 Questions | Bank 1: 36 | Bank 2: 22 | Bank 3: 18 | Bank 4: 18</p>
+            <p>Ready for Canvas, LMS integration, or direct classroom use</p>
+        </footer>
+    </div>
+
+    <div class="return-to-top" id="returnToTop" onclick="scrollToTop()">↑</div>
+
+    <script>
+        const returnToTopBtn = document.getElementById('returnToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                returnToTopBtn.classList.add('show');
+            } else {
+                returnToTopBtn.classList.remove('show');
+            }
+        });
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
